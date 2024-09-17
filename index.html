@@ -3,54 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oakmoss Woodcraft</title>
+    <title>Oakmoss Woodcraft | Exquisite Wooden Art & Furniture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <img src="images/logo.png" alt="Oakmoss Woodcraft Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <img src="images/logo.png" alt="Oakmoss Woodcraft Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Main Content -->
     <main>
         <section id="hero">
-            <img src="images/cherry-table.jpg" alt="Cherry Table" class="hero-image">
-            <div class="hero-text">
+            <div class="hero-content">
                 <h1>Oakmoss Woodcraft</h1>
                 <p>Exquisite handmade wooden art and furniture for discerning clients.</p>
+                <a href="#gallery" class="cta-button">Explore Our Collection</a>
             </div>
         </section>
 
-        <section id="wallets">
+        <section id="wallets" class="container">
             <h2>Featured Oakmoss Wallets</h2>
-            <img src="images/oakmoss-wallets.jpg" alt="Oakmoss Wallets" class="wallet-image">
-            <p>Discover the artistry of Oakmoss Wallets, crafted with precision and elegance. <a href="wallets.html">See More</a></p>
+            <div class="wallet-showcase">
+                <img src="images/oakmoss-wallets.jpg" alt="Oakmoss Wallets" class="wallet-image">
+                <div class="wallet-info">
+                    <p>Discover the artistry of Oakmoss Wallets, crafted with precision and elegance.</p>
+                    <a href="wallets.html" class="button">See More</a>
+                </div>
+            </div>
             <div class="reviews">
                 <img src="images/review1.png" alt="Review 1" class="review-image">
                 <img src="images/review2.png" alt="Review 2" class="review-image">
             </div>
         </section>
 
-        <section id="blog-preview">
+        <section id="blog-preview" class="container">
             <h2>From Our Blog</h2>
-            <p>Jesse's Interviews With Artists and Scientists <a href="blog.html">Read More</a></p>
+            <p>Jesse's Interviews With Artists and Scientists</p>
+            <a href="blog.html" class="button">Read More</a>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Oakmoss Woodcraft. All rights reserved.</p>
-        <p>Contact us: <a href="mailto:jesse.boyes@oakmosswoodcraft.com">jesse.boyes@oakmosswoodcraft.com</a></p>
+        <div class="container">
+            <p>&copy; 2024 Oakmoss Woodcraft. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:jesse.boyes@oakmosswoodcraft.com">jesse.boyes@oakmosswoodcraft.com</a></p>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>
