@@ -148,14 +148,31 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
+#wallets .button {
+    display: inline-block;
+    background-color: #8B4513;
+    color: #F6E4CE;
+    padding: 4px 18px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+#wallets .button:hover {
+    background-color: #6B3E0A;
+    text-decoration: underline;
+}
+
 #wallets .reviews {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
 #wallets .review-image {
-    width: 30%;
+    width: 65%;
     border-radius: 5px;
 }
 
@@ -203,4 +220,19 @@ nav ul li a:hover {
     font-size: 1rem;
     margin-bottom: 10px;
    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #9FA37A;
+    color: #F6E4CE;
+}
+
+footer .social-icons {
+    display: flex;
+    
+
 }
