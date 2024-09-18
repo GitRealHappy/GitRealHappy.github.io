@@ -44,11 +44,13 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: -20px;
+    margin: 0px 30px;
+    padding: 5px;
+    border-bottom: 2px solid black;
 }
 
 header .logo {
-    height: 225px; /* Adjusted logo height for balance */
+    height: 150px; /* Adjusted logo height for balance */
 }
 
 nav ul {
@@ -63,7 +65,8 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #F6E4CE;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
@@ -76,18 +79,20 @@ nav ul li a:hover {
     background-image: url('../images/cherry-table.jpg');
     background-size: cover;
     background-position: center;
+    padding-top: 150px;
     height: 80vh;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
     text-align: center;
-    color: #F6E4CE;
+    color: #0c0417;
 }
 
 .hero-content {
-    background-color: rgba(159, 163, 122, 0.8);
-    padding: 40px;
-    border-radius: 5px;
+    background-color: rgba(159, 163, 122, 0.9);
+    padding: 30px;
+    margin-bottom: 15px;
+    border-radius: 9px;
 }
 
 .hero-content h1 {
@@ -97,7 +102,7 @@ nav ul li a:hover {
 
 .hero-content p {
     font-size: 1.2rem;
-    margin-bottom: 30px;
+    font-weight: 700;
 }
 
 .cta-button {
@@ -108,7 +113,7 @@ nav ul li a:hover {
     text-decoration: none;
     border-radius: 3px;
     transition: background-color 0.3s ease;
-    margin-top: auto; /* Push the button to the bottom */
+    margin-top: 15px; /* Push the button to the bottom */
     align-self: center; /* Ensure it's centered */
 }
 
@@ -118,14 +123,15 @@ nav ul li a:hover {
 
 /* Wallet Section */
 #wallets {
-    padding: 60px 0;
+    padding: 30px 40px;
     background-color: #F6E4CE;
     text-align: center;
+    font-size: 1.7rem;
 }
 
 .wallet-showcase {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     margin-bottom: 40px;
 }
@@ -133,6 +139,7 @@ nav ul li a:hover {
 #wallets .wallet-image {
     width: 18%; /* Slightly smaller for better proportions */
     border-radius: 5px;
+    outline: 2px solid black;;
     margin-bottom: 20px;
 }
 
