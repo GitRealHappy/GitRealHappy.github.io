@@ -184,17 +184,12 @@ main {
     text-decoration: underline;
 }
 
-#wallets .reviews {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-#wallets .review-image {
-    width: 65%;
+.review {
+    background-color: #9FA37A;
+    color: #F6E4CE;
+    padding: 20px;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
 /* Blog Preview */
