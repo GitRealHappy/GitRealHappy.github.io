@@ -190,7 +190,7 @@ nav ul li a:hover {
 
 .blog-posts {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-top: 30px;
     gap: 20px;
@@ -236,3 +236,6 @@ footer .social-icons {
     
 
 }
+
+/* This is the gallery css */
+
