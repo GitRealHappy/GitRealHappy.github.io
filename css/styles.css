@@ -74,12 +74,15 @@ nav ul li a:hover {
     color: #8B4513;
 }
 
+
+main {
+    padding-top: 160px;
+}
 /* Hero Section */
 #hero {
     background-image: url('../images/cherry-table.jpg');
     background-size: cover;
     background-position: center;
-    padding-top: 150px;
     height: 80vh;
     display: flex;
     align-items:center;
