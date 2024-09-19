@@ -52,9 +52,11 @@
                     <a href="wallets.html" class="button">See More</a>
                 </div>
             </div>
-            <div class="reviews">
-                <img src="images/review1.png" alt="Review 1" class="review-image">
-                <img src="images/review2.png" alt="Review 2" class="review-image">
+            <div class="container">
+            </div class="review"><h3>"I got a custom piece from Oakmoss and I love the design and handiwork. Their craftsmanship is amazing. If you're looking for something custom and handcrafted I highly reccomend these guys."</h3>
+                <h4>Nicholas Man - CEO of IIAS</h4></div>
+                <div class="review"></div><h3>I really like the size and shape of the wallet, which is especially low profile in the clothes I use when making things. It's way less cumbersome than my previous wallet. I'm using it as my business wallet, so it's got my business credit card, and things like that.</h3
+                <h4>Fabio Bollinger - CEO of Bollingerhouse</h4></div>
             </div>
         </section>
 
@@ -101,5 +103,20 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+        
+            if (hamburger && navLinks) {
+                hamburger.addEventListener('click', function() {
+                    navLinks.classList.toggle('active');
+                    console.log('Hamburger clicked!'); // For debugging
+                });
+            } else {
+                console.error('Hamburger menu or nav links not found');
+            }
+        });
+        </script>
 </body>
 </html>
