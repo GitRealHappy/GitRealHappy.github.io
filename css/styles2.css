@@ -52,16 +52,21 @@ header .logo {
     height: 150px;
 }
 
-nav ul {
+/* Navigation Styles */
+nav {
+    display: flex;
+}
+
+.nav-links {
     display: flex;
     list-style: none;
 }
 
-nav ul li {
+.nav-links li {
     margin-left: 30px;
 }
 
-nav ul li a {
+.nav-links li a {
     text-decoration: none;
     color: #F6E4CE;
     font-weight: 600;
@@ -69,10 +74,26 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+.nav-links li a:hover {
     color: #8B4513;
 }
 
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #F6E4CE;
+    border-radius: 2px;
+}
+
+/* Main Content */
 main {
     padding-top: 160px;
 }
@@ -84,7 +105,7 @@ main {
     background-position: center;
     height: 80vh;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     text-align: center;
     color: #0c0417;
@@ -258,22 +279,36 @@ footer .social-icons a:hover {
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     header .container {
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
+        flex-wrap: wrap;
     }
 
     header .logo {
         height: 100px;
     }
 
-    nav ul {
-        flex-direction: column;
-        margin-top: 10px;
+    nav {
+        order: 3;
+        width: 100%;
     }
 
-    nav ul li {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
         margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
     }
 
     #hero {
@@ -298,7 +333,7 @@ footer .social-icons a:hover {
         flex-direction: column;
     }
 
-    .wallet-image {
+    #wallets .wallet-image {
         width: 50%;
     }
 
@@ -349,7 +384,7 @@ footer .social-icons a:hover {
         font-size: 0.9rem;
     }
 
-    .wallet-image {
+    #wallets .wallet-image {
         width: 80%;
     }
 
