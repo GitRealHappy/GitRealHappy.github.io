@@ -22,11 +22,11 @@ p {
 }
 
 main {
-    padding: 0 20px;
+    padding-top: 200px;
 }
 
 .gallery-intro {
-    padding-top: 200px; /* Adjust the value to match your header height */
+    padding-top: 30px;
     text-align: center;
     margin-bottom: 20px;
 }
