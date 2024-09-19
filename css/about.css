@@ -1,3 +1,36 @@
 main {
     padding-top: 200px;
 }
+
+#about-preview .container {
+    padding: 20px;
+    border: 5px solid #6B3E0A;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #9FA37A;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    align-items: center;
+}
+
+#about-preview h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #6B3E0A;
+}
+
+#about-preview h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #6B3E0A;
+    text-align: center;
+}
+
+#about-preview p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #6B3E0A;
+    padding: 45px;
+    outline: 2px solid #6B3E0A;
+    margin-left: 45px;
+    margin-right: 45px;
+}
