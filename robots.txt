@@ -1,0 +1,40 @@
+User-agent: *
+Allow: /
+
+# Allow search engines to crawl all important pages
+Allow: /index.html
+Allow: /about.html
+Allow: /gallery.html
+Allow: /events.html
+Allow: /blog.html
+Allow: /contact.html
+Allow: /wallets.html
+Allow: /blogposts/wadedavis.html
+Allow: /blogposts/monicagagliano.html
+Allow: /blogposts/trevorcarolan.html
+Allow: /blogposts/dennismckenna.html
+
+# Prevent crawling of any admin or private areas (if they exist)
+Disallow: /admin/
+Disallow: /private/
+Disallow: / GitRealHapppy.github.io
+
+# Sitemap location
+Sitemap: https://www.jesseboyes.com/sitemap.xml
+
+# handmade furniture fraser valley
+# custom wooden art abbotsford
+# artisan woodcraft chilliwack
+# bespoke wood tables mission bc
+# wooden wallets canada
+# eco-friendly wood products british columbia
+# custom hardwood furniture langley
+# artisanal woodworking maple ridge
+# sustainable wood art fraser valley
+# handcrafted wooden gifts bc
+# custom woodworking
+# jesse boyes
+# oakmoss wood art
+# abbotsford artists
+# custom carved doors
+# 

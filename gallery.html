@@ -42,14 +42,69 @@
         <section class="gallery-container">
             <!-- Images will be displayed here -->
             <div class="gallery-grid">
-                <img src="images/gallery/gallery1.jpeg" alt="Gallery Image 1">
-                <img src="images/gallery/gallery2.jpeg" alt="Gallery Image 2">
-                <img src="images/gallery/gallery3.jpeg" alt="Gallery Image 3">
-                <img src="images/gallery/gallery4.jpeg" alt="Gallery Image 4">
-                <img src="images/gallery/gallery5.jpeg" alt="Gallery Image 5">
-                <img src="images/gallery/gallery6.jpeg" alt="Gallery Image 6">
-                <img src="images/gallery/gallery7.jpeg" alt="Gallery Image 7">
-                <img src="images/gallery/gallery8.jpeg" alt="Gallery Image 8">
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery1.jpeg" alt="Oakmoss Cherry Table 1" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery2.jpeg" alt="Oakmoss Cherry Table 1" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery3.jpeg" alt="Oakmoss Cherry Table 1" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery4.jpeg" alt="Oakmoss Cherry Table 2" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery4.jpeg" alt="Oakmoss Cherry Table 3" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery5.jpeg" alt="Oakmoss Cherry Table 4" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery6.jpeg" alt="Oakmoss Cherry Table 5" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery7.jpeg" alt="Oakmoss Cherry Table 6" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery8.jpeg" alt="Oakmoss Cherry Table 7" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery9.jpeg" alt="Oakmoss Cherry Table 8" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery10.jpeg" alt="Oakmoss Wood Wallet" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery11.jpeg" alt="Oakmoss Wood Art" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery12.jpeg" alt="Oakmoss Wood Carving" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery13.jpeg" alt="Oakmoss Wood Carving" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery14.jpeg" alt="Oakmoss Wood Carving" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery15.jpeg" alt="Oakmoss Wood Carving" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery16.jpeg" alt="Oakmoss Wood Carving" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery17.jpeg" alt="Oakmoss Wood Carving" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery18.jpeg" alt="Oakmoss Wood Carving" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery19.jpeg" alt="Oakmoss Wood Carving" onclick="openLightbox(this.src);">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/gallery20.jpeg" alt="Oakmoss Wood Carving" onclick="openLightbox(this.src);">
+                </div>
                 <!-- Add more images as needed -->
             </div>
         </section>
@@ -67,6 +122,14 @@
         </div>
     </footer>
 
+    <div id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <button id="prevBtn" onclick="changeImage(-1)">&#10094; Prev</button>
+        <img src="" alt="">
+        <button id="nextBtn" onclick="changeImage(1)">Next &#10095;</button>
+    </div>
+    
+
     <script src="js/script.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -83,5 +146,6 @@
             }
         });
         </script>
+    
 </body>
 </html>
