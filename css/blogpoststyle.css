@@ -1,0 +1,101 @@
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Article container */
+article.interview {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header section */
+header {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.4em;
+    margin-bottom: 5px;
+}
+
+header .date,
+header .author {
+    font-size: 0.9em;
+    color: #777;
+}
+
+header .intro {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #333;
+}
+
+/* Bio section */
+section.bio h2 {
+    font-size: 1.8em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+section.bio p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Interview content */
+section.interview-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Q&A section */
+div.qa h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-left: 5px solid #5a9;
+}
+
+div.qa p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    color: #555;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    article.interview {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section.bio h2, 
+    section.interview-content h2 {
+        font-size: 1.6em;
+    }
+    
+    div.qa h3 {
+        font-size: 1.2em;
+    }
+}
