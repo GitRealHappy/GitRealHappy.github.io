@@ -1,3 +1,55 @@
+/* Main content styles */
 main {
-    padding-top: 200px;
+    padding: 40px 20px;
+    padding-top: 230px;
+    background-color: #f4f4f4; /* Light background for the main area */
+    border: 2px solid #6B3E0A; /* Darker border to frame the content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px; /* Spacing from the footer */
 }
+
+/* Event preview section */
+.events-intro {
+    background-color: rgba(11, 18, 7, 0.796); /* Semi-transparent dark background */
+    color: rgb(243, 231, 221); /* Text color for contrast */
+    padding: 20px; /* Padding for content */
+    margin: 0 45px;
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 30px; /* Space between sections */
+}
+
+/* Headings and paragraphs within events */
+#events-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #FFD700; /* Gold color for headings */
+}
+
+#events-intro p {
+    line-height: 1.6; /* Better readability */
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    padding: 10px 45px;
+}
+
+/* Event posts */
+
+
+.event-post {
+    background-color: #2b1a39; /* Dark background for event posts */
+    border: 1px solid #271731d8; /* Darker border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding for content */
+    margin-bottom: 20px; /* Space between posts */
+}
+
+.event-post iframe {
+    border-radius: 4px; /* Rounded corners for the video */
+    width: 70%; /* Set width to 70% of the container */
+    max-width: 800px; /* Maximum width to prevent it from getting too large */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the video */
+    display: block; /* Ensure the iframe behaves as a block element */
+}
+
