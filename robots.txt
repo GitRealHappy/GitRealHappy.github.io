@@ -20,7 +20,7 @@ Disallow: /private/
 Disallow: / GitRealHapppy.github.io
 
 # Sitemap location
-Sitemap: https://www.jesseboyes.com/sitemap.xml
+Sitemap: https://www.oakmoss.ca/sitemap.xml
 
 # handmade furniture fraser valley
 # custom wooden art abbotsford
@@ -37,4 +37,5 @@ Sitemap: https://www.jesseboyes.com/sitemap.xml
 # oakmoss wood art
 # abbotsford artists
 # custom carved doors
-# 
+# wooden wallet
+# abbotsford gallery
