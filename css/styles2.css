@@ -208,7 +208,7 @@ font-size: 1.2rem;
 #blog-preview {
     padding: 60px 0;
     background-color: #9FA37A;
-    color: #F6E4CE;
+    color: #120b02;
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
@@ -236,13 +236,13 @@ font-size: 1.2rem;
 }
 
 .blog-post h3, h2 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 10px;
     text-align: center;
 }
 
 .blog-post p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
