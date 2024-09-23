@@ -1,6 +1,12 @@
 /* Table Gallery Specific Styles */
-.gallery-intro {
-    padding-top: 180px;
+.table-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    background-color: #f3e9c9c9;
+    margin: 75px 45px 45px 45px;
+    outline: 2px solid black;
 }
 
 .gallery-intro h1 {
@@ -18,9 +24,10 @@
 }
 
 .closing-section {
-    text-align: center;
     padding: 40px 20px;
-    background-color: #F6E4CE;
+    background-color: #f3e9c9c9;
+    margin: 45px 45px;
+    outline: 2px solid black;
 }
 
 .closing-section p {
@@ -32,6 +39,7 @@
 }
 
 .cta-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;

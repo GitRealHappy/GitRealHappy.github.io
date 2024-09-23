@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Story of The Cherry Sun Table - Oakmoss Woodcraft</title>
     <link rel="stylesheet" href="css/styles2.css">
-    <link rel="stylesheet" href="css/gallery.css"
     <link rel="stylesheet" href="css/tablegallery.css">
+    <link rel="stylesheet" href="css/gallery.css">
+
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -33,7 +34,7 @@
     </header>
 
     <main>
-        <section class="gallery-intro">
+        <section class="table-intro">
             <h1>The Solar Flux Table</h1>
 <p>WARNING: This ain't your grandma's coffee table...</p>
     <p>Imagine owning a piece of furniture so striking, it stops conversations mid-sentence. A table that doesn't just sit in your living room, but transforms it into a Zen sanctuary of awe-inspiring beauty.</p>
@@ -76,16 +77,18 @@
     <p>Are you the type who settles for the mundane? Or are you ready to inject a dose of "furyu" - refined unconventionality - into your living space?</p>
     <p>The choice is yours. But tick-tock... this "uncarved block" of possibilities won't wait forever.</p>
 
-    <h3>ATTENTION SERIOUS ART LOVERS</h3>
-    <p>To claim this one-of-a-kind masterpiece and transform your home into a sanctuary of awe-inspiring beauty, call 778-241-5956 now.
+    <h1>ATTENTION SERIOUS ART LOVERS</h1>
+    <p>To claim this one-of-a-kind masterpiece and transform your home into a sanctuary of awe-inspiring beauty, call 778-241-5956 now.</p>
     <p>$5,000 investment. No tire-kickers or window-shoppers, please.</p>
     <p>Remember: When it's gone, it's gone. Don't let your future self curse you for missing out.</p>
     <p>Call 778-241-5956 now. Your journey to everyday transcendence awaits.</p>
     
     <div class="cta-container">
-                <button class="cta-button">Purchase This Table</button>
-                <p class="cta-note"><i>Serious inquiries only</i></p>
-            </div>
+        <a href="mailto:jesse.boyes@oakmosswoodcraft.com">
+            <button class="cta-button">Purchase This Table</button>
+        </a>
+        <p class="cta-note"><i>Serious inquiries only</i></p>
+    </div>
         </section>
     </main>
 
@@ -108,6 +111,23 @@
         <button id="nextBtn" onclick="changeImage(1)">&#10095;</button>
     </div>
 
-    <script src="script.js"></script>
+    <!--hamburger menu-->
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+        
+            if (hamburger && navLinks) {
+                hamburger.addEventListener('click', function() {
+                    navLinks.classList.toggle('active');
+                    console.log('Hamburger clicked!'); // For debugging
+                });
+            } else {
+                console.error('Hamburger menu or nav links not found');
+            }
+        });
+        </script>
+    
 </body>
 </html>

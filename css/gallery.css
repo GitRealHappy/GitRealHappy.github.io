@@ -36,7 +36,7 @@ main {
 .gallery-container {
     padding: 20px;
     border: 5px solid #6B3E0A; /* Gold-like color for luxury feel */
-    margin: 20px auto;
+    margin: 20px 20px;
     max-width: 1200px;
     background-color: #9FA37A;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -56,8 +56,8 @@ main {
 .gallery-item img {
     width: 100%; /* Make the image fill the item */
     height: auto; /* Maintain aspect ratio */
-    border: 2px solid #6B3E0A;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #3a2104;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.277);
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
 }
