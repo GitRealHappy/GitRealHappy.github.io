@@ -1,9 +1,82 @@
+/* Blog Page Styling */
 main {
     padding-top: 140px;
 }
 
+#blog-posts-section {
+    background-color: #e4dfda;
+    padding: 60px 20px;
+}
 
-.container h2 {
-    font-weight: 700;
-    color: brown;
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Single column by default */
+    gap: 30px;
+    padding-top: 10px;
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;    /* Center align images and text */
+    gap: 10px; /* Adjust the gap between image and content */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.blog-post img {
+    width: 195px; /* Increased image size by 30% from original 150px */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0; /* Ensure no margin below the image */
+    padding: 0;       /* Ensure no padding below the image */
+}
+
+.blog-post h3 {
+    font-size: 1.8rem;
+    margin: 5px 0; /* Reduce margin between title and image */
+    color: #333;
+    text-align: center;      /* Center align titles */
+}
+
+.blog-post p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;      /* Center align descriptions */
+}
+
+.blog-post-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;      /* Ensure entire content is centered */
+}
+
+/* Responsive Styling */
+@media (min-width: 1024px) {
+    .blog-posts {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+    }
+
+    .blog-post {
+        max-width: 600px; /* Restrict width to avoid overly long rows */
+    }
+
+    .blog-post img {
+        width: 30%; /* On larger screens, make images 30% larger */
+        margin-bottom: 0; /* Ensure no extra space between image and title */
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-post img {
+        width: 100%; /* Full width image on smaller screens */
+    }
+
+    .blog-post-content {
+        text-align: center;
+    }
 }
