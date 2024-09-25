@@ -97,7 +97,7 @@ nav {
 
 /* Main Content */
 main {
-    padding-top: 150px;
+    padding-top: 130px;
 }
 
 /* Hero Section */
@@ -113,25 +113,25 @@ main {
     color: #0c0417;
 }
 
-.hero-content {
-    background-color: rgba(159, 163, 122, 0.9);
-    padding: 30px;
-    border-radius: 9px;
+#welcome-oakmoss {
+    padding: 40px 20px;
+    background-color: #F6E4CE;
+    text-align: center;
+    margin-top: 20px;
 }
 
-.hero-content h1 {
+#welcome-oakmoss h1 {
     font-size: 3.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.hero-content h3 {
-    font-size: 1.4rem;
-    padding-bottom: 15px;
-    font-weight: 700;
+#welcome-oakmoss h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 30px;
 }
 
-.cta-button {
-    display: inline-block;
+#welcome-oakmoss .cta-button {
     background-color: #8B4513;
     color: #F6E4CE;
     padding: 12px 24px;
@@ -140,9 +140,10 @@ main {
     transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
+#welcome-oakmoss .cta-button:hover {
     background-color: #6B3E0A;
 }
+
 
 /* Wallet Section */
 #wallets {
