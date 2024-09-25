@@ -171,6 +171,20 @@ main {
     text-decoration: none;
 }
 
+.wallets-button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.wallets-button-container .table-story-button {
+    background-color: #3A2104; /* Darker color to differentiate */
+}
+
+.wallets-button-container .table-story-button:hover {
+    background-color: #8B4513; /* Adjust hover effect */
+}
+
+
 /* Add responsiveness for the button */
 @media screen and (max-width: 768px) {
     .table-story-button {
