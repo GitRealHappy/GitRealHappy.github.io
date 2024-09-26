@@ -1,10 +1,5 @@
 /* Blog Post Specific Styles */
 
-/* Ensure the main content doesn't overlap with the fixed header */
-main {
-    padding-top: 170px; /* Adjust this value based on your header height */
-}
-
 /* Style for the interview container */
 article.interview {
     max-width: 800px;
