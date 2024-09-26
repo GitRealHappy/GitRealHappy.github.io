@@ -366,6 +366,12 @@ footer .social-icons a:hover {
         flex: 1 1 45%; /* Take up more space on smaller screens */
     }
 
+    #blog-preview .cta-button {
+        clear: both;
+        display: block;
+        margin-top: 20px;
+    }
+
     footer .container {
         flex-direction: column;
         text-align: center;
