@@ -97,7 +97,7 @@ nav {
 
 /* Main Content */
 main {
-    padding-top: 130px;
+    padding-top: 144px;
 }
 
 /* Hero Section */
@@ -105,16 +105,14 @@ main {
     background-image: url('../images/cherry-table.jpg');
     background-size: cover;
     background-position: center;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #0c0417;
+    height: 60vh;
+    padding: 20px;
+    color: rgb(43, 70, 43);
+    outline: 5px solid #6B3E0A;
 }
 
 #welcome-oakmoss {
-    padding: 40px 20px;
+    padding: 20px 20px;
     background-color: #F6E4CE;
     text-align: center;
     margin-top: 20px;
@@ -293,6 +291,11 @@ footer .social-icons a:hover {
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
+
+    main {
+        padding-top: 107px;
+    }
+
     header .container {
         flex-wrap: wrap;
     }
@@ -327,16 +330,8 @@ footer .social-icons a:hover {
     }
 
     #hero {
-        height: 60vh;
+        height: 40vh;
         background-position: center;
-    }
-
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
     }
 
     .cta-button {
@@ -383,6 +378,10 @@ footer .social-icons a:hover {
 
 /* Mobile-specific styles */
 @media screen and (max-width: 414px) {
+    main {
+        padding-top: 86px;
+    }
+
     header .logo {
         height: 65px;
     }
