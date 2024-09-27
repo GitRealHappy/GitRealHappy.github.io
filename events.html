@@ -42,6 +42,16 @@
             <p>Below is a video from the art gallery and concert I coordinated called "Turquoiser Under the Stars" from Summer of 2022, hosted at The Rusty Shovel, a new venue built by Richard Wiebe in Chilliwack by the Vedder River with repurposed materials.</p>
             <p>Some footage from this summer's art gallery music party: "Ritual Madness", hosted at Jesse's home, will be posted soon.</p>
           </div>
+          <!-- Newsletter Signup Form -->
+<div class="newsletter-signup">
+  <form id="newsletter-form">
+    <label for="email">Sign up for our newsletter:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+  <p id="message"></p>
+</div>
+          
             <div class="event-posts">
                 <article class="event-post">
                   <h1>Past events:</h1>
@@ -84,5 +94,48 @@
                         }
                     });
                     </script>
+
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBrERSHpeJ2TEGQIU-SM48Mj6KgVpsC0rc",
+    authDomain: "the-unblocked-carver.firebaseapp.com",
+    projectId: "the-unblocked-carver",
+    storageBucket: "the-unblocked-carver.appspot.com",
+    messagingSenderId: "215911476741",
+    appId: "1:215911476741:web:ce93f2f343e194f5c7f66c",
+    measurementId: "G-GCN5WGHMCT"
+  };
+
+  // Initialize Firebase
+  const app = firebase.initializeApp(firebaseConfig);
+  const analytics = firebase.analytics();
+
+  // Initialize Firestore
+  const db = firebase.firestore();
+</script>
+<script>
+  document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const email = document.getElementById('email').value;
+
+    // Add email to Firestore
+    db.collection("newsletter-subscribers").add({
+      email: email,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp()
+    })
+    .then(() => {
+      document.getElementById('message').innerText = 'Thank you for subscribing!';
+      document.getElementById('email').value = ''; // Clear the form
+    })
+    .catch((error) => {
+      document.getElementById('message').innerText = 'Error: ' + error.message;
+    });
+  });
+</script>
             </body>
             </html>

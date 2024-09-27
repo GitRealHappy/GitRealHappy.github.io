@@ -20,8 +20,36 @@ main {
     margin-bottom: 10px; /* Space between sections */
 }
 
-/* Headings and paragraphs within events */
+/* Newsletter Signup Styles */
+.newsletter-signup {
+    background-color: #f7e6d5;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .newsletter-signup input {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-signup button {
+    padding: 10px 20px;
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .newsletter-signup button:hover {
+    background-color: #6B3E0A;
+  }
 
+/* Headings and paragraphs within events */
 
 
 #events-preview h2 {
