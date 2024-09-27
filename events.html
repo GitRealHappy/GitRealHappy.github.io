@@ -119,23 +119,35 @@
   const db = firebase.firestore();
 </script>
 <script>
-  document.getElementById('newsletter-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const email = document.getElementById('email').value;
+document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form from reloading the page
+  const emailInput = document.getElementById('email');
+  const email = emailInput.value;
+  const subscribeButton = document.querySelector('button[type="submit"]');
+  const message = document.getElementById('message');
 
-    // Add email to Firestore
-    db.collection("newsletter-subscribers").add({
-      email: email,
-      timestamp: firebase.firestore.FieldValue.serverTimestamp()
-    })
-    .then(() => {
-      document.getElementById('message').innerText = 'Thank you for subscribing!';
-      document.getElementById('email').value = ''; // Clear the form
-    })
-    .catch((error) => {
-      document.getElementById('message').innerText = 'Error: ' + error.message;
-    });
+  // Disable the button to prevent multiple submissions
+  subscribeButton.disabled = true;
+  subscribeButton.innerText = "Subscribing..."; // Optional loading state
+
+  // Add email to Firestore
+  db.collection("newsletter-subscribers").add({
+    email: email,
+    timestamp: firebase.firestore.FieldValue.serverTimestamp()
+  })
+  .then(() => {
+    // Change the button text to show subscription success
+    subscribeButton.innerText = "Subscribed!";
+    emailInput.value = ''; // Clear the input field
+    message.innerText = ''; // Clear any previous error message
+  })
+  .catch((error) => {
+    // Re-enable the button and show error message
+    subscribeButton.disabled = false;
+    subscribeButton.innerText = "Subscribe";
+    message.innerText = 'Error: ' + error.message;
   });
+});
 </script>
             </body>
             </html>
