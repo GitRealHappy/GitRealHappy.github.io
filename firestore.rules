@@ -2,9 +2,14 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
+    // Allow public read and write access to the newsletter-subscribers collection
+    match /newsletter-subscribers/{docId} {
+      allow read, write: if true; // Change to if request.auth != null for authenticated access
+    }
+    
+    // Default deny all other access
     match /{document=**} {
       allow read, write: if false;
     }
   }
 }
-
