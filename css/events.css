@@ -35,6 +35,8 @@ main {
     max-width: 400px;
     margin-bottom: 10px;
   }
+
+
   
   .newsletter-signup button {
     padding: 10px 20px;
@@ -49,6 +51,10 @@ main {
     background-color: #6B3E0A;
   }
 
+  button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
 /* Headings and paragraphs within events */
 
 
