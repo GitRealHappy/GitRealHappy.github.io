@@ -120,15 +120,14 @@
 </script>
 <script>
 document.getElementById('newsletter-form').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent form from reloading the page
+  event.preventDefault(); 
   const emailInput = document.getElementById('email');
   const email = emailInput.value;
   const subscribeButton = document.querySelector('button[type="submit"]');
   const message = document.getElementById('message');
 
-  // Disable the button to prevent multiple submissions
   subscribeButton.disabled = true;
-  subscribeButton.innerText = "Subscribing..."; // Optional loading state
+  subscribeButton.innerText = "Subscribing...";
 
   // Add email to Firestore
   db.collection("newsletter-subscribers").add({
@@ -136,13 +135,13 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
     timestamp: firebase.firestore.FieldValue.serverTimestamp()
   })
   .then(() => {
-    // Change the button text to show subscription success
+    console.log("Email successfully added:", email); // Log success
     subscribeButton.innerText = "Subscribed!";
-    emailInput.value = ''; // Clear the input field
-    message.innerText = ''; // Clear any previous error message
+    emailInput.value = '';
+    message.innerText = '';
   })
   .catch((error) => {
-    // Re-enable the button and show error message
+    console.error("Error adding email:", error); // Log error
     subscribeButton.disabled = false;
     subscribeButton.innerText = "Subscribe";
     message.innerText = 'Error: ' + error.message;
