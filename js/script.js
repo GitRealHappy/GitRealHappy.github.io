@@ -46,30 +46,3 @@ function closeLightbox() {
 window.onload = initializeGallery;
 
 
-// Initialize Firestore
-const db = firebase.firestore();
-
-// Function to handle the subscription process
-async function subscribeNewsletter(email) {
-    try {
-        await db.collection('subscribers').add({
-            email: email,
-            timestamp: firebase.firestore.FieldValue.serverTimestamp()
-        });
-        document.getElementById("subscribe-btn").innerText = "Subscribed!";
-    } catch (error) {
-        console.error("Error subscribing to newsletter: ", error);
-        document.getElementById("subscribe-btn").innerText = "Failed to Subscribe";
-    }
-}
-
-// Event listener for the subscribe button
-document.getElementById("subscribe-btn").addEventListener('click', function() {
-    const email = document.getElementById("email-input").value;
-    if (email) {
-        this.innerText = "Subscribing...";
-        subscribeNewsletter(email);
-    } else {
-        alert("Please enter a valid email address");
-    }
-});
