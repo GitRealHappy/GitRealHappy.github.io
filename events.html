@@ -43,14 +43,13 @@
             <p>Some footage from this summer's art gallery music party: "Ritual Madness", hosted at Jesse's home, will be posted soon.</p>
           </div>
           <!-- Newsletter Signup Form -->
-<div class="newsletter-signup">
-  <form id="newsletter-form">
-    <label for="email">Sign up for our newsletter:</label>
-    <input type="email" id="email" placeholder="Enter your email" required autocomplete="email">
-    <button type="submit">Subscribe</button>
-  </form>
-  <p id="message"></p>
-</div>
+          <div class="email-form">
+            <form action="https://script.google.com/macros/s/AKfycbxMKe5z6z4DrXXr-GpPGCLeJggxDCN2np3C__6wWmbRwUeMk0JOgzeofIsQEyeuowwW/exec" method="POST">
+                <label for="email">Newsletter Signup:</label>
+                <input type="email" name="email" id="email" placeholder="email address" required>
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>  
           
             <div class="event-posts">
                 <article class="event-post">
@@ -95,62 +94,5 @@
                     });
                     </script>
 
-<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyBrERSHpeJ2TEGQIU-SM48Mj6KgVpsC0rc",
-    authDomain: "the-unblocked-carver.firebaseapp.com",
-    projectId: "the-unblocked-carver",
-    storageBucket: "the-unblocked-carver.appspot.com",
-    messagingSenderId: "215911476741",
-    appId: "1:215911476741:web:ce93f2f343e194f5c7f66c",
-    measurementId: "G-GCN5WGHMCT"
-  };
-
-  // Initialize Firebase
-  const app = firebase.initializeApp(firebaseConfig);
-  const analytics = firebase.analytics();
-
-  console.log("Firebase initialized:", firebase.apps.length > 0);
-
-
-  // Initialize Firestore
-  const db = firebase.firestore();
-</script>
-
-<script>
-document.getElementById('newsletter-form').addEventListener('submit', function(event) {
-  event.preventDefault(); 
-  const emailInput = document.getElementById('email');
-  const email = emailInput.value;
-  const subscribeButton = document.querySelector('button[type="submit"]');
-  const message = document.getElementById('message');
-
-  subscribeButton.disabled = true;
-  subscribeButton.innerText = "Subscribing...";
-
-  // Add email to Firestore
-  db.collection("newsletter-subscribers").add({
-    email: email,
-    timestamp: firebase.firestore.FieldValue.serverTimestamp()
-  })
-  .then(() => {
-    console.log("Email successfully added:", email); // Log success
-    subscribeButton.innerText = "Subscribed!";
-    emailInput.value = '';
-    message.innerText = '';
-  })
-  .catch((error) => {
-    console.error("Error adding email:", error); // Log error
-    subscribeButton.disabled = false;
-    subscribeButton.innerText = "Subscribe";
-    message.innerText = 'Error: ' + error.message;
-  });
-});
-</script>
             </body>
             </html>
