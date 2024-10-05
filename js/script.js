@@ -6,7 +6,7 @@ function openLightbox(imageSrc) {
     const lightboxImage = lightbox.querySelector('img');
     
     // Set the source and display the lightbox
-    lightboxImage.src = imageSrc; 
+    lightboxImage.src = imageSrc;
     lightbox.style.display = 'flex';
 
     // Find the index of the clicked image in the images array
@@ -46,3 +46,41 @@ function closeLightbox() {
 window.onload = initializeGallery;
 
 
+// Adjust navigation links for blogpost pages
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelector('.nav-links');
+    const isSubdirectory = window.location.pathname.includes('/blogposts/');
+
+    if (navLinks) {
+        const links = navLinks.querySelectorAll('a');
+        links.forEach(link => {
+            const originalHref = link.getAttribute('href');
+            if (isSubdirectory && !originalHref.startsWith('..')) {
+                link.setAttribute('href', `../${originalHref}`);
+            }
+        });
+
+        // Add the 'Partners' link if it does not exist
+        if (!Array.from(links).some(link => link.textContent === 'Partners')) {
+            const partnersLink = document.createElement('li');
+            partnersLink.innerHTML = `<a href="${isSubdirectory ? '../partners.html' : 'partners.html'}">Partners</a>`;
+            navLinks.appendChild(partnersLink);
+        }
+    } else {
+        console.error('Nav links not found');
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (hamburger && navLinks) {
+        hamburger.addEventListener('click', function () {
+            navLinks.classList.toggle('active');
+            console.log('Hamburger clicked! Nav links active:', navLinks.classList.contains('active')); // Debugging message
+        });
+    } else {
+        console.error('Hamburger menu or nav links not found');
+    }
+});
