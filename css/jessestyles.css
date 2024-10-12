@@ -26,8 +26,8 @@ header {
 
 .profile-pic {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
     object-fit: cover;
     margin-right: 20px;
 }
@@ -61,7 +61,7 @@ header {
     width: 95%; /* Adjusted size */
     max-width: 175px;
     display: block;
-    margin: 35px auto 25px;
+    margin: 30px auto 25px;
 }
 
 /* Main Content */
@@ -194,6 +194,11 @@ body {
 
     .email-form .fine-print {
         margin-left: 0;
+    }
+
+    .profile-pic {
+        height: 90px;
+        width: 90px;
     }
 }
 
