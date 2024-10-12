@@ -29,7 +29,7 @@
             <div class="category">
                 <img src="images/taoistthreads.png" alt="Taoist Fungi Symbol" class="taoist-threads-logo">
                 <h3>Taoist Threads</h3>
-                <p>My free bi-weekly missives on finding your creative power and inner peace.</p>
+                <p>My free bi-weekly missive on finding your creative power and inner peace.</p>
                 <p>Inspired nature's endless wisdom, and the mycelium which is the interface organism between life and death.
                 </p>
                 <a href="https://app.kortex.co/public/document/04fcbd54-ea6d-449f-9f31-21f83ad6c4c8">Read Taoist Threads</a>
@@ -41,6 +41,46 @@
                 <a href="https://www.oakmoss.ca/blog.html">Explore Interviews</a>
             </div>
         </section>
-    </main>
+        <div class="email-form">
+            <form id="newsletter-form">
+                <label for="email">Subscribe to Taoist Threads:</label>
+                <input type="email" name="email" id="email" placeholder="email address">
+                <button type="submit">Subscribe</button>
+            </form>
+            <span class="fine-print">You may easily unsubscribe at any time.</span>
+            <p id="message"></p> <!-- This will display a success message -->
+        </div>
+            </main>
+
+    <script>
+        document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the default form submission
+      
+          const email = document.getElementById('email').value; // Get the email value
+          const message = document.getElementById('message'); // Get the message paragraph
+      
+          // Send the form data to Google Apps Script using fetch
+          fetch('https://script.google.com/macros/s/AKfycbxMKe5z6z4DrXXr-GpPGCLeJggxDCN2np3C__6wWmbRwUeMk0JOgzeofIsQEyeuowwW/exec', {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: new URLSearchParams({
+              'email': email,
+            })
+          })
+          .then(() => {
+            // Assume the submission is successful and show the success message
+            message.innerText = "Thanks for subscribing!";
+            document.getElementById('email').value = ''; // Clear the form
+          })
+          .catch((error) => {
+            // In case of any error, still show some feedback
+            message.innerText = 'Error: Something went wrong. Please try again later.';
+          });
+        });
+      </script>
+
 </body>
 </html>

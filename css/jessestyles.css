@@ -68,7 +68,7 @@ header {
 .brand-categories {
     display: flex;
     justify-content: space-between;
-    margin: 50px 10px;
+    margin: 20px 10px;
     gap: 10px; /* 10px between the boxes */
 }
 
@@ -107,6 +107,96 @@ header {
 .category a:hover {
     background-color: #444;
 }
+
+/* Form Styling - Black bar at the bottom */
+.email-form {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    height: auto;
+}
+
+.email-form form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.email-form input[type="email"] {
+    width: 50%;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 3px;
+}
+
+.email-form button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.email-form button:hover {
+    background-color: #444;
+}
+
+.email-form p#message {
+    font-size: 0.9rem;
+    color: #00ff00;
+}
+
+/* Fine print */
+.email-form .fine-print {
+    font-size: 0.7rem;
+    color: #aaa;
+    margin-left: 10px;
+}
+
+/* Compress content upwards */
+body {
+    padding-bottom: 50px; /* Adjust depending on bar height */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .email-form input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .email-form {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .email-form form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .email-form .fine-print {
+        margin-left: 0;
+    }
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
