@@ -11,7 +11,7 @@ body {
 header {
     background-color: #000;
     color: #fff;
-    padding: 20px;
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,7 +68,7 @@ header {
 .brand-categories {
     display: flex;
     justify-content: space-between;
-    margin: 20px 10px;
+    margin: 20px 10px 40px; /* Increased bottom margin */
     gap: 10px; /* 10px between the boxes */
 }
 
@@ -122,7 +122,8 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    height: auto;
+    max-height: 150px; /* Set max height */
+    overflow-y: auto; /* Allow scrolling within the form if content overflows */
 }
 
 .email-form form {
@@ -185,6 +186,7 @@ body {
     .email-form {
         flex-direction: column;
         padding: 10px;
+        max-height: 100px; /* Adjust height on small screens */
     }
 
     .email-form form {
@@ -196,18 +198,22 @@ body {
         margin-left: 0;
     }
 
+    .fine-print {
+        margin-bottom: 15px;
+    }
+    
     .profile-pic {
         height: 90px;
         width: 90px;
     }
 }
 
-
-/* Responsive */
+/* Responsive adjustments for brand categories */
 @media (max-width: 768px) {
     .brand-categories {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 50px; /* More margin for better spacing */
     }
 
     .category {
