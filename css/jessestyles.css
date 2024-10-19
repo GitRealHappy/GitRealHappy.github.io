@@ -68,7 +68,7 @@ header {
 .brand-categories {
     display: flex;
     justify-content: space-between;
-    margin: 20px 10px 40px; /* Increased bottom margin */
+    margin: 20px 10px 70px; /* Increased bottom margin */
     gap: 10px; /* 10px between the boxes */
 }
 
@@ -108,45 +108,39 @@ header {
     background-color: #444;
 }
 
-/* Form Styling - Black bar at the bottom */
+/* Email form styling */
 .email-form {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #000;
+    background-color: #7c834f; /* Olive green */
     color: #fff;
-    padding: 10px 20px;
-    box-sizing: border-box;
+    padding: 10px 20px; /* Adjust padding for shorter height */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    max-height: 150px; /* Set max height */
-    overflow-y: auto; /* Allow scrolling within the form if content overflows */
+    justify-content: space-between; /* Align elements horizontally */
+    align-items: center; /* Center elements vertically */
+    width: 100%; /* Make it as wide as the header */
+    box-sizing: border-box;
+    margin: 0; /* Remove any margin to align it with the header */
+    position: relative; /* Attach it directly below the header */
 }
 
+/* Form elements */
 .email-form form {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .email-form input[type="email"] {
-    width: 50%;
+    flex: 1;
     padding: 5px;
-    margin-right: 10px;
-    font-size: 0.9rem;
+    margin-right: 10px; /* Space between input and button */
+    font-size: 1rem;
     border: none;
     border-radius: 3px;
 }
 
 .email-form button {
     padding: 5px 10px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     background-color: #fff;
     color: #000;
     border: none;
@@ -159,79 +153,81 @@ header {
     background-color: #444;
 }
 
+.email-form .fine-print {
+    font-size: 0.8rem;
+    color: #ccc;
+    margin-left: 20px; /* Space between the button and fine print */
+}
+
 .email-form p#message {
     font-size: 0.9rem;
     color: #00ff00;
+    margin-left: 20px; /* Space between the fine print and the message */
 }
 
-/* Fine print */
-.email-form .fine-print {
-    font-size: 0.7rem;
-    color: #aaa;
-    margin-left: 10px;
+/* Sticky Footer Styling */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-/* Compress content upwards */
-body {
-    padding-bottom: 50px; /* Adjust depending on bar height */
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    white-space: normal; /* Ensure text wraps on small screens */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .email-form input[type="email"] {
-        width: 100%;
-        margin-bottom: 5px;
+    .brand-categories {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0 100px; /* Increase bottom margin to account for footer */
+        gap: 15px; /* Add more spacing between categories */
+    }
+
+    .category {
+        width: 90%; /* Allow the categories to take more width */
+        margin-bottom: 20px;
+    }
+
+    .category h3 {
+        font-size: 1.2rem; /* Slightly reduce font size */
+        margin-top: 5px; /* Reduce distance between image and title */
+        margin-bottom: 5px; /* Reduce space after the title */
     }
 
     .email-form {
-        flex-direction: column;
-        padding: 10px;
-        max-height: 100px; /* Adjust height on small screens */
+        flex-direction: column; /* Stack form elements vertically on smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+        width: 100%; /* Ensure the email form takes full width */
+        box-sizing: border-box;
     }
 
     .email-form form {
         flex-direction: column;
+        align-items: stretch;
         width: 100%;
+    }
+
+    .email-form input[type="email"], .email-form button {
+        width: 100%; /* Full width input and button */
+        margin: 5px 0;
     }
 
     .email-form .fine-print {
         margin-left: 0;
+        margin-top: 10px; /* Add space on top for vertical layout */
+        text-align: center; /* Center align the fine print text */
     }
 
-    .fine-print {
-        margin-bottom: 15px;
-    }
-    
-    .profile-pic {
-        height: 90px;
-        width: 90px;
-    }
-}
-
-/* Responsive adjustments for brand categories */
-@media (max-width: 768px) {
-    .brand-categories {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 50px; /* More margin for better spacing */
-    }
-
-    .category {
-        width: 80%;
-        margin-bottom: 30px;
-    }
-
-    .header-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile-pic {
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
-
-    .header-text {
-        width: 100%;
+    footer {
+        padding: 15px;
+        font-size: 0.9rem;
     }
 }

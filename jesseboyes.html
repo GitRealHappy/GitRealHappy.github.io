@@ -17,6 +17,16 @@
         </div>
     </header>
 
+    <div class="email-form">
+      <form id="newsletter-form">
+          <label for="email">Subscribe to Taoist Threads:</label>
+          <input type="email" name="email" id="email" placeholder="email address">
+          <button type="submit">Subscribe</button>
+      </form>
+      <span class="fine-print">You can easily unsubscribe at any time.</span>
+      <p id="message"></p> <!-- This will display a success message -->
+  </div>
+
     <main>
         <section class="brand-categories">
             <div class="category">
@@ -41,16 +51,15 @@
                 <a href="https://www.oakmoss.ca/blog.html">Explore Interviews</a>
             </div>
         </section>
-        <div class="email-form">
-            <form id="newsletter-form">
-                <label for="email">Subscribe to Taoist Threads:</label>
-                <input type="email" name="email" id="email" placeholder="email address">
-                <button type="submit">Subscribe</button>
-            </form>
-            <span class="fine-print">You can easily unsubscribe at any time.</span>
-            <p id="message"></p> <!-- This will display a success message -->
-        </div>
             </main>
+            
+            <footer>
+              <div class="footer-content">
+                  <p><strong>Web Design Course</strong> - Coming December 2024</p>
+              </div>
+          </footer>
+          
+          
 
     <script>
         document.getElementById('newsletter-form').addEventListener('submit', function(event) {
