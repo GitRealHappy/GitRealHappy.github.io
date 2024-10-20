@@ -1,0 +1,156 @@
+/* General page settings */
+body {
+    background-color: black;
+    color: #00FF00;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    overflow-y: auto;
+}
+  
+/* Terminal window */
+.terminal {
+    width: 80%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5);
+    border: 2px solid #00FF00;
+    overflow: hidden;
+    margin-top: 20px;
+}
+  
+/* Terminal header (title bar) */
+.terminal-header {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #00FF00;
+    font-weight: bold;
+}
+  
+.terminal-title {
+    margin-left: 15px;
+}
+  
+/* Window control buttons */
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.close-btn, .minimize-btn, .maximize-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.close-btn {
+    background-color: #FF5F57;
+}
+
+.minimize-btn {
+    background-color: #FFBD2E;
+}
+
+.maximize-btn {
+    background-color: #28C940;
+}
+  
+/* Terminal body (content) */
+.terminal-body {
+    padding: 20px;
+    background-color: black;
+    overflow-y: auto;
+}
+
+.green-text {
+    color: #00FF00;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Large text and heading styles */
+.large-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.large-text {
+    font-size: 1.2rem;
+}
+
+/* Code section container */
+.code-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+/* Box for rendered output */
+.rendered-output {
+    width: 48%;
+    height: 300px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #00FF00;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5);
+}
+
+/* Neon sign (output) */
+.neon-sign {
+  color: #39FF14;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  text-shadow:
+    0 0 5px #39FF14,
+    0 0 10px #39FF14,
+    0 0 20px #39FF14,
+    0 0 40px #0FA,
+    0 0 80px #0FA;
+}
+
+.neon-sign p {
+    padding-bottom: 10px;
+}
+
+.glitch-button {
+  background: none;
+  border: 2px solid #39FF14;
+  padding: 15px 30px;
+  color: #39FF14;
+  font-size: 18px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.glitch-button:hover {
+  box-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14, 0 0 40px #0FA;
+}
+
+/* Box for code */
+.code-box {
+    width: 48%;
+    height: 300px;
+    background-color: #000;
+    color: #00FF00;
+    overflow: auto;
+    border: 1px solid #00FF00;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5);
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
