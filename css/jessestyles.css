@@ -112,6 +112,7 @@ header {
 .email-form {
     background-color: #7c834f; /* Olive green */
     color: #fff;
+    font-size: 1.3rem;
     padding: 10px 20px; /* Adjust padding for shorter height */
     display: flex;
     justify-content: space-between; /* Align elements horizontally */
@@ -133,6 +134,7 @@ header {
     flex: 1;
     padding: 5px;
     margin-right: 10px; /* Space between input and button */
+    margin-left: 10px;
     font-size: 1rem;
     border: none;
     border-radius: 3px;
@@ -168,8 +170,8 @@ header {
 /* Sticky Footer Styling */
 footer {
     background-color: #000;
-    color: #fff;
-    padding: 20px;
+    color: #ef2c2c;
+    padding: 10px;
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -180,6 +182,10 @@ footer p {
     margin: 0;
     font-size: 1rem;
     white-space: normal; /* Ensure text wraps on small screens */
+}
+
+footer a {
+    color: #ef2c2c;
 }
 
 /* Responsive adjustments */
@@ -212,12 +218,13 @@ footer p {
     .email-form form {
         flex-direction: column;
         align-items: stretch;
-        width: 100%;
+    text-align: center;
+        width: 90%;
     }
 
     .email-form input[type="email"], .email-form button {
         width: 100%; /* Full width input and button */
-        margin: 5px 0;
+        margin: 5px 5px;
     }
 
     .email-form .fine-print {
@@ -227,7 +234,7 @@ footer p {
     }
 
     footer {
-        padding: 15px;
+        padding: 10px;
         font-size: 0.9rem;
     }
 }
