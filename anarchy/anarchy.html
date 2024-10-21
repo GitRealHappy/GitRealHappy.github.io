@@ -16,12 +16,13 @@
 
   <div class="terminal">
     <div class="terminal-header">
-      <span class="terminal-title">Web Design for Anarchists</span>
       <div class="buttons">
         <span class="close-btn"></span>
         <span class="minimize-btn"></span>
         <span class="maximize-btn"></span>
       </div>
+      <span class="terminal-title">Web Design for Anarchists</span>
+    <div class="header-spacer"></div>
     </div>
     
     <div class="terminal-body">
@@ -39,7 +40,7 @@
 
       <p class="green-text emphasize large-heading">Introducing: Web Design for Anarchists</p>
 
-      <p class="green-text">A 2-day, hands-on journey into the heart of web freedom. I'm not just teaching code; I'm starting a revolution against the tyranny of templates and the dictatorship of drag-and-drop. Using your computer through the terminal may seem scary, but soon you'll be stopping bullets mid air, reprogramming Terminators to send back in time and stop Judgement Day.</p>
+      <p class="green-text">A 2-day, hands-on journey into the heart of web freedom. I'm not just teaching code; I'm starting a revolution against the tyranny of templates and the dictatorship of drag-and-drop. Using your computer through the terminal may seem scary, but soon you'll be stopping bullets mid air, or reprogramming Terminators to send back in time and stop Judgement Day.</p>
 
       <p class="green-text emphasize large-heading">What You’ll Learn:</p>
 
@@ -135,14 +136,43 @@
 
       <p class="green-text emphasize">This course will be offered for $100 just ONE TIME in December 2024, for TWO PARTICIPANTS. After that it will become a $600+ bootcamp.</p>
 
-      <p class="green-text emphasize-link" onclick="showPopup()">>> <u>Enlist in the Web Design Rebellion Now</u>! <<</p>
+      <p class="green-text emphasize large-heading">PREREQUISITES:</p>
 
-      <p class="green-text">Break free from the confines of CMS tyranny. Build something that’s truly yours. Embrace the power that’s been within you all along.</p>
-
-      <p class="green-text"><strong>P.S.</strong> The monopolizing media masters don’t want you to know this, but the web is yours for the taking. Let’s seize it together!</p>
-    </div>
+      <div class="prerequisite-box">
+      <ul class="green-text list">
+        <li><u>Typing</u>: If you can't type over 30 words per minute, it may be tricky to keep up, but this is just a suggestion.</li>
+        <li><u>Downloading Software</u>: You'll have some set-up to do before the course, like downloading VS Code or Cursor. You'll get an email guide to get set-up, but these basics should require no hand-holding.</li>
+        <li><u>File Management</u>: You should be comfortable with navigating your folders and files in the graphical interface of your computer.</li>
+        <li><u>Stable Internet Connection</u>: Look, if you have a power outage I'll work with you on a refund. Just try to be prepared.</li>
+        <li><u>Time Commitment</u>: 8 hours of class time and suggested 4 hours available to practice and experiment during breaks/after hours. The course will take place over four two-hour sessions.</li>
+        <li><u>Familiar with Zoom</u>: You're attending a course over Zoom calls. You must be prepared to show up, and should be ready to share your screen if you're having trouble.</li>
+      </ul>
 
   </div>
   <span class="foot-space"></span>
+
+</div>
+
+<p class="green-text emphasize-link" onclick="showPopup()">>> <u>Enlist in the Web Design Rebellion Now</u>! <<</p>
+
+<p class="green-text">Break free from the confines of CMS tyranny. Build something that’s truly yours. Embrace the power that’s been within you all along.</p>
+
+<p class="green-text"><strong>P.S.</strong> The monopolizing media masters don’t want you to know this, but the web is yours for the taking. Let’s seize it together!</p>
+</div>
+
+<!-- Popup Modal -->
+<div id="popup-modal" class="modal">
+  <div class="modal-content">
+    <p class="green-text">You wish to terminate?</p>
+    <div class="modal-buttons">
+      <a href="https://www.youtube.com/watch?v=1JSRauM78_0" target="_blank" class="terminate-btn">Terminate.</a>
+      <button class="cancel-btn" onclick="closeModal()">No, let's stop Judgement Day.</button>
+    </div>
+  </div>
+</div>
+
+<script src="../js/anarchy.js"></script>
+</body>
+
 </body>
 </html>
