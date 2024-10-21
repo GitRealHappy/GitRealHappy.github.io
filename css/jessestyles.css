@@ -170,7 +170,8 @@ header {
 /* Sticky Footer Styling */
 footer {
     background-color: #000;
-    color: #ef2c2c;
+    color: #fd3c32;
+    font-weight: 600;
     padding: 10px;
     text-align: center;
     position: fixed;
@@ -180,12 +181,13 @@ footer {
 
 footer p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
     white-space: normal; /* Ensure text wraps on small screens */
+    max-width: 90%;
 }
 
 footer a {
-    color: #ef2c2c;
+    color: #ff5a3cfa;
 }
 
 /* Responsive adjustments */
@@ -210,20 +212,25 @@ footer a {
 
     .email-form {
         flex-direction: column; /* Stack form elements vertically on smaller screens */
-        padding: 10px; /* Adjust padding for smaller screens */
+        padding: 20px 10px; /* Adjust padding for smaller screens */
         width: 100%; /* Ensure the email form takes full width */
         box-sizing: border-box;
     }
 
     .email-form form {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
     text-align: center;
         width: 90%;
     }
 
-    .email-form input[type="email"], .email-form button {
-        width: 100%; /* Full width input and button */
+    .email-form input[type="email"], {
+        width: 80%; /* Full width input and button */
+        margin: 5px 5px;
+    }
+
+    .email-form button {
+        width: 45%;
         margin: 5px 5px;
     }
 
@@ -235,6 +242,6 @@ footer a {
 
     footer {
         padding: 10px;
-        font-size: 0.9rem;
+        font-size: 1.0rem;
     }
 }
