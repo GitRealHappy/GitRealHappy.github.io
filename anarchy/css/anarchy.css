@@ -14,13 +14,14 @@ body {
   
 /* Terminal window */
 .terminal {
-    width: 80%;
+    width: 85%;
     max-width: 900px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5);
     border: 2px solid #00FF00;
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 90px;
 }
   
 /* Terminal header (title bar) */
@@ -70,13 +71,10 @@ body {
 }
 
 .green-text {
-    color: #00FF00;
-    font-size: 1rem;
+    color: #00ff00e5;
+    font-size: 1.1rem;
+    font-weight: 600;
     line-height: 1.6;
-}
-
-.green-link {
-    
 }
 
 .green-text a {
