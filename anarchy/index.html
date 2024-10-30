@@ -5,12 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Design for Anarchists</title>
   <link rel="stylesheet" href="css/anarchy.css">
-  <script>
-    // Pop-up function for the glitch button and text link
-    function showPopup() {
-      alert("Email jesse.boyes@hotmail.com with subject line 'web anarchy' to enrol.");
-    }
-  </script>
 </head>
 <body>
 
@@ -26,7 +20,7 @@
     </div>
     
     <div class="terminal-body">
-      <p class="green-text emphasize large-heading">Unshackle Your Web Creativity: Escape the CMS Matrix!</p>
+      <p class="green-text emphasize large-heading">Unshackle Your Web Creativity: Escape the matrix of content management systems like Wordpress and Squarespace!</p>
 
       <p class="green-text large-text">Greetings, digital rebel!</p>
 
@@ -67,7 +61,7 @@
           <div class="neon-sign">
             <h1>Defy the Defaults: Build Websites on Your Terms.</h1>
             <p>Reprogram your world. Spin your web, your way.</p>
-            <a href="javascript:void(0);" class="glitch-button" onclick="showPopup()">Join the Rebellion</a>
+            <a href="javascript:void(0);" class="glitch-button" onclick="openSignupForm()">Join the Rebellion</a>
           </div>
         </div>
 
@@ -154,7 +148,7 @@
   <span class="foot-space"></span>
 
 
-<p class="green-text emphasize-link" onclick="showPopup()">>> <u>Enlist in the Web Design Rebellion Now</u>! <<</p>
+<p class="green-text emphasize-link" onclick="openSignupForm()">>> <u>Enlist in the Web Design Rebellion Now</u>! <<</p>
 
 <p class="green-text">Break free from the confines of CMS tyranny. Build something that’s truly yours. Embrace the power that’s been within you all along.</p>
 
@@ -172,6 +166,30 @@
     </div>
   </div>
 </div>
+
+<!-- Add this form modal before the closing terminal-body div -->
+<div id="signup-modal" class="form-modal">
+  <button class="form-close" onclick="closeSignupForm()">×</button>
+  <h2>Join the Web Design Rebellion</h2>
+  <form id="signup-form" action="https://formspree.io/f/xwpklpkl"
+  method="POST">
+    <div class="form-field">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  </div>
+  <div class="form-field">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  </div>
+  <div class="form-field">
+      <label for="experience">Current Experience Level:</label>
+      <input type="text" id="experience" name="experience" placeholder="Potato? Beginner? Migrating from Wordpress?">
+  </div>
+  <button type="submit" class="form-submit">Submit Application</button>
+</form>
+
+<!-- Add a hidden iframe to handle the form submission -->
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
 <script src="js/anarchy.js"></script>
 </body>
