@@ -151,10 +151,15 @@ hr {
 .problem-list {
     font-size: 1.4rem;
     margin-left: 15px;
-    outline: 1px solid #cd2200ce;
+    outline: 1px solid #c6442ace;
     padding: 15px 25px;
     border-radius: 8px;
-    color: rgb(226, 66, 66);
+    color: rgb(191, 82, 82);
+}
+
+.problem-list hr {
+    border: 1px solid #b180765d;
+    margin: 10px 0;
 }
 
 /* Code section container */
