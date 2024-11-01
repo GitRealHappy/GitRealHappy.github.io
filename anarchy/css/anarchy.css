@@ -1,6 +1,6 @@
 /* General page settings */
 body {
-    background: linear-gradient(to bottom, #170422, #100202);
+    background-color: #1d0626;
     color: #e36b10d4;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
@@ -23,12 +23,11 @@ hr {
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 0px 0px 6px rgba(0, 190, 0, 0.427);
-    border: 2px solid #02a302c1;
+    border: 2px solid #409640d6;
     overflow: hidden;
     margin-top: 20px;
     margin-bottom: 90px;
 }
-
   
 /* Terminal header (title bar) */
 .terminal-header {
@@ -113,7 +112,7 @@ hr {
 
 .green-text {
     color: #699760;
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     font-weight: 400;
     line-height: 1.6;
     margin-bottom: 1.2em;
@@ -379,13 +378,14 @@ pre {
 
 /* Add more breathing room between sections */
 .green-text.emphasize.large-heading {
-    margin-top: 2.5em;
+    margin-top: 2.2em;
     margin-bottom: 1em;
 }
 
 /* Improve paragraph spacing */
 .green-text {
     margin-bottom: 1.2em;
+    font-weight: 600;
 }
 
 /* Better list spacing */
@@ -504,6 +504,7 @@ pre code {
 /* Call to action styling */
 .emphasize-link {
     text-align: center;
+    color: #c0f0e1;
     font-size: 1.4rem;
     padding: 20px;
     margin: 40px 0;
@@ -512,7 +513,7 @@ pre code {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
-    text-shadow: 0 0 5px #39FF14;
+    text-shadow: 0 0 3px #7bb783;
 }
 
 .emphasize-link:hover {
