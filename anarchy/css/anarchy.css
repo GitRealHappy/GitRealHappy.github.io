@@ -1,6 +1,6 @@
 /* General page settings */
 body {
-    background-color: #15011c;
+    background: linear-gradient(to bottom, #170422, #100202);
     color: #e36b10d4;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
@@ -10,6 +10,11 @@ body {
     align-items: flex-start;
     height: 100vh;
     overflow-y: auto;
+}
+
+hr {
+    border: 1px solid #475541;
+    margin: 20px 0;
 }
   
 /* Terminal window */
@@ -107,7 +112,7 @@ body {
 }
 
 .green-text {
-    color: #84db84;
+    color: #699760;
     font-size: 1.15rem;
     font-weight: 400;
     line-height: 1.6;
@@ -128,16 +133,29 @@ body {
 
 /* Large text and heading styles */
 .large-heading {
+    outline: 3px solid #475541;
+    text-align: center;
+    padding: 10px 15px;
     font-size: 1.7rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.9px;
     text-transform: uppercase;
-    text-shadow: 0 0 3px #5eb65e, 0 0 5px #6c826c;
+    text-shadow: 0 0 2px #370836, 0 0 3px #e7ef7bb8;
     margin-bottom: 0.5em;
 }
 
 .large-text {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.problem-list {
+    font-size: 1.4rem;
+    margin-left: 15px;
+    outline: 1px solid #cd2200ce;
+    padding: 15px 25px;
+    border-radius: 8px;
+    color: rgb(226, 66, 66);
 }
 
 /* Code section container */
