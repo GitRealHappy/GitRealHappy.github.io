@@ -67,15 +67,32 @@ a:hover {
 
 /* Hero section for article image */
 .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
     height: 300px;
     outline: 8px solid black;
-    background-image: url(../../images/gallery/ecologytime1.jpg);
     background-size: cover;
     background-position: center;
     filter: grayscale(20%);
     opacity: 0.9;
+    padding: 10px 10px;
     margin-bottom: 50px;
+}
+
+.hero h1 {
+    color: #91ab83;
+    font-size: 1.6em;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 4px 4px 3px #15170ce2,
+    -3px -3px 2px #15170c,
+    3px -3px 2px #15170c,
+    -3px 3px 2px #15170c;
+
+    text-decoration-thickness: 10px;
 }
 
 /* Blockquote styling */
@@ -128,6 +145,7 @@ blockquote {
     margin: 5px !important;
     padding: 5px !important;
     text-align: center;
+    background-color: #000000;
 }
 
 .fine-print {
@@ -139,6 +157,18 @@ blockquote {
     font-size: 1.2em;
     color: #7ba87d;
     text-align: center;
+}
+
+.email-form button {
+    background-color: #000000;
+    outline: 2px solid #9E9E9E;
+    color: #b0baaf;
+}
+
+.email-form button:hover {
+    background-color: #9E9E9E;
+    color: #000000;
+    cursor: pointer;
 }
 
 footer {
@@ -164,6 +194,10 @@ footer {
 
     hr {
         margin: 20px 0px;
+    }
+
+    .hero h1 {
+        font-size: 1.2em;
     }
 
     .gallery-container {
