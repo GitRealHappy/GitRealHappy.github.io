@@ -192,12 +192,51 @@
 
     <hr>
 
-    <div class="subscribe">
-    <p>Subscribe to Taoist Threads to receive these clear-cutting insights, and let’s carve a path toward freedom together. Subscribe at:</p>
-    <a href="../jesseboyes.html">JesseBoyes.com</a>
+    <div class="email-form">
+        <form id="newsletter-form">
+            <label for="email">Subscribe to Taoist Threads:</label>
+            <input type="email" name="email" id="email" placeholder="email address">
+            <button type="submit">Subscribe</button>
+        </form>
+        <span class="fine-print">You can easily unsubscribe at any time.</span>
+        <p id="message"></p> <!-- This will display a success message -->
     </div>
     <!-- Footer -->
     <footer>
         © 2024 Jesse James Boyes. All rights reserved.
     </footer>
 </main>
+
+
+<script>
+    document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+  
+      const email = document.getElementById('email').value; // Get the email value
+      const message = document.getElementById('message'); // Get the message paragraph
+  
+      // Send the form data to Google Apps Script using fetch
+      fetch('https://script.google.com/macros/s/AKfycbxMKe5z6z4DrXXr-GpPGCLeJggxDCN2np3C__6wWmbRwUeMk0JOgzeofIsQEyeuowwW/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams({
+          'email': email,
+        })
+      })
+      .then(() => {
+        // Assume the submission is successful and show the success message
+        message.innerText = "Thanks for subscribing!";
+        document.getElementById('email').value = ''; // Clear the form
+      })
+      .catch((error) => {
+        // In case of any error, still show some feedback
+        message.innerText = 'Error: Something went wrong. Please try again later.';
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -69,7 +69,7 @@
             <img src="images/park2.jpeg" alt="Solar Rays Table">
         </div>
     </section>
-    <p>Although for a long time this chunk of cherry wood wasn't much more than a burden and a block in the path, but once it truly began the piece took on its own life and inertia. No longer did I have the idea; the idea had me.</p>
+    <p>Although for a long time this chunk of cherry wood wasn't much more than a burden and a block in the path, once it truly began the piece took on its own life and inertia. No longer did I have the idea; the idea had me.</p>
     <p>Sometimes I felt more like carving than other times, but this tabletop always invited me back and welcomed me at whatever pace, in whatever state of mind. The whole process became a meditation on the Tao.</p>
     <p>I thought about photosynthesis.</p>
     <p>I considered how bizarre and incredible it is that this wood is mostly composed of carbon drawn into the tree directly from the air (CO₂) and made into wood using energy captured from the sun's light.</p>
@@ -100,7 +100,7 @@
     <p>In his 2013 essay Three Forms of Meaning and the Management of Complexity, Dr. Jordan B. Peterson writes the following:</p>
     <p><blockquote>… “objects” are entities bounded by their affective relationship to a goal.</blockquote></p>
     <p><blockquote>We perceive meaningful phenomena, not the objective world. The intuitions that guide us are pragmatic and embodied.</blockquote></p>
-    <p>Not only is it necessary to have goals, but you can't forfeit them even if you try to be without ambition. "Letting go of desire," being a classic misinterpretation of the Noble Truths of Buddhism, as Watts said, is like trying to bite your own teeth.</p>
+    <p>Not only is it necessary to have goals, but you can't forfeit them even if you try to be without ambition. "Letting go of desire," a classic misinterpretation of the Noble Truths of Buddhism, as Watts said, is like trying to bite your own teeth.</p>
     <p>When you see a room full of objects, you know that there's incalculably more information there than what you're actually seeing. You see a landscape of affordances, as termed by JJ Gibson:</p>
     <p><blockquote>The affordances of the environment are what it offers the animal, what it provides or furnishes, either for good or ill.</blockquote></p>
     <p>(JJ Gibson, An Ecological Approach to Visual Perception)</p>
@@ -109,7 +109,7 @@
     <p>I agree with that 100%, but alas: life is fraught with paradox.</p>
     <p>Author of The Art of Focus, Dan Koe, recently helped me clarify it in his newsletter in this way:</p>
     <p><blockquote>"you can argue that "the end of a melody isn’t its goal," as Nietzsche would say, but the goal of the artist was to create the melody."</blockquote></p>
-    <p>Perhaps there is a middle way. Indeed there is, because once I drew this abstract pattern onto the tabletop, nothing was stopping me from simply enjoying the moment-by-moment process. The process of bringing the piece closer to the inner vision of its completed form was a melody to be enjoyed, but it wouldn't have existed without the inner vision of the end goal.</p>
+    <p>Perhaps there is a middle way. Indeed there is, because once I drew this abstract pattern onto the tabletop, nothing could stop me from simply enjoying the moment-by-moment process. The process of bringing the piece closer to the inner vision of its completed form was a melody to be enjoyed, but it wouldn't have existed without the inner vision of the end goal.</p>
     <section class="mini-gallery">
         <div class="gallery-container">
             <img src="images/topwhole.jpeg" alt="Solar Rays Table">
@@ -130,8 +130,9 @@
     <p>As I said at the start, you can forget about motivation. The creative power of nature is within you. It's often the intensity, direction, or lack of direction of our striving that actually blocks that power, leaving us disoriented.</p>
     <p>The uncarved block is pure potentiality, true to nature and not stifled by rigid concepts and goals.</p>
     <p>A good goal contains its own means of revision.</p>
-    <p>Over time, reality provides feedback, and you shuffle your hierarchy of priorities and goals around until the most functional meta-goals get to the top. Recognize that your self-centred and your unitive, world-centric drives are both real parts of you. Neither can be ignored without consequence.</p>
-    <p>For someone else the watercourse way, the natural flow, might have been to use a CNC machine to quicken this whole carving process. Other carvers use chainsaws without much concern for the wood's grain direction.</p>
+    <p>Over time, reality provides feedback, and you shuffle your hierarchy of priorities and goals around until the most functional meta-goals get to the top. Recognize that your self-centred and your unitive world-centric drives are both real parts of you. Neither can be ignored without consequence.</p>
+    <hr>
+    <p>For someone else, the watercourse way—the natural flow—might have been to use a CNC machine to quicken the carving process. Other carvers use chainsaws without much concern for the wood's grain direction.</p>
     <p>So forget about wood and carving with-the-grain. Remember that this was all a metaphor for knowledge of yourself.</p>
     <p>Sitting still with yourself is part of the opportunity in creative work. It can be uncomfortable, but the alternative is to always be so distracted that you never get acquainted with the inner being who holds the key.</p>
     <p>My hope is that in reading this letter, you come to your own useful insights that will be of value to you.</p>
@@ -148,14 +149,52 @@
     <p>Jesse James Boyes</p>
     <hr>
 
-    <p>See the full gallery of the Solar Rays Table <a href="../gallery.html">here</a>.</p>
+    <p>See the full gallery of the Solar Rays Table here: <a href="../gallery.html"><em> TABLE GALLERY </em></a>.</p>
 
-    <div class="subscribe">
-    <p>Subscribe to Taoist Threads to receive these clear-cutting insights, and let’s carve a path toward freedom together. Subscribe at:</p>
-    <a href="../jesseboyes.html">JesseBoyes.com</a>
+    <div class="email-form">
+        <form id="newsletter-form">
+            <label for="email">Subscribe to Taoist Threads:</label>
+            <input type="email" name="email" id="email" placeholder="email address">
+            <button type="submit">Subscribe</button>
+        </form>
+        <span class="fine-print">You can easily unsubscribe at any time.</span>
+        <p id="message"></p> <!-- This will display a success message -->
     </div>
     <!-- Footer -->
     <footer>
         © 2024 Jesse James Boyes. All rights reserved.
     </footer>
 </main>
+
+<script>
+    document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+  
+      const email = document.getElementById('email').value; // Get the email value
+      const message = document.getElementById('message'); // Get the message paragraph
+  
+      // Send the form data to Google Apps Script using fetch
+      fetch('https://script.google.com/macros/s/AKfycbxMKe5z6z4DrXXr-GpPGCLeJggxDCN2np3C__6wWmbRwUeMk0JOgzeofIsQEyeuowwW/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams({
+          'email': email,
+        })
+      })
+      .then(() => {
+        // Assume the submission is successful and show the success message
+        message.innerText = "Thanks for subscribing!";
+        document.getElementById('email').value = ''; // Clear the form
+      })
+      .catch((error) => {
+        // In case of any error, still show some feedback
+        message.innerText = 'Error: Something went wrong. Please try again later.';
+      });
+    });
+  </script>
+
+</body>
+</html>
