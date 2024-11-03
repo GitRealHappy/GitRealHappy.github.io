@@ -7,13 +7,13 @@
 
 hr {
     border: none;
-    border-top: 1px solid #4CAF50; /* Thin line with color */
+    border-top: 5px double #5ca95ed5; /* Thin line with color */
     margin: 40px 0; /* Spacing between sections */
 }
 
 body {
-    background: linear-gradient(90deg, #121812, #141513, #191c18);
-    color: #b4afba;
+    background: linear-gradient(90deg, #080b08, #101210, #0a0c0a);
+    color: #bfbece;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
     line-height: 1.7;
@@ -31,7 +31,7 @@ main {
 }
 
 h1, h2 {
-    color: #b7a895;
+    color: #e1cfb7;
     margin-bottom: 0.5em;
 }
 
@@ -124,18 +124,22 @@ blockquote {
     opacity: 1;
 }
 
-.subscribe p {
-    font-size: small;
-    color: #7ba87d;
-    text-align: center;
-}
-
-.subscribe {
+.email-form {
     margin: 5px !important;
     padding: 5px !important;
     text-align: center;
 }
 
+.fine-print {
+    font-size: 0.8em;
+    color: #9E9E9E;
+}
+
+.email-form p {
+    font-size: 1.2em;
+    color: #7ba87d;
+    text-align: center;
+}
 
 footer {
     text-align: center;
