@@ -12,21 +12,25 @@
 
 <main>
     <!-- Hero section -->
-    <div class="hero"></div>
+    <div class="hero" style="background-image: url(../images/gallery/gallery5.jpeg);">
+        <h1>Creative Power. Future Skills. Inner Peace.</h1>
+    </div>
 
     <div class="email-form">
         <form id="newsletter-form">
-            <label for="email">Subscribe to Taoist Threads:</label>
+            <label for="email">Join the Taoist Threads mailing list:</label>
             <input type="email" name="email" id="email" placeholder="email address">
-            <button type="submit">Subscribe</button>
+            <button type="submit">Read for Free</button>
         </form>
         <span class="fine-print">You can easily unsubscribe at any time.</span>
         <p id="message"></p> <!-- This will display a success message -->
     </div>
 <h1>Past Issues of Taoist Threads:</h1>
     <div class="section">
-        <p><a href="tao2.html">Issue #2: The Unblocked Carver</a></p>
-        <p><a href="tao1.html">Issue #1: Suffering, Art, and Liberation: The Story of a Four-Year Art Project</a></p>
+        <ul style="text-decoration-line:underline";>
+        <li><a href="tao2.html">Issue #2: The Unblocked Carver</a></li>
+        <li><a href="tao1.html">Issue #1: Suffering, Art, and Liberation: The Story of a Four-Year Art Project</a></li>
+        </ul>
     </div>
 
     
@@ -55,7 +59,7 @@
       })
       .then(() => {
         // Assume the submission is successful and show the success message
-        message.innerText = "Thanks for subscribing!";
+        message.innerText = "Thanks for subscribing! New letters will appear in your inbox twice per month. Please check your spam folder if you don't see them.";
         document.getElementById('email').value = ''; // Clear the form
       })
       .catch((error) => {
