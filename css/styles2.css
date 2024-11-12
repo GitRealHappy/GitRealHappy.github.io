@@ -198,9 +198,73 @@ background-color: #bec399;
 max-width: 70%;
 text-align: center;
 color: rgb(37, 20, 4);
-padding: 10px;
+padding: 10px 30px;
 margin: 10px 0px;
 font-size: 1.2rem;
+}
+
+/* Founder Message */
+#founder-message {
+    background-color: #16051d;
+    color: #d1d5d0;
+    padding: 50px 25;
+    text-align: center;
+}
+
+/* Style for the work button */
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.work-button {
+    display: inline-block;
+    background-color: #000000;
+    color: #f0b68c;
+    padding: 6px 12px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    border-bottom: 1px solid #a14401;
+    border-top: 1px solid #a14401;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-button:hover {
+    background-color: #4077b3;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    text-decoration: underline;
+}
+
+.founder-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#founder-message h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#founder-message p {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+noone {
+    color: #f0b68c;
+    text-decoration: none;
+    border-bottom: 1px solid #a14401;
+    border-top: 1px solid #a14401;
+}
+
+#founder-message a:hover {
+    color: #5C3317;
+    border-bottom-color: #5C3317;
 }
 
 
@@ -243,6 +307,7 @@ font-size: 1.2rem;
 
 .blog-post-text {
     text-align: center;
+    padding: 10px 15px;
     background-color: #63692b88;
     outline: 2px solid black;
 }
@@ -260,7 +325,7 @@ font-size: 1.2rem;
 
 .cta-button {
     margin-top: 40px; /* Add margin above the button */
-    background-color: black;
+    background-color: rgb(150, 131, 131);
     color: #F6E4CE;
     display: block;
     margin: 0 auto;
