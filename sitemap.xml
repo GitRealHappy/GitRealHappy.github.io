@@ -42,32 +42,52 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-    <url>
+  <url>
     <loc>https://www.oakmoss.ca/blogposts/wadedavis.html</loc>
     <lastmod>2024-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
-    </url>
-    <url>
+  <url>
     <loc>https://www.oakmoss.ca/blogposts/dennismckenna.html</loc>
     <lastmod>2024-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
-    </url>
-    <url>
+  <url>
     <loc>https://www.oakmoss.ca/blogposts/trevorcarolan.html</loc>
     <lastmod>2024-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
-    </url>
-    <url>
+  <url>
     <loc>https://www.oakmoss.ca/blogposts/monicagagliano.html</loc>
     <lastmod>2024-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
-  
+  <url>
+    <loc>https://www.oakmoss.ca/partners.html</loc>
+    <lastmod>2024-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.oakmoss.ca/privacy-policy.html</loc>
+    <lastmod>2024-09-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.oakmoss.ca/jesseboyes.html</loc>
+    <lastmod>2024-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.oakmoss.ca/tablegallery.html</loc>
+    <lastmod>2024-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
