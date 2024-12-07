@@ -336,18 +336,19 @@ noone {
 .email-form {
     display: flex;
     flex-direction: column;
-    background-color: rgb(128, 143, 107);
-    color: #000000d5;
+    background-color: rgb(0, 0, 0);
+    color: #e8e8e8d5;
     text-align: center;
     font-weight: 600;
     font-size: 1.4rem;
     padding: 25px 10px;
 }
 
+
 .email-form button {
     font-size: 1.6rem;
-    color: #000000;
-    background-color:#ff00bfdf;
+    color: #F6E4CE;
+    background-color:#8B4513;
     border-radius: 7px;
     padding: 8px;
     cursor: pointer;
