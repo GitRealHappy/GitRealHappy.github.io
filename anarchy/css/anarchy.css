@@ -129,6 +129,8 @@ hr {
     border-bottom-color: #1d6767;
 }
 
+
+
 /* Large text and heading styles */
 .large-heading {
     outline: 3px solid #475541;
@@ -749,4 +751,11 @@ pre code {
       .form-close {
         font-size: 1.1rem; /* Adjust close button size */
       }
+}
+
+.white-text {
+    color: #dcdcdc; /* Example property */
+    font-size: 1.2rem;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
