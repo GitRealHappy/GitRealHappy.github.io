@@ -1,6 +1,6 @@
 /* General page settings */
 body {
-    background-color: #1e0f24;
+    background-color: #000000;
     color: #e36b10d4;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
@@ -13,7 +13,7 @@ body {
 }
 
 hr {
-    border: 1px solid #475541;
+    border: 1px solid #06dd26;
     margin: 20px 0;
 }
   
@@ -35,7 +35,7 @@ hr {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    color: #00FF00;
+    color: #1cd01c;
     font-weight: bold;
 }
 
@@ -105,15 +105,14 @@ hr {
 /* Terminal body (content) */
 .terminal-body {
     padding: 30px 25px;
-    background-color: black;
+    background-color: rgba(10, 26, 47, 0.766);
     overflow-y: auto;
     line-height: 1.7;
 }
 
 .green-text {
-    color: #699760;
+    color: #3ecc22;
     font-size: 1.3rem;
-    font-weight: 400;
     line-height: 1.6;
     margin-bottom: 1.2em;
 }
@@ -407,7 +406,7 @@ pre {
 /* Improve paragraph spacing */
 .green-text {
     margin-bottom: 1.2em;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 /* Better list spacing */
