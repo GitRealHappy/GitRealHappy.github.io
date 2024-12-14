@@ -36,7 +36,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 1.6em;
     font-weight: 700;
     text-align: center;
 }
@@ -83,7 +83,7 @@ a:hover {
 }
 
 .hero h1 {
-    color: #91ab83;
+    color: #b2d3a1;
     font-size: 1.6em;
     font-weight: 700;
     text-align: center;
@@ -93,6 +93,33 @@ a:hover {
     -3px 3px 2px #15170c;
 
     text-decoration-thickness: 10px;
+}
+
+/* Author Section Styles */
+.author-section {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    width: 70%;
+    text-align: center;
+    background-color: #414d41b9;
+    color: #e9e7e1;
+}
+
+.author-section p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.author-link {
+    color: #8bcfff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.author-link:hover {
+    text-decoration: underline;
+    color: #4CAF50;
 }
 
 /* Blockquote styling */
@@ -106,7 +133,8 @@ blockquote {
 
 /* Add extra spacing for mindful reading */
 .section {
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
 
 /* Mini Gallery Styles */
@@ -146,6 +174,7 @@ blockquote {
     padding: 5px !important;
     text-align: center;
     background-color: #000000;
+    outline: 2px solid #9E9E9E;
 }
 
 .fine-print {
