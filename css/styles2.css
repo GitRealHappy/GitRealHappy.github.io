@@ -139,7 +139,8 @@ main {
 }
 
 #welcome-oakmoss .cta-button:hover {
-    background-color: #6B3E0A;
+    background-color: #512e06;
+    text-decoration: underline;
 }
 
 
@@ -357,8 +358,9 @@ noone {
 
 .email-form button:hover {
     font-size: 1.6rem;
-    color: #000000cd;
-    background-color: #7a411500;
+    text-decoration: underline;
+    color: #e1c8a8f9;
+    background-color: #7a4115a2;
     padding: 8px;
     cursor: pointer;
     
