@@ -184,8 +184,8 @@ hr {
 /* Code section container */
 .code-container {
     display: flex;
-    justify-content: space-between;
-    gap: 15px;
+    flex-direction: column;
+    gap: 20px;
     margin: 40px 0;
     align-items: stretch;
     width: 100%;
@@ -193,7 +193,7 @@ hr {
 
 /* Box for rendered output */
 .rendered-output {
-    width: 49%;
+    width: 80%;
     height: 360px;
     background: linear-gradient(145deg, #020824, #02083c);
     display: flex;
@@ -540,7 +540,7 @@ pre code {
 /* Call to action styling */
 .emphasize-link {
     text-align: center;
-    color: #c0f0e1;
+    color: #51efbd;
     font-size: 1.4rem;
     padding: 20px;
     margin: 40px 0;
@@ -549,7 +549,6 @@ pre code {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
-    text-shadow: 0 0 3px #7bb783;
 }
 
 .emphasize-link:hover {
