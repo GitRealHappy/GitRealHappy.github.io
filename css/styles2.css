@@ -272,15 +272,15 @@ noone {
 /* Blog Preview */
 #blog-preview {
     overflow-x: hidden;
-    background-color: #222;
+    background-color: #454545;
     padding: 60px 20px;
-    color: #120b02;
-    margin-bottom: 40px;
+    color: #f1f3f0;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 #blog-preview h2 {
-    margin-bottom: 40px; /* Add space between the h2 and the images */
+    margin-bottom: 20px; /* Add space between the h2 and the images */
 }
 
 #blog-preview a {
@@ -305,12 +305,13 @@ noone {
     height: auto;
     border-radius: 5px;
     margin-bottom: 15px;
+    outline: 2px solid rgb(245, 246, 244)
 }
 
 .blog-post-text {
     text-align: center;
     padding: 10px 15px;
-    background-color: #bb8858;
+    background-color: #c2a387;
     outline: 2px solid black;
 }
 
