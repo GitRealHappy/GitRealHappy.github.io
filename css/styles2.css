@@ -531,6 +531,13 @@ footer .social-icons a:hover {
         font-weight: 400;
     }
 
+    .blog-posts {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 4 columns on wide screens */
+        gap: 20px;
+        padding-top: 20px;
+    }
+
     .blog-post {
         margin-bottom: 30px; /* Extra margin for smaller screens */
     }
