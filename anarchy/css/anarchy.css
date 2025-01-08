@@ -535,6 +535,14 @@ pre code {
         padding: 3px 6px;
         border-width: 1px;
     }
+
+    .green-text a {
+        color: #5dc1c1;
+        font-size: 1rem;
+        text-decoration: none;
+        border-bottom: 1px solid #00ffff50;
+        transition: all 0.6s ease;
+    }
 }
 
 /* Call to action styling */
