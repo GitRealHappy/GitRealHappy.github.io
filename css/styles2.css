@@ -273,7 +273,7 @@ noone {
 #blog-preview {
     overflow-x: hidden;
     background-color: #454545;
-    padding: 60px 20px;
+    padding: 40px 20px;
     color: #f1f3f0;
     margin-bottom: 20px;
     text-align: center;
@@ -523,7 +523,7 @@ footer .social-icons a:hover {
     }
 
     #wallets .wallet-image {
-        width: 80%;
+        width: 90%;
     }
 
     .wallet-info p {
@@ -548,16 +548,5 @@ footer .social-icons a:hover {
 
     footer .container {
         padding: 10px;
-    }
-}
-
-/* Add this media query for mobile sizes */
-@media (max-width: 767px) {
-    #blog-preview {
-        padding: 0 15px;
-    }
-    
-    #blog-preview .preview-content {
-        width: 100%;
     }
 }
