@@ -271,8 +271,9 @@ noone {
 
 /* Blog Preview */
 #blog-preview {
+    overflow-x: hidden;
+    background-color: #222;
     padding: 60px 20px;
-    background-color: #9FA37A;
     color: #120b02;
     margin-bottom: 40px;
     text-align: center;
@@ -309,7 +310,7 @@ noone {
 .blog-post-text {
     text-align: center;
     padding: 10px 15px;
-    background-color: #63692b88;
+    background-color: #bb8858;
     outline: 2px solid black;
 }
 
@@ -539,5 +540,16 @@ footer .social-icons a:hover {
 
     footer .container {
         padding: 10px;
+    }
+}
+
+/* Add this media query for mobile sizes */
+@media (max-width: 767px) {
+    #blog-preview {
+        padding: 0 15px;
+    }
+    
+    #blog-preview .preview-content {
+        width: 100%;
     }
 }
