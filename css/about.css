@@ -2,6 +2,20 @@ main {
     padding-top: 140px;
 }
 
+main a {
+    text-decoration: none;
+    background-color: #00000000;
+    color: #1268e2;
+    padding: 5px 8px;
+    border: 2px solid #000000;
+    border-radius: 3px;
+}
+
+main a:hover {
+    background-color: #9000ce;
+    color: #ffffff;
+}
+
 /* Global container styles */
 #about-preview .container {
     padding: 20px;
