@@ -48,7 +48,7 @@ header .container {
 }
 
 header .logo {
-    height: 125px;
+    height: 100px;
     margin: -15px;
 }
 
@@ -63,7 +63,7 @@ nav {
 }
 
 .nav-links li {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .nav-links li a {
@@ -85,13 +85,13 @@ nav {
     display: none;
     cursor: pointer;
     flex-direction: column;
-    gap: 5px;
+    gap: 11px;
 }
 
 .hamburger span {
     width: 25px;
     height: 3px;
-    background-color: #F6E4CE;
+    background-color: #000000;
     border-radius: 2px;
 }
 
