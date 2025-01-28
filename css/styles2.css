@@ -11,7 +11,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: #F6E4CE;
+    background-color: #efdac0;
 }
 
 .container {
@@ -105,10 +105,23 @@ main {
     background-image: url('../images/cherry-table.jpg');
     background-size: cover;
     background-position: center;
+    margin: 0px 10px;
     height: 60vh;
-    padding: 20px;
-    color: rgb(43, 70, 43);
+    padding: 20px 20px;
+    color: rgb(194, 186, 170);
     outline: 5px solid #6B3E0A;
+}
+
+#hero .cta-button {
+    background-color: #885a39cb;
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    text-decoration: none;
+    outline: 2px solid #0e0903;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
 }
 
 #welcome-oakmoss {
@@ -208,7 +221,8 @@ font-size: 1.2rem;
 #founder-message {
     background-color: #16051d;
     color: #d1d5d0;
-    padding: 50px 25;
+    padding: 50px 45;
+    margin: 20px 20px;
     text-align: center;
 }
 
@@ -288,7 +302,7 @@ noone {
 
 #blog-preview a {
     text-decoration: none;
-    color: #463b1e;
+    color: #16140e;
 }
 
 .blog-posts {
@@ -308,13 +322,13 @@ noone {
     height: auto;
     border-radius: 5px;
     margin-bottom: 15px;
-    outline: 2px solid rgb(245, 246, 244)
+    outline: 2px solid rgb(232, 232, 231)
 }
 
 .blog-post-text {
     text-align: center;
     padding: 10px 15px;
-    background-color: #c2a387;
+    background-color: #d3bca7;
     outline: 2px solid black;
 }
 
@@ -421,7 +435,7 @@ footer .social-icons a:hover {
     }
 
     header .logo {
-        height: 85px;
+        height: 95px;
     }
 
     nav {
