@@ -97,8 +97,10 @@ a:hover {
 
 /* Author Section Styles */
 .author-section {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    margin: auto;
+    margin: 20px auto;
     padding: 10px;
     width: 70%;
     text-align: center;
