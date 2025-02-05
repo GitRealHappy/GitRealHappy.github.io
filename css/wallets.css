@@ -15,11 +15,11 @@
 /* Box styling for text sections */
 .text-box {
     background-color: #fff8f0;
-    border: 2px solid #9FA37A;
+    border: 2px solid #050504;
     padding: 30px;
     margin: 20px auto;
     max-width: 1000px;
-    border-radius: 10px;
+    border-radius: 4px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-size: 1.2rem;
@@ -80,10 +80,11 @@
 
 .review {
     background-color: #bec399;
+    outline: 2px solid #050504;
     max-width: 800px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.332);
     text-align: left;
     color: rgb(37, 20, 4);
     font-size: 1.2rem;
@@ -135,12 +136,17 @@
     }
 
     .text-box {
-        padding: 20px;
+        padding: 10px;
         font-size: 1.1rem;
     }
 
     .cta-button {
         font-size: 1.1rem;
         padding: 10px 20px;
+    }
+
+    .cta-section .email-address {
+        padding-top: 10px;
+        font-size: 0.8rem;
     }
 }
