@@ -139,6 +139,10 @@ blockquote {
     margin-bottom: 25px;
 }
 
+.section li {
+    margin-bottom: 15px;
+}
+
 /* Mini Gallery Styles */
 .mini-gallery {
     margin-top: 20px;
