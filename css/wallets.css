@@ -102,6 +102,11 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.cta-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 .cta-section p {
     font-size: 1.2rem;
     color: #3A2104;
