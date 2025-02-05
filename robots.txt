@@ -6,13 +6,23 @@ Allow: /index.html
 Allow: /about.html
 Allow: /gallery.html
 Allow: /events.html
-Allow: /blog.html
+Allow: /interviews.html
 Allow: /contact.html
 Allow: /wallets.html
-Allow: /blogposts/wadedavis.html
-Allow: /blogposts/monicagagliano.html
-Allow: /blogposts/trevorcarolan.html
-Allow: /blogposts/dennismckenna.html
+Allow: /interviews/wadedavis.html
+Allow: /interviews/monicagagliano.html
+Allow: /interviews/trevorcarolan.html
+Allow: /interviews/dennismckenna.html
+Allow: /jesseboyes.html
+Allow: /taoistthreads/index.html
+Allow: /tablegallery.html
+Allow: /taoistthreads/tao1.html
+Allow: /taoistthreads/tao2.html
+Allow: /taoistthreads/tao3.html
+Allow: /taoistthreads/tao4.html
+Allow: /taoistthreads/tao5.html
+Allow: /taoistthreads/tao6.html
+
 
 # Prevent crawling of any admin or private areas (if they exist)
 Disallow: /admin/
