@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <script>
+      window.onload = function() {
+        var emailParam = '<?= e.parameter.email ? e.parameter.email : "" ?>';
+        if (emailParam) {
+          document.getElementById('email').value = emailParam;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form id="unsubscribeForm">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <button type="submit">Unsubscribe</button>
+    </form>
+    <div id="confirmation"></div>
+    <script>
+      document.getElementById('unsubscribeForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var email = document.getElementById('email').value;
+        google.script.run.withSuccessHandler(function(message) {
+          document.getElementById('confirmation').innerText = message;
+          document.getElementById('unsubscribeForm').style.display = 'none';
+        }).submitUnsubscribe(email);
+      });
+    </script>
+  </body>
+</html>
