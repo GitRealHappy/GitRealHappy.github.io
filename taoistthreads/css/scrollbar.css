@@ -1,0 +1,32 @@
+/* Custom Scrollbar for Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 16px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(to right, #757575, #000000bc, #757575); /* Horizontal gradient for track */
+    border-radius: 0px;
+    outline: 2px solid #a0a0a0d5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9FA37A; /* Thumb color, using the same color as your hr border */
+    border-radius: 4px;
+    outline: 2px solid #eef8c7d5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    outline: 2px solid #94ad85d5;
+    background: radial-gradient(circle, #9FA37A, #757a44, #2b2d11); /* Change color on hover for better interaction */
+}
+
+/* For Firefox, which uses scrollbar-color */
+body {
+    scrollbar-color: #5ca95ed5 #101210;
+    scrollbar-width: thin;
+}
+
+/* For IE and Edge, which use ms-overflow-style */
+body {
+    -ms-overflow-style: scrollbar; /* This enables custom scrollbars */
+}
