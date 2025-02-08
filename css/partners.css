@@ -6,6 +6,7 @@
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
+    outline: 4px solid #3d4024;
 }
 
 .partners-grid {
@@ -39,6 +40,7 @@
 .partner h3 {
     font-size: 1.6rem;
     font-weight: bold;
+    color: #60634a;
 }
 
 .partner p {
