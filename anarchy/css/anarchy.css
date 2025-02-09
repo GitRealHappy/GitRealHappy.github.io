@@ -302,6 +302,12 @@ hr {
     font-size: 1.2rem;
 }
 
+.iframe {
+    outline: 3px solid #00ff00;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
 /* Modal styling */
 .modal {
     display: none; /* Hidden by default */
