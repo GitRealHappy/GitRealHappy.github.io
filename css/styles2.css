@@ -64,7 +64,7 @@ nav {
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .nav-links li a {
@@ -90,10 +90,9 @@ nav {
 }
 
 .hamburger span {
-    width: 25px;
-    height: 3px;
-    background-color: #000000;
-    border-radius: 2px;
+    width: 32px;
+    height: 4px;
+    background-color: #000000d2;
 }
 
 /* Main Content */
@@ -109,7 +108,14 @@ main {
     margin: 0px 10px;
     height: 60vh;
     padding: 20px 20px;
-    color: rgb(194, 186, 170);
+    color: rgb(205, 198, 172);
+    font-family: 'EB Garamond', serif;
+    text-shadow:
+    -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000;
+        text-align: center;
     outline: 5px solid #6B3E0A;
 }
 
