@@ -153,15 +153,9 @@
     <p>The Solar Rays Table is for sale. See the full gallery here: <a href="../tablegallery.html"><em> TABLE GALLERY </em></a>.</p>
 
     <div class="email-form">
-        <form id="newsletter-form">
-            <label for="email">Subscribe to The Unblocked Carver:</label>
-            <input type="email" name="email" id="email" placeholder="email address">
-            <button type="submit">Subscribe</button>
-        </form>
-        <span class="fine-print">You can easily unsubscribe at any time.</span>
-        <p id="message"></p> <!-- This will display a success message -->
-    </div>
-
+          <iframe src="https://embeds.beehiiv.com/d090f079-e994-4f8a-9845-e3d83d0e656d" data-test-id="beehiiv-embed" width="100%" height="280" frameborder="0" scrolling="no" style="border-radius: 0px; border: 1px solid #000000; margin: 0; background-color: transparent;"></iframe>
+        </div>
+  
     <hr>
     <h3>See all issues of The Unblocked Carver here: <a href="index.html">PAST ISSUES</a></h3>
     <hr>
@@ -170,36 +164,6 @@
         © 2024 Jesse James Boyes. All rights reserved.
     </footer>
 </main>
-
-<script>
-    document.getElementById('newsletter-form').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent the default form submission
-  
-      const email = document.getElementById('email').value; // Get the email value
-      const message = document.getElementById('message'); // Get the message paragraph
-  
-      // Send the form data to Google Apps Script using fetch
-      fetch('https://script.google.com/macros/s/AKfycbxMKe5z6z4DrXXr-GpPGCLeJggxDCN2np3C__6wWmbRwUeMk0JOgzeofIsQEyeuowwW/exec', {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams({
-          'email': email,
-        })
-      })
-      .then(() => {
-        // Assume the submission is successful and show the success message
-        message.innerText = "Thanks for subscribing! New letters will appear in your inbox twice per month. Please check your spam folder if you don't see them.";
-        document.getElementById('email').value = ''; // Clear the form
-      })
-      .catch((error) => {
-        // In case of any error, still show some feedback
-        message.innerText = 'Error: Something went wrong. Please try again later.';
-      });
-    });
-  </script>
 
 </body>
 </html>
