@@ -163,6 +163,21 @@ main {
     text-decoration: underline;
 }
 
+.email-form {
+    background-color: #000000;
+    color: #F6E4CE;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.email-form h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: -40px;
+    padding-bottom: 20px;
+    color: #F6E4CE;
+}
+
 
 /* Wallet Section */
 #wallets {
@@ -307,6 +322,10 @@ noone {
     margin-bottom: 20px; /* Add space between the h2 and the images */
 }
 
+#blog-preview h1 {
+    font-size: 1.8rem;
+}
+
 #blog-preview a {
     text-decoration: none;
     color: #16140e;
@@ -360,37 +379,8 @@ noone {
     width: fit-content;
 }
 
-.email-form {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(0, 0, 0);
-    color: #e8e8e8d5;
-    text-align: center;
-    font-weight: 600;
-    font-size: 1.4rem;
-    padding: 25px 10px;
-}
 
 
-.email-form button {
-    font-size: 1.6rem;
-    color: #F6E4CE;
-    background-color:#8B4513;
-    border-radius: 7px;
-    padding: 8px;
-    cursor: pointer;
-    
-}
-
-.email-form button:hover {
-    font-size: 1.6rem;
-    text-decoration: underline;
-    color: #e1c8a8f9;
-    background-color: #7a4115a2;
-    padding: 8px;
-    cursor: pointer;
-    
-}
 
 /* Footer */
 footer {
@@ -544,6 +534,13 @@ footer .social-icons a:hover {
 
     .cta-button {
         font-size: 0.9rem;
+    }
+
+    .email-form h2 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-top: -30px;
+        padding-bottom: 20px;
     }
 
     #wallets .wallet-image {
