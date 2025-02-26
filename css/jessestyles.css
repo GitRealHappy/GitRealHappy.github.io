@@ -9,7 +9,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #8f966e;
+    background-color: #9FA37A;
     color: rgb(5, 6, 5);
     padding: 5px;
     display: flex;
@@ -41,6 +41,7 @@ header {
 
 .profile-pic {
     border-radius: 50%;
+    border: 3px solid #0e200ae3;
     width: 110px;
     height: 110px;
     object-fit: cover;
@@ -88,8 +89,8 @@ header {
 }
 
 .category {
-    border: 3px solid black; /* 3px black border */
-    background-color: rgb(235, 235, 235);
+    border: 8px solid rgb(119, 76, 25); /* 3px black border */
+    background-color: rgba(235, 235, 235, 0.838);
     padding: 15px;
     text-align: center;
     width: 30%; /* Equal widths */
@@ -220,7 +221,7 @@ footer a {
     .brand-categories {
         flex-direction: column;
         align-items: center;
-        margin: 10px 0 220px; /* Increase bottom margin to account for footer */
+        margin: 10px 0 120px; /* Increase bottom margin to account for footer */
         gap: 10px; /* Add more spacing between categories */
     }
 
