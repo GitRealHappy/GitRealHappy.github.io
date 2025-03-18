@@ -3,13 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(90deg, #2e3421, #161616);
+    background: linear-gradient(180deg, #2e3421, #161616);
     color: #333;
 }
 
 /* Header Styles */
 header {
-    background-color: #9FA37A;
+    background-color: #9fa37ac9;
     color: rgba(5, 6, 5, 0.774);
     padding: 5px;
     border-bottom: 5px solid rgb(39, 25, 8);
@@ -68,14 +68,14 @@ header {
 
 /* Graphics Section */
 .taoist-threads-logo, .ginkgo-dharma {
-    width: 75%; /* Adjusted size */
+    width: 75%;
     max-width: 150px;
     display: block;
     margin: 0 auto 2px;
 }
 
 .oakmoss-logo {
-    width: 100%; /* Adjusted size */
+    width: 100%;
     max-width: 185px;
     display: block;
     margin: 20px auto 20px;
@@ -84,22 +84,26 @@ header {
 /* Main Content */
 .brand-categories {
     display: flex;
-    justify-content: space-between;
-    margin: 20px 30px 70px; /* Increased bottom margin */
-    gap: 10px; /* 10px between the boxes */
+    justify-content: center;
+    margin: 20px 30px 30px;
+    gap: 20px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .category {
-    border: 8px solid rgb(119, 76, 25); /* 3px black border */
+    border: 8px solid rgb(119, 76, 25);
     background-color: rgba(235, 235, 235, 0.838);
     padding: 15px;
     text-align: center;
-    width: 30%; /* Equal widths */
+    width: 30%;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    min-height: 360px; /* Fixed height to align content */
+    min-height: 360px;
 }
 
 .category h3 {
@@ -118,7 +122,7 @@ header {
     background-color: #000;
     padding: 10px 20px;
     border-radius: 5px;
-    margin-top: auto; /* Ensure equal distance from the bottom */
+    margin-top: auto;
     transition: background-color 0.3s ease;
 }
 
@@ -126,66 +130,37 @@ header {
     background-color: #444;
 }
 
-/* Email form styling */
-.email-form {
-    background-color: #949d5e; /* Olive green */
-    color: #fff;
-    font-size: 1.3rem;
-    padding: 10px 20px; /* Adjust padding for shorter height */
+.social-links {
     display: flex;
-    justify-content: space-between; /* Align elements horizontally */
-    align-items: center; /* Center elements vertically */
-    width: 100%; /* Make it as wide as the header */
-    box-sizing: border-box;
-    margin: 0; /* Remove any margin to align it with the header */
-    position: relative; /* Attach it directly below the header */
-}
-
-/* Form elements */
-.email-form form {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    color: #092a11;
-    font-weight: ;
+    gap: 10px;
+    background-color: #9fa37a23;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto 80px;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
 }
 
-.email-form input[type="email"] {
-    flex: 1;
+.social-links p {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ffffffe7;
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
     padding: 5px;
-    margin-right: 10px; /* Space between input and button */
-    margin-left: 10px;
-    background-color: #e5e5e2;
-    font-size: 1rem;
-    border: none;
-    border-radius: 3px;
+    transition: transform 0.3s ease;
 }
 
-.email-form button {
-    padding: 5px 10px;
-    font-size: 1rem;
-    background-color: #000000;
-    color: #e3e3e3;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.email-form button:hover {
-    background-color: #444a46;
-}
-
-.email-form .fine-print {
-    font-size: 0.8rem;
-    color: #fafafa;
-    margin-left: 20px; /* Space between the button and fine print */
-}
-
-.email-form p#message {
-    font-size: 0.9rem;
-    color: #38c538;
-    margin-left: 20px; /* Space between the fine print and the message */
+.social-icon:hover {
+    transform: scale(1.1);
 }
 
 /* Sticky Footer Styling */
@@ -199,12 +174,13 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 100;
 }
 
 footer p {
     margin: 0;
     font-size: 1.2rem;
-    white-space: normal; /* Ensure text wraps on small screens */
+    white-space: normal;
     max-width: 90%;
 }
 
@@ -222,12 +198,13 @@ footer a {
     .brand-categories {
         flex-direction: column;
         align-items: center;
-        margin: 10px 0 120px; /* Increase bottom margin to account for footer */
-        gap: 10px; /* Add more spacing between categories */
+        margin: 10px 0 20px;
+        gap: 10px;
     }
 
     .category {
-        width: 90%; /* Allow the categories to take more width */
+        width: 90%;
+        max-width: 500px;
         margin-bottom: 15px;
     }
 
@@ -236,47 +213,26 @@ footer a {
     }
 
     .category h3 {
-        font-size: 1.2rem; /* Slightly reduce font size */
-        margin-top: 5px; /* Reduce distance between image and title */
-        margin-bottom: 5px; /* Reduce space after the title */
+        font-size: 1.2rem;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
-
-    .email-form {
-        flex-direction: column; /* Stack form elements vertically on smaller screens */
-        padding: 20px 10px; /* Adjust padding for smaller screens */
-        width: 100%; /* Ensure the email form takes full width */
-        box-sizing: border-box;
-    }
-
-    .email-form form {
-        flex-direction: column;
-        align-items: center;
-    text-align: center;
+    
+    .social-links {
+        margin-bottom: 100px;
         width: 90%;
+        padding: 12px 10px;
+        gap: 8px;
     }
 
-    .email-form input[type="email"], {
-        width: 80%; /* Full width input and button */
-        margin: 5px 5px;
-    }
-
-    .email-form button {
-        width: 45%;
-        margin: 5px 5px;
-    }
-
-    .email-form .fine-print {
-        margin-left: 0;
-        margin-top: 10px; /* Add space on top for vertical layout */
-        text-align: center; /* Center align the fine print text */
+    .social-links p {
+        font-size: 1.4rem;
     }
 
     footer {
         padding: 10px;
         font-size: 1.0rem;
     }
-
-
 }
 
 @media (max-width: 480px) {
@@ -298,6 +254,25 @@ footer a {
         padding: 3px;
         margin: 3px 3px;
     }
+    
+    .social-links {
+        margin-bottom: 120px;
+        flex-direction: column;
+        padding: 8px;
+        gap: 5px;
+        width: 85%;
+    }
+    
+    .social-links p {
+        font-size: 1.1rem;
+        margin-bottom: 3px;
+    }
+    
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        padding: 3px;
+    }
 
     .footer-content {
         padding: 3px;
@@ -305,13 +280,35 @@ footer a {
     }
 
     .footer-content a {
-        font-size: 3rem;
+        font-size: 1.2rem;
     }
 
     .footer a {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
+}
 
+/* Add a new breakpoint for very small heights */
+@media (max-height: 600px) {
+    .brand-categories {
+        margin-bottom: 15px;
+    }
+    
+    .social-links {
+        margin-bottom: 90px;
+        padding: 5px;
+    }
+    
+    .social-links p {
+        font-size: 1rem;
+        margin-bottom: 2px;
+    }
+    
+    .social-icon {
+        width: 30px;
+        height: 30px;
+        padding: 2px;
+    }
 }
 
 
