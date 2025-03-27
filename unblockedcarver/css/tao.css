@@ -12,10 +12,10 @@ hr {
 }
 
 body {
-    background: linear-gradient(90deg, #080b08, #101210, #0a0c0a);
+    background: linear-gradient(90deg, #23241a, #2a2b20, #2f3124);
     color: #cbcbcb;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.7;
     margin: 0;
     padding: 0;
@@ -55,7 +55,7 @@ p {
 }
 
 a {
-    color: #8bcfff;
+    color: #76a5c6;
     text-decoration: none;
     text-align: center;
 }
@@ -82,17 +82,58 @@ a:hover {
     margin-bottom: 50px;
 }
 
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 100px;
+    border-radius: 8px;
+}
+
+.logo-container {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(200, 200, 200, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.hero-logo {
+    width: 100%;
+    height: auto;
+    filter: grayscale(20%);
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+}
+
 .hero h1 {
-    color: #b2d3a1;
+    color: #0c0c0a;
     font-size: 1.6em;
     font-weight: 700;
     text-align: center;
-    text-shadow: 4px 4px 3px #15170ce2,
-    -3px -3px 2px #15170c,
-    3px -3px 2px #15170c,
-    -3px 3px 2px #15170c;
-
+    -webkit-text-stroke: 1px #15170c;
+    text-stroke: 1px #15170c;
     text-decoration-thickness: 10px;
+    margin: 0;
+    padding: 0.2em 0.5em;
+    background-color: rgba(200, 200, 200, 0.3);
+    border-radius: 4px;
+}
+
+.hero .author-name {
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0.2em 0.5em;
+    background-color: rgba(200, 200, 200, 0.3);
+    border-radius: 4px;
 }
 
 /* Author Section Styles */
@@ -100,11 +141,11 @@ a:hover {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 20px auto;
-    padding: 10px;
-    width: 70%;
+    margin: 20px -20px;
+    padding: 10px 20px;
+    width: calc(100% + 40px);
     text-align: center;
-    background-color: #414d41b9;
+    background-color: #161816b9;
     color: #e9e7e1;
 }
 
@@ -142,6 +183,13 @@ blockquote {
 .section li {
     margin-bottom: 15px;
 }
+
+.section li a strong {
+    background-color: #17a21775;
+    padding: 2px 4px;
+    border-radius: 2px;
+}
+
 
 /* Mini Gallery Styles */
 .mini-gallery {
@@ -188,23 +236,6 @@ blockquote {
     color: #9E9E9E;
 }
 
-.email-form p {
-    font-size: 1.2em;
-    color: #7ba87d;
-    text-align: center;
-}
-
-.email-form button {
-    background-color: #000000;
-    outline: 2px solid #9E9E9E;
-    color: #b0baaf;
-}
-
-.email-form button:hover {
-    background-color: #9E9E9E;
-    color: #000000;
-    cursor: pointer;
-}
 
 footer {
     text-align: center;
@@ -231,8 +262,35 @@ footer {
         margin: 20px 0px;
     }
 
+    .hero-content {
+        flex-direction: row;
+        gap: 10px;
+        padding: 5px 15px;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .logo-container {
+        width: 60px;
+        height: 60px;
+        padding: 6px;
+    }
+
+    .hero-logo {
+        width: 60px;
+    }
+
+    .hero-text {
+        flex: 1;
+    }
+
     .hero h1 {
-        font-size: 1.2em;
+        font-size: 1em;
+        line-height: 1.2;
+    }
+
+    .hero .author-name {
+        font-size: 0.7em;
     }
 
     .gallery-container {
