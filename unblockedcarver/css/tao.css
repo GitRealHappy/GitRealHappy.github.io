@@ -127,6 +127,36 @@ a:hover {
     }
 }
 
+/* Add a specific media query for landscape orientation on phones */
+@media (orientation: landscape) and (max-height: 500px) {
+    .hero-title span {
+        font-size: min(5.5vw, 2.5rem);
+        letter-spacing: -0.12em;
+        transform: scaleX(0.95);
+        width: 98%;
+        padding: 0 1%;
+    }
+    
+    .hero-title {
+        bottom: 4px;
+    }
+    
+    .author-banner span {
+        font-size: min(4vw, 1.8rem);
+        letter-spacing: -0.08em;
+    }
+}
+
+/* Add specific handling for mid-sized screens in landscape */
+@media (min-width: 640px) and (max-width: 960px) {
+    .hero-title span {
+        font-size: min(7vw, 3.2rem);
+        letter-spacing: -0.08em;
+        width: 98%;
+        padding: 0 1%;
+    }
+}
+
 @media (min-width: 1024px) {
     .hero-title span {
         letter-spacing: -0.02em;
