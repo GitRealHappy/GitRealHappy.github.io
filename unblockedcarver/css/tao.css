@@ -78,7 +78,7 @@ a:hover {
     filter: grayscale(25%);
     opacity: 0.9;
     padding: 0;
-    margin-bottom: 2px; /* Changed from 30px to allow exact positioning */
+    margin-bottom: 2px;
     position: relative;
     overflow: hidden;
 }
@@ -92,32 +92,31 @@ a:hover {
     margin: 0;
     padding: 0;
     text-align: center;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .hero-title span {
     display: inline-block;
     color: #0c0c0a;
-    font-size: min(11vw, 4rem); /* Reduced maximum size */
+    font-size: min(11vw, 4rem);
     font-weight: 900;
     line-height: 0.85;
     letter-spacing: -0.04em;
     font-family: 'Impact', 'Arial Black', sans-serif;
     text-transform: uppercase;
     -webkit-text-stroke: 1px #15170c;
-    transform: scaleX(1.03); /* Slightly stretch horizontally */
+    transform: scaleX(1.03);
     transform-origin: center;
     background-color: rgba(200, 200, 200, 0.3);
     padding: 0 0;
     width: 100%;
     box-sizing: border-box;
     white-space: nowrap;
-    /* Add text scaling to ensure it fits */
     text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }
-
-
 
 /* Media queries for different screen sizes */
 @media (min-width: 769px) {
@@ -376,13 +375,16 @@ footer {
 
     .hero-title {
         bottom: 5px;
+        overflow: hidden;
     }
 
     .hero-title span {
-        font-size: 7.5vw;
-        letter-spacing: -0.08em;
-        transform: scaleX(1.08);
+        font-size: 6.5vw;
+        letter-spacing: -0.1em;
+        transform: scaleX(1.05);
         line-height: 0.95;
+        max-width: 100%;
+        overflow: hidden;
     }
 }
 
