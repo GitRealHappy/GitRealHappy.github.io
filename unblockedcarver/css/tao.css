@@ -413,8 +413,9 @@ footer {
     text-stroke: 0.8px #000000;
     transform: scaleX(1.03);
     transform-origin: center;
+    background-color: rgba(200, 200, 200, 0.3);
     margin: 6px 0;
-    padding: 0px 0px;
+    padding: 0px 4px;
     width: auto; /* Only as wide as the text */
     box-sizing: border-box;
     white-space: nowrap;
@@ -457,6 +458,6 @@ footer {
         font-size: 6vw;
         letter-spacing: -0.05em;
         transform: scaleX(1.15);
-        -webkit-text-stroke: 0px #000000;
+        -webkit-text-stroke: 0.5px #000000;
     }
 }
