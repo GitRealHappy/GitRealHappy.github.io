@@ -72,13 +72,13 @@ a:hover {
     justify-content: center;
     width: 100%;
     height: 300px;
-    outline: 8px solid black;
+    outline: 8px solid rgba(200, 200, 200, 0.3);
     background-size: cover;
     background-position: center;
     filter: grayscale(25%);
     opacity: 0.9;
     padding: 0;
-    margin-bottom: 0; /* Changed from 30px to allow exact positioning */
+    margin-bottom: 2px; /* Changed from 30px to allow exact positioning */
     position: relative;
     overflow: hidden;
 }
@@ -105,7 +105,6 @@ a:hover {
     font-family: 'Impact', 'Arial Black', sans-serif;
     text-transform: uppercase;
     -webkit-text-stroke: 1px #15170c;
-    text-stroke: 1px #15170c;
     transform: scaleX(1.03); /* Slightly stretch horizontally */
     transform-origin: center;
     background-color: rgba(200, 200, 200, 0.3);
@@ -118,11 +117,7 @@ a:hover {
     -webkit-text-size-adjust: 100%;
 }
 
-/* Remove the pseudo-elements */
-.hero-title::before,
-.hero-title::after {
-    content: none;
-}
+
 
 /* Media queries for different screen sizes */
 @media (min-width: 769px) {
