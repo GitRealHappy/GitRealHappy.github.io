@@ -68,73 +68,117 @@ a:hover {
 /* Hero section for article image */
 .hero {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: center;
     width: 100%;
     height: 300px;
     outline: 8px solid black;
     background-size: cover;
     background-position: center;
-    filter: grayscale(20%);
+    filter: grayscale(25%);
     opacity: 0.9;
-    padding: 10px 10px;
-    margin-bottom: 50px;
+    padding: 0;
+    margin-bottom: 0; /* Changed from 30px to allow exact positioning */
+    position: relative;
+    overflow: hidden;
 }
 
-.hero-content {
+.hero-title {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: visible;
+}
+
+.hero-title span {
+    display: inline-block;
+    color: #0c0c0a;
+    font-size: min(11vw, 4rem); /* Reduced maximum size */
+    font-weight: 900;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #15170c;
+    text-stroke: 1px #15170c;
+    transform: scaleX(1.03); /* Slightly stretch horizontally */
+    transform-origin: center;
+    background-color: rgba(200, 200, 200, 0.3);
+    padding: 0 0;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: nowrap;
+    /* Add text scaling to ensure it fits */
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Remove the pseudo-elements */
+.hero-title::before,
+.hero-title::after {
+    content: none;
+}
+
+/* Media queries for different screen sizes */
+@media (min-width: 769px) {
+    .hero-title span {
+        letter-spacing: -0.03em;
+        transform: scaleX(1.01);
+        font-size: min(9vw, 3.8rem);
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-title span {
+        letter-spacing: -0.02em;
+        transform: scaleX(1);
+        font-size: min(7vw, 3.6rem);
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-title span {
+        letter-spacing: -0.02em;
+        transform: scaleX(1);
+        font-size: 3.5rem; /* Fixed size for largest screens */
+    }
+}
+
+.logo-section {
     display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 5px 100px;
-    border-radius: 8px;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 10px;
 }
 
 .logo-container {
     width: 100px;
     height: 100px;
-    background-color: rgba(200, 200, 200, 0.3);
+    background-color: rgba(200, 200, 200, 0.233);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
 }
 
 .hero-logo {
-    width: 100%;
-    height: auto;
-    filter: grayscale(20%);
+width: 120px;
 }
+
 
 .hero-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.3em;
+    flex: 1;
 }
 
-.hero h1 {
-    color: #0c0c0a;
-    font-size: 1.6em;
-    font-weight: 700;
-    text-align: center;
-    -webkit-text-stroke: 1px #15170c;
-    text-stroke: 1px #15170c;
-    text-decoration-thickness: 10px;
-    margin: 0;
-    padding: 0.2em 0.5em;
-    background-color: rgba(200, 200, 200, 0.3);
-    border-radius: 4px;
-}
-
-.hero .author-name {
-    font-size: 0.8em;
-    margin: 0;
-    padding: 0.2em 0.5em;
-    background-color: rgba(200, 200, 200, 0.3);
-    border-radius: 4px;
-}
 
 /* Author Section Styles */
 .author-section {
@@ -190,7 +234,6 @@ blockquote {
     border-radius: 2px;
 }
 
-
 /* Mini Gallery Styles */
 .mini-gallery {
     margin-top: 20px;
@@ -236,14 +279,12 @@ blockquote {
     color: #9E9E9E;
 }
 
-
 footer {
     text-align: center;
     margin-top: 60px;
     font-size: 0.9em;
     color: #9E9E9E;
 }
-
 
 @media (max-width: 768px) {
     main {
@@ -271,13 +312,13 @@ footer {
     }
 
     .logo-container {
-        width: 60px;
-        height: 60px;
-        padding: 6px;
+        width: 90px;
+        height: 90px;
+        padding: 0px;
     }
 
     .hero-logo {
-        width: 60px;
+        width: 120px;
     }
 
     .hero-text {
@@ -304,5 +345,118 @@ footer {
         border-radius: 5px;
         filter: grayscale(20%);
         opacity: 1;
+    }
+
+    .hero-title span {
+        font-size: 9vw;
+        letter-spacing: -0.06em;
+        transform: scaleX(1.05);
+        line-height: 0.9;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        width: 95%;
+        padding: 5px 10px;
+    }
+
+    .logo-container {
+        width: 90px;
+        height: 90px;
+        padding: 0px;
+    }
+
+    .hero-logo {
+        width: 120px;
+    }
+
+    .hero h1 {
+        font-size: 0.9em;
+    }
+
+    .hero .author-name {
+        font-size: 0.6em;
+    }
+
+    .hero-title {
+        bottom: 5px;
+    }
+
+    .hero-title span {
+        font-size: 7.5vw;
+        letter-spacing: -0.08em;
+        transform: scaleX(1.08);
+        line-height: 0.95;
+    }
+}
+
+/* Author banner styles */
+.author-banner {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 30px 0; /* Base margin */
+    position: relative;
+    z-index: 1;
+}
+
+.author-banner span {
+    display: inline-block;
+    color: #0c0c0a;
+    font-size: min(7vw, 2.5rem);
+    font-weight: 800;
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.8px #000000;
+    text-stroke: 0.8px #000000;
+    transform: scaleX(1.03);
+    transform-origin: center;
+    margin: 6px 0;
+    padding: 0px 0px;
+    width: auto; /* Only as wide as the text */
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+/* Media queries for author banner responsiveness */
+@media (min-width: 769px) {
+    .author-banner span {
+        letter-spacing: -0.02em;
+        transform: scaleX(1.01);
+        font-size: min(6vw, 2.3rem);
+    }
+}
+
+@media (min-width: 1024px) {
+    .author-banner span {
+        letter-spacing: -0.015em;
+        transform: scaleX(1);
+        font-size: min(5vw, 2.1rem);
+    }
+}
+
+@media (min-width: 1200px) {
+    .author-banner span {
+        letter-spacing: -0.01em;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .author-banner span {
+        font-size: 6vw;
+        letter-spacing: -0.05em;
+        transform: scaleX(1.05);
+    }
+}
+
+@media (max-width: 480px) {
+    .author-banner span {
+        font-size: 6vw;
+        letter-spacing: -0.05em;
+        transform: scaleX(1.15);
+        -webkit-text-stroke: 0px #000000;
     }
 }
