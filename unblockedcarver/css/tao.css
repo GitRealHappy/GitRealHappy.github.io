@@ -242,6 +242,15 @@ blockquote {
     font-style: italic;
 }
 
+/* Fix blockquote spacing */
+blockquote p {
+    margin-bottom: 0.5em; /* Reduce bottom margin for paragraphs inside blockquotes */
+}
+
+blockquote footer {
+    margin-top: 0.3em; /* Reduce space between the quote and attribution */
+}
+
 /* Add extra spacing for mindful reading */
 .section {
     margin-top: 15px;
