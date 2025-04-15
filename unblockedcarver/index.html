@@ -7,6 +7,33 @@
     <title>Unblocked Carver</title>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/tao.css"> <!-- External CSS linked here -->
+    <style>
+        /* Custom styles for Load More functionality */
+        .hidden-article {
+            display: none;
+        }
+        
+        .load-more-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .load-more-btn {
+            background-color: #5ca95e;
+            color: #fff;
+            border: none;
+            padding: 10px 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            border-radius: 4px;
+            font-family: 'Source Sans Pro', sans-serif;
+            transition: background-color 0.3s;
+        }
+        
+        .load-more-btn:hover {
+            background-color: #4a8a4c;
+        }
+    </style>
 </head>
 <body>
 
@@ -25,8 +52,9 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="articles-container">
         <ul>
+          <!-- Initially visible articles -->
           <li><a href="block5.html"><strong>#5:</strong> The Shadow Method: Transform Pain Into Unstoppable Creative Genius</a><br>
           (April 8, 2025)</li>
           <li><a href="block4-5.html"><strong>#4.5:</strong> Anguish and The Way of Poetry</a><br>
@@ -35,17 +63,22 @@
           (February 4, 2025)</li>
           <li><a href="block3.html"><strong>#3:</strong> Unblocking Your Generative Drive: The Most Important Skill of the 21st Century</a><br>
           (December 9, 2024)</li>
-        <li><a href="block2.html"><strong>#2:</strong> The Uncarved Block: Unlock Motivation Through Self-Knowledge</a><br>
-        (November 3, 2024)</li>
-        <li><a href="block1.html"><strong>#1:</strong> From "Dukkha" to Dharma: A Path to Creative Liberation</a><br>
-        (October 15, 2024)</li>
+          
+          <!-- Hidden articles (will display when Load More is clicked) -->
+          <li class="hidden-article"><a href="block2.html"><strong>#2:</strong> The Uncarved Block: Unlock Motivation Through Self-Knowledge</a><br>
+            (November 3, 2024)</li>
+          <li class="hidden-article"><a href="block1.html"><strong>#1:</strong> From "Dukkha" to Dharma: A Path to Creative Liberation</a><br>
+            (October 15, 2024)</li>
         </ul>
+    </div>
+    
+    <div class="load-more-container">
+        <button class="load-more-btn" id="load-more-btn">Load More</button>
     </div>
     
     <div class="email-form">
         <iframe src="https://embeds.beehiiv.com/d090f079-e994-4f8a-9845-e3d83d0e656d" data-test-id="beehiiv-embed" width="100%" height="280" frameborder="0" scrolling="no" style="border-radius: 0px; border: 1px solid #000000; margin: 0; background-color: transparent;"></iframe>
-      </div>
-
+    </div>
 
     <!-- About the Author Section -->
     <div class="author-section">
@@ -53,17 +86,36 @@
           <a href="../index.html">Oakmoss Woodcraft</a><br>
           and the teacher of <br>
           <a href="../wayfinder/index.html">The Creative Wayfinder.</a></p>
-      </div>
-      
-
-
-
-
+    </div>
     
     <footer>
         © 2024 The Unblocked Carver. All rights reserved.
     </footer>
 </main>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const loadMoreBtn = document.getElementById('load-more-btn');
+        const hiddenArticles = document.querySelectorAll('.hidden-article');
+        let visibleCount = 0;
+        const articlesToShowPerClick = 5;
+        
+        loadMoreBtn.addEventListener('click', function() {
+            const nextBatch = Array.from(hiddenArticles).slice(visibleCount, visibleCount + articlesToShowPerClick);
+            
+            nextBatch.forEach(article => {
+                article.classList.remove('hidden-article');
+            });
+            
+            visibleCount += articlesToShowPerClick;
+            
+            // Hide the button if all articles are visible
+            if (visibleCount >= hiddenArticles.length) {
+                loadMoreBtn.style.display = 'none';
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
