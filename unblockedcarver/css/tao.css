@@ -12,7 +12,7 @@ hr {
 }
 
 body {
-    background: linear-gradient(90deg, #23241a, #2a2b20, #2f3124);
+    background: #9FA37A;
     color: #cbcbcb;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 24px;
@@ -25,9 +25,9 @@ main {
     max-width: 750px;
     margin: 30px auto;
     padding: 40px;
-    outline: 2px solid #b7a8959d;
+    outline: 5px solid #5a091df9;
     border-radius: 12px;
-    background-color: #75999a0d;
+    background-color: #0a0606f4;
 }
 
 h1, h2 {
@@ -55,7 +55,7 @@ p {
 }
 
 a {
-    color: #76a5c6;
+    color: #579aca;
     text-decoration: none;
     text-align: center;
 }
@@ -101,7 +101,7 @@ a:hover {
     font-size: min(11vw, 4rem);
     font-weight: 900;
     line-height: 0.85;
-    letter-spacing: -0.04em;
+    letter-spacing: 0;
     font-family: 'Impact', 'Arial Black', sans-serif;
     text-transform: uppercase;
     -webkit-text-stroke: 1px #15170c;
@@ -121,7 +121,7 @@ a:hover {
 /* Media queries for different screen sizes */
 @media (min-width: 769px) {
     .hero-title span {
-        letter-spacing: -0.03em;
+        letter-spacing: 0.01em;
         transform: scaleX(1.01);
         font-size: min(9vw, 3.8rem);
     }
@@ -131,7 +131,7 @@ a:hover {
 @media (orientation: landscape) and (max-height: 500px) {
     .hero-title span {
         font-size: min(5.5vw, 2.5rem);
-        letter-spacing: -0.12em;
+        letter-spacing: 0.02em;
         transform: scaleX(0.95);
         width: 98%;
         padding: 0 1%;
@@ -143,15 +143,15 @@ a:hover {
     
     .author-banner span {
         font-size: min(4vw, 1.8rem);
-        letter-spacing: -0.08em;
+        letter-spacing: -0.01em;
     }
 }
 
 /* Add specific handling for mid-sized screens in landscape */
 @media (min-width: 640px) and (max-width: 960px) {
     .hero-title span {
-        font-size: min(7vw, 3.2rem);
-        letter-spacing: -0.08em;
+        font-size: min(5vw, 2.3rem);
+        letter-spacing: 0.01em;
         width: 98%;
         padding: 0 1%;
     }
@@ -159,7 +159,7 @@ a:hover {
 
 @media (min-width: 1024px) {
     .hero-title span {
-        letter-spacing: -0.02em;
+        letter-spacing: 0.01em;
         transform: scaleX(1);
         font-size: min(7vw, 3.6rem);
     }
@@ -167,7 +167,7 @@ a:hover {
 
 @media (min-width: 1200px) {
     .hero-title span {
-        letter-spacing: -0.02em;
+        letter-spacing: 0.01em;
         transform: scaleX(1);
         font-size: 3.5rem; /* Fixed size for largest screens */
     }
@@ -382,7 +382,7 @@ footer {
 
     .hero-title span {
         font-size: 9vw;
-        letter-spacing: -0.06em;
+        letter-spacing: 0.02em;
         transform: scaleX(1.05);
         line-height: 0.9;
     }
@@ -419,7 +419,7 @@ footer {
 
     .hero-title span {
         font-size: 6.5vw;
-        letter-spacing: -0.1em;
+        letter-spacing: 0.03em;
         transform: scaleX(1.05);
         line-height: 0.95;
         max-width: 100%;
@@ -492,7 +492,7 @@ footer {
 @media (max-width: 480px) {
     .author-banner span {
         font-size: 6vw;
-        letter-spacing: -0.05em;
+        letter-spacing: -0.01em;
         transform: scaleX(1.15);
         -webkit-text-stroke: 0.5px #000000;
     }
