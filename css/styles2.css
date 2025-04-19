@@ -171,13 +171,70 @@ main {
 }
 
 .email-form h2 {
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin-top: -40px;
-    padding-bottom: 20px;
-    color: #F6E4CE;
+    font-size: 1.2rem;
+    margin-top: -20px;
 }
 
+/* Wayfinder Banner Section */
+#wayfinder-banner {
+    background-color: #9FA37A;
+    color: #F6E4CE;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0 auto 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-top: 3px solid rgb(43, 70, 43);
+    border-bottom: 3px solid rgb(43, 70, 43);
+}
+
+#wayfinder-banner .banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#wayfinder-banner h2 {
+    font-size: 2.6rem;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#wayfinder-banner h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+#wayfinder-banner p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#wayfinder-banner .offered-by {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#wayfinder-banner .cta-button {
+    background-color: rgb(43, 70, 43);
+    color: #F6E4CE;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    border: 2px solid #F6E4CE;
+}
+
+#wayfinder-banner .cta-button:hover {
+    background-color: #F6E4CE;
+    color: rgb(43, 70, 43);
+    transform: scale(1.05);
+    text-decoration: none;
+}
 
 /* Wallet Section */
 #wallets {
@@ -538,9 +595,25 @@ footer .social-icons a:hover {
 
     .email-form h2 {
         font-size: 1.4rem;
-        font-weight: 500;
         margin-top: -30px;
-        padding-bottom: 20px;
+        padding-bottom: 15px;
+    }
+
+    #wayfinder-banner h2 {
+        font-size: 2rem;
+    }
+
+    #wayfinder-banner h3 {
+        font-size: 1.5rem;
+    }
+
+    #wayfinder-banner p {
+        font-size: 1.2rem;
+    }
+
+    #wayfinder-banner .cta-button {
+        font-size: 1.1rem;
+        padding: 10px 20px;
     }
 
     #wallets .wallet-image {
