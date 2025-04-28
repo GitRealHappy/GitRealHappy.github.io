@@ -6,142 +6,455 @@
     <meta name="description" content="Creative Power. Future Skills. Inner Peace.">
     <title>Unblocked Carver</title>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/tao.css"> <!-- External CSS linked here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Custom styles for Load More functionality */
+        :root {
+            --primary-color: #979b6e;
+            --secondary-color: #6B3E0A;
+            --light-color: #F6E4CE;
+            --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: var(--light-color);
+            color: var(--secondary-color);
+            overflow-x: hidden;
+        }
+
+        .hero {
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .hero-title {
+            color: var(--light-color);
+            font-size: 3rem;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .author-banner {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .logo-section {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .hero-logo {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            padding: 0 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 85%;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.2s ease;
+            border: 2px solid black;
+        }
+
+        .article-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .article-image {
+            width: 100%;
+            height: 200px;
+            background-color: var(--primary-color);
+            object-fit: cover;
+        }
+
+        .article-content {
+            padding: 1.5rem;
+        }
+
+        .article-number {
+            color: black;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .article-title {
+            margin: 0.5rem 0;
+            color: var(--secondary-color);
+            font-size: 1.4rem;
+            line-height: 1.4;
+        }
+
+        .article-metadata {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .article-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tag {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            padding: 0.2rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+
         .hidden-article {
             display: none;
         }
-        
+
         .load-more-container {
             text-align: center;
-            margin: 30px 0;
-            position: relative;
-            z-index: 1;
-            /* Prevent any potential stacking context issues */
+            margin: 1.5rem 0;
         }
-        
+
         .load-more-btn {
-            background-color: #5ca95e;
-            color: #fff;
-            border: none;
-            padding: 10px 25px;
-            font-size: 1.1em;
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            border: 2px solid var(--secondary-color);
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
             cursor: pointer;
-            border-radius: 4px;
-            font-family: 'Source Sans Pro', sans-serif;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s ease, background-color 0.2s ease;
-            /* Use transform instead of changing other properties */
+            font-weight: bold;
+            letter-spacing: 0.5px;
             position: relative;
-            /* Ensure button stays in its own layer */
-            will-change: transform;
-            /* Optimize for animations */
-            -webkit-font-smoothing: antialiased;
+            overflow: hidden;
         }
-        
+
         .load-more-btn:hover {
-            background-color: #4a8a4c;
-            transform: translateY(-1px);
-            /* Small lift effect instead of any size changes */
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
-        .load-more-btn:active {
-            transform: translateY(0);
+        .load-more-btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.2),
+                transparent
+            );
+            transition: 0.5s;
         }
 
-        /* Ensure container heights are stable */
-        #articles-container {
-            position: relative;
-            margin-bottom: 20px;
+        .load-more-btn:hover::after {
+            left: 100%;
         }
 
-        #articles-container ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            min-height: 350px;
+        .email-form {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .author-section {
+            text-align: center;
+            margin: 3rem 0;
+            padding: 2rem;
+            background-color: var(--primary-color);
+            color: var(--light-color);
+        }
+
+        .author-section a {
+            color: rgb(6, 51, 146);
+            text-decoration: none;
+            outline: 1px solid black;
+            border-radius: 3px;
+            padding: 0 3px;
+            background-color: rgba(246, 246, 188, 0.309);
+        }
+
+        .author-section a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--secondary-color);
+            color: var(--light-color);
+        }
+
+        @media (max-width: 768px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+                width: 100%;
+                padding: 0 1rem;
+                margin: 0 auto;
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+
+            .article-card {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .article-content {
+                padding: 1.25rem;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .articles-grid {
+                padding: 0 0.75rem;
+            }
+
+            .article-metadata {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            .article-tags {
+                flex-wrap: wrap;
+            }
         }
     </style>
 </head>
 <body>
-
-<main>
-    <!-- Hero section -->
     <div class="hero" style="background-image: url(../images/gallery/gallery5.jpeg);">
-        <h1 class="hero-title"><span>THE&nbsp;UNBLOCKED&nbsp;CARVER</span></h1>
+        <h1 class="hero-title">THE UNBLOCKED CARVER</h1>
     </div>
+    
     <div class="author-banner">
-        <span>BY&nbsp;JESSE&nbsp;JAMES&nbsp;BOYES</span>
+        <span>BY JESSE JAMES BOYES</span>
     </div>
 
     <div class="logo-section">
-        <div class="logo-container">
-            <img src="../images/unblockedlogo.png" alt="Unblocked Carver Logo" class="hero-logo">
-        </div>
+        <img src="../images/unblockedlogo.png" alt="Unblocked Carver Logo" class="hero-logo">
     </div>
 
-    <div class="section" id="articles-container">
-        <ul style="min-height: 350px;">
-          <!-- Initially visible articles -->
-          <li><a href="block7.html"><strong>#7:</strong> Speeding Up By Slowing Down: Flow and Feng Shui</a><br>
-          (April 23, 2025)</li>
-          <li><a href="block6.html"><strong>#6:</strong> How I'm Escaping the "Creative Island" (And You Can Too)</a><br>
-          (April 16, 2025)</li>
-          <li><a href="block5.html"><strong>#5:</strong> The Shadow Method: Transform Pain Into Unstoppable Creative Genius</a><br>
-          (April 8, 2025)</li>
-          <li><a href="block4-5.html"><strong>#4.5:</strong> Anguish and The Way of Poetry</a><br>
-          (March 22, 2025)</li>
-          <li><a href="block4.html"><strong>#4:</strong> The Tao of AI: Finding Meaning in a Machine World</a><br>
-          (February 4, 2025)</li>
-          <!-- Hidden articles (will display when Load More is clicked) -->
+    <div class="articles-grid">
+        <!-- Initially visible articles -->
+        <a href="block7.html" style="text-decoration: none; color: inherit;">
+            <article class="article-card">
+                <img src="../images/logo.png" alt="Article 7 thumbnail" class="article-image">
+                <div class="article-content">
+                    <div class="article-number">#7</div>
+                    <h2 class="article-title">Speeding Up By Slowing Down: Flow and Feng Shui</h2>
+                    <div class="article-metadata">
+                        <span><i class="far fa-calendar"></i> April 23, 2025</span>
+                        <span><i class="far fa-clock"></i> 3 min read</span>
+                    </div>
+                    <div class="article-tags">
+                        <span class="tag">Productivity</span>
+                        <span class="tag">Mindfulness</span>
+                    </div>
+                </div>
+            </article>
+        </a>
 
-          <li class="hidden-article"><a href="block3.html"><strong>#3:</strong> Unblocking Your Generative Drive: The Most Important Skill of the 21st Century</a><br>
-          (December 9, 2024)</li>
-          <li class="hidden-article"><a href="block2.html"><strong>#2:</strong> The Uncarved Block: Unlock Motivation Through Self-Knowledge</a><br>
-            (November 3, 2024)</li>
-          <li class="hidden-article"><a href="block1.html"><strong>#1:</strong> From "Dukkha" to Dharma: A Path to Creative Liberation</a><br>
-            (October 15, 2024)</li>
-        </ul>
+        <a href="block6.html" style="text-decoration: none; color: inherit;">
+            <article class="article-card">
+                <img src="../images/logo.png" alt="Article 6 thumbnail" class="article-image">
+                <div class="article-content">
+                    <div class="article-number">#6</div>
+                    <h2 class="article-title">How I'm Escaping the "Creative Island" (And You Can Too)</h2>
+                    <div class="article-metadata">
+                        <span><i class="far fa-calendar"></i> April 16, 2025</span>
+                        <span><i class="far fa-clock"></i> 4 min read</span>
+                    </div>
+                    <div class="article-tags">
+                        <span class="tag">Creativity</span>
+                        <span class="tag">Growth</span>
+                    </div>
+                </div>
+            </article>
+        </a>
+
+        <a href="block5.html" style="text-decoration: none; color: inherit;">
+            <article class="article-card">
+                <img src="../images/logo.png" alt="Article 5 thumbnail" class="article-image">
+                <div class="article-content">
+                    <div class="article-number">#5</div>
+                    <h2 class="article-title">The Shadow Method: Transform Pain Into Unstoppable Creative Genius</h2>
+                    <div class="article-metadata">
+                        <span><i class="far fa-calendar"></i> April 8, 2025</span>
+                        <span><i class="far fa-clock"></i> 20 min read</span>
+                    </div>
+                    <div class="article-tags">
+                        <span class="tag">Psychology</span>
+                        <span class="tag">Creativity</span>
+                    </div>
+                </div>
+            </article>
+        </a>
+
+        <a href="block4-5.html" style="text-decoration: none; color: inherit;">
+            <article class="article-card">
+                <img src="../images/logo.png" alt="Article 4.5 thumbnail" class="article-image">
+                <div class="article-content">
+                    <div class="article-number">#4.5</div>
+                    <h2 class="article-title">Anguish and The Way of Poetry</h2>
+                    <div class="article-metadata">
+                        <span><i class="far fa-calendar"></i> March 22, 2025</span>
+                        <span><i class="far fa-clock"></i> 8 min read</span>
+                    </div>
+                    <div class="article-tags">
+                        <span class="tag">Poetry</span>
+                        <span class="tag">Art</span>
+                    </div>
+                </div>
+            </article>
+        </a>
+
+        <!-- Hidden articles -->
+        <a href="block4.html" style="text-decoration: none; color: inherit;">
+            <article class="article-card hidden-article">
+                <img src="../images/logo.png" alt="Article 4 thumbnail" class="article-image">
+                <div class="article-content">
+                    <div class="article-number">#4</div>
+                    <h2 class="article-title">The Tao of AI: Finding Meaning in a Machine World</h2>
+                    <div class="article-metadata">
+                        <span><i class="far fa-calendar"></i> February 4, 2025</span>
+                        <span><i class="far fa-clock"></i> 20 min read</span>
+                    </div>
+                    <div class="article-tags">
+                        <span class="tag">Technology</span>
+                        <span class="tag">Philosophy</span>
+                    </div>
+                </div>
+            </article>
+        </a>
+
+        <a href="block3.html" style="text-decoration: none; color: inherit;">
+            <article class="article-card hidden-article">
+                <img src="../images/logo.png" alt="Article 3 thumbnail" class="article-image">
+                <div class="article-content">
+                    <div class="article-number">#3</div>
+                    <h2 class="article-title">Unblocking Your Generative Drive: The Most Important Skill of the 21st Century</h2>
+                    <div class="article-metadata">
+                        <span><i class="far fa-calendar"></i> December 9, 2024</span>
+                        <span><i class="far fa-clock"></i> 12 min read</span>
+                    </div>
+                    <div class="article-tags">
+                        <span class="tag">Productivity</span>
+                        <span class="tag">Innovation</span>
+                    </div>
+                </div>
+            </article>
+        </a>
+
+        <a href="block2.html" style="text-decoration: none; color: inherit;">
+            <article class="article-card hidden-article">
+                <img src="../images/logo.png" alt="Article 2 thumbnail" class="article-image">
+                <div class="article-content">
+                    <div class="article-number">#2</div>
+                    <h2 class="article-title">The Uncarved Block: Unlock Motivation Through Self-Knowledge</h2>
+                    <div class="article-metadata">
+                        <span><i class="far fa-calendar"></i> November 3, 2024</span>
+                        <span><i class="far fa-clock"></i> 15 min read</span>
+                    </div>
+                    <div class="article-tags">
+                        <span class="tag">Psychology</span>
+                        <span class="tag">Growth</span>
+                    </div>
+                </div>
+            </article>
+        </a>
+
+        <a href="block1.html" style="text-decoration: none; color: inherit;">
+            <article class="article-card hidden-article">
+                <img src="../images/logo.png" alt="Article 1 thumbnail" class="article-image">
+                <div class="article-content">
+                    <div class="article-number">#1</div>
+                    <h2 class="article-title">From "Dukkha" to Dharma: A Path to Creative Liberation</h2>
+                    <div class="article-metadata">
+                        <span><i class="far fa-calendar"></i> October 15, 2024</span>
+                        <span><i class="far fa-clock"></i> 18 min read</span>
+                    </div>
+                    <div class="article-tags">
+                        <span class="tag">Spirituality</span>
+                        <span class="tag">Creativity</span>
+                    </div>
+                </div>
+            </article>
+        </a>
     </div>
-    
+
     <div class="load-more-container">
         <button class="load-more-btn" id="load-more-btn">Load More</button>
     </div>
-    
+
     <div class="email-form">
         <iframe src="https://embeds.beehiiv.com/d090f079-e994-4f8a-9845-e3d83d0e656d" data-test-id="beehiiv-embed" width="100%" height="280" frameborder="0" scrolling="no" style="border-radius: 0px; border: 1px solid #000000; margin: 0; background-color: transparent;"></iframe>
     </div>
 
-    <!-- About the Author Section -->
     <div class="author-section">
-        <p style="text-align:center; font-size: 1em;"><a href="../jesseboyes.html">Jesse James Boyes</a> is the creator of <br>
-          <a href="../index.html">Oakmoss Woodcraft</a><br>
-          and the teacher of <br>
-          <a href="https://stan.store/oakmoss/p/the-creative-wayfinder">The Creative Wayfinder.</a></p>
+        <p>
+            <a href="../jesseboyes.html">Jesse James Boyes</a> is the creator of<br>
+            <a href="../index.html">Oakmoss Woodcraft</a><br>
+            and the teacher of<br>
+            <a href="https://stan.store/oakmoss/p/the-creative-wayfinder">The Creative Wayfinders.</a>
+        </p>
     </div>
-    
+
     <footer>
         © 2024 The Unblocked Carver. All rights reserved.
     </footer>
-</main>
 
-<script>
+    <script>
     document.addEventListener('DOMContentLoaded', function() {
         const loadMoreBtn = document.getElementById('load-more-btn');
-        const articlesToShowPerClick = 5;
-
-        // Debounce function to prevent multiple rapid clicks
-        function debounce(func, wait) {
-            let timeout;
-            return function executedFunction(...args) {
-                const later = () => {
-                    clearTimeout(timeout);
-                    func(...args);
-                };
-                clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
-            };
-        }
+        const articlesToShowPerClick = 4;
 
         // Handle the load more action
         const handleLoadMore = debounce(function() {
@@ -165,11 +478,23 @@
                     loadMoreBtn.style.display = 'none';
                 }
             });
-        }, 250); // 250ms debounce
+        }, 250);
+
+        // Debounce function to prevent multiple rapid clicks
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
 
         loadMoreBtn.addEventListener('click', handleLoadMore);
     });
-</script>
-
+    </script>
 </body>
 </html>
