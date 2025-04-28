@@ -16,6 +16,9 @@
         .load-more-container {
             text-align: center;
             margin: 30px 0;
+            position: relative;
+            z-index: 1;
+            /* Prevent any potential stacking context issues */
         }
         
         .load-more-btn {
@@ -27,11 +30,36 @@
             cursor: pointer;
             border-radius: 4px;
             font-family: 'Source Sans Pro', sans-serif;
-            transition: background-color 0.3s;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            /* Use transform instead of changing other properties */
+            position: relative;
+            /* Ensure button stays in its own layer */
+            will-change: transform;
+            /* Optimize for animations */
+            -webkit-font-smoothing: antialiased;
         }
         
         .load-more-btn:hover {
             background-color: #4a8a4c;
+            transform: translateY(-1px);
+            /* Small lift effect instead of any size changes */
+        }
+
+        .load-more-btn:active {
+            transform: translateY(0);
+        }
+
+        /* Ensure container heights are stable */
+        #articles-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        #articles-container ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            min-height: 350px;
         }
     </style>
 </head>
@@ -53,11 +81,11 @@
     </div>
 
     <div class="section" id="articles-container">
-        <ul>
+        <ul style="min-height: 350px;">
           <!-- Initially visible articles -->
           <li><a href="block7.html"><strong>#7:</strong> Speeding Up By Slowing Down: Flow and Feng Shui</a><br>
           (April 23, 2025)</li>
-          <li><a href="block6.html"><strong>#6:</strong> How I'm Escaping the “Creative Island” (And You Can Too)</a><br>
+          <li><a href="block6.html"><strong>#6:</strong> How I'm Escaping the "Creative Island" (And You Can Too)</a><br>
           (April 16, 2025)</li>
           <li><a href="block5.html"><strong>#5:</strong> The Shadow Method: Transform Pain Into Unstoppable Creative Genius</a><br>
           (April 8, 2025)</li>
@@ -100,24 +128,46 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const loadMoreBtn = document.getElementById('load-more-btn');
-        const hiddenArticles = document.querySelectorAll('.hidden-article');
-        let visibleCount = 0;
         const articlesToShowPerClick = 5;
-        
-        loadMoreBtn.addEventListener('click', function() {
-            const nextBatch = Array.from(hiddenArticles).slice(visibleCount, visibleCount + articlesToShowPerClick);
-            
-            nextBatch.forEach(article => {
-                article.classList.remove('hidden-article');
+
+        // Debounce function to prevent multiple rapid clicks
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Handle the load more action
+        const handleLoadMore = debounce(function() {
+            const hiddenArticles = document.querySelectorAll('.hidden-article');
+            const nextBatch = Array.from(hiddenArticles).slice(0, articlesToShowPerClick);
+
+            // Use requestAnimationFrame for smooth DOM updates
+            requestAnimationFrame(() => {
+                nextBatch.forEach(article => {
+                    article.style.opacity = '0';
+                    article.classList.remove('hidden-article');
+                    // Fade in the article
+                    requestAnimationFrame(() => {
+                        article.style.transition = 'opacity 0.3s ease';
+                        article.style.opacity = '1';
+                    });
+                });
+
+                // Hide the button if there are no more hidden articles
+                if (document.querySelectorAll('.hidden-article').length === 0) {
+                    loadMoreBtn.style.display = 'none';
+                }
             });
-            
-            visibleCount += articlesToShowPerClick;
-            
-            // Hide the button if all articles are visible
-            if (visibleCount >= hiddenArticles.length) {
-                loadMoreBtn.style.display = 'none';
-            }
-        });
+        }, 250); // 250ms debounce
+
+        loadMoreBtn.addEventListener('click', handleLoadMore);
     });
 </script>
 
