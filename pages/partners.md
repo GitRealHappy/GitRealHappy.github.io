@@ -67,8 +67,8 @@ We are proud to collaborate with talented artists and creatives who share our va
     <div class="partner-content">
       <h3>Donna Boyes</h3>
       <p class="partner-subtitle">Impressionist Painter</p>
-      <p>A painter specializing in impressionism, creating beautiful works that capture light and emotion. Donna shares her artistic journey and beautiful creations as @artist_intheworks.</p>
-      <a href="https://www.instagram.com/artist_intheworks" class="partner-link" target="_blank" rel="noopener">View on Instagram</a>
+      <p>A painter specializing in impressionism, creating beautiful works that capture light and emotion. Donna shares her artistic journey and beautiful creations as @donnamaypaints.</p>
+      <a href="https://www.instagram.com/donna_may_paints/" class="partner-link" target="_blank" rel="noopener">View on Instagram</a>
     </div>
   </div>
 
