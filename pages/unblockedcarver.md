@@ -237,12 +237,4 @@ hide_page_header: true
   </div>
 </div>
 
-<!-- Creative Wayfinder CTA -->
-<div class="wayfinder-cta">
-  <div class="container">
-    <h3>🎯 Transform Your Creative Practice</h3>
-    <p><strong>The Creative Wayfinder</strong> — An 8-week group initiation for artists and creatives ready to master their generative drive and create with purpose.</p>
-    <a href="https://stan.store/oakmoss/p/the-creative-wayfinder" target="_blank" class="cta-button">Join The Creative Wayfinder</a>
-    <p class="cta-note"><em>Next cohort begins August 3rd, 2025</em></p>
-  </div>
-</div> 
+{% include wayfinder-cta.html %} 

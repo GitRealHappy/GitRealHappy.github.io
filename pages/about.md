@@ -34,4 +34,6 @@ For more about my writing, philosophy, and other creative endeavors, visit my pe
 
 ---
 
-*Ready to explore my work? Check out the [gallery](/gallery/) or [get in touch](/contact/) to discuss a custom piece.* 
+*Ready to explore my work? Check out the [gallery](/gallery/) or [get in touch](/contact/) to discuss a custom piece.*
+
+{% include wayfinder-cta.html %} 
