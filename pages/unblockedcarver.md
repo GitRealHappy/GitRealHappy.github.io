@@ -112,27 +112,6 @@ hide_page_header: true
       </div>
     </a>
 
-    <!-- Issue #4.5 -->
-    <a href="/unblockedcarver/issue-4-5/" class="issue-card">
-      <div class="issue-image">
-        <img src="/assets/images/rustyshovel.jpeg" alt="Anguish and Poetry" loading="lazy">
-      </div>
-      <div class="issue-content">
-        <div class="issue-number">#4.5</div>
-        <h3 class="issue-title">Anguish and The Way of Poetry</h3>
-        <div class="issue-meta">
-          <span class="date">March 22, 2025</span>
-          <span class="read-time">8 min read</span>
-        </div>
-        <div class="issue-tags">
-          <span class="tag">Poetry</span>
-          <span class="tag">Art</span>
-        </div>
-        <p class="issue-excerpt">A personal update and reflection on transforming life's difficulties into creative expression...</p>
-        <span class="read-more">Read Full Issue</span>
-      </div>
-    </a>
-
     <!-- Issue #4 -->
     <a href="/unblockedcarver/issue-4/" class="issue-card">
       <div class="issue-image">
