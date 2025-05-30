@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  {% include meta.html %}
+</head>
+<body class="{% if page.body_class %}{{ page.body_class }}{% endif %}">
+  
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Header -->
+  <header class="site-header">
+    {% include navigation.html %}
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" class="main-content" role="main">
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  {% include footer.html %}
+
+  <!-- JavaScript -->
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  
+  <!-- Page-specific JavaScript -->
+  {% if page.custom_js %}
+    {% for js_file in page.custom_js %}
+      <script src="{{ '/assets/js/' | append: js_file | relative_url }}"></script>
+    {% endfor %}
+  {% endif %}
+
+</body>
+</html> 

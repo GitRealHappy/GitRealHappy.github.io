@@ -1,0 +1,89 @@
+title: "Oakmoss Woodcraft"
+description: "Wood Art & Furniture by Jesse James Boyes - Handcrafted with timeless craftsmanship"
+baseurl: ""
+url: "https://gitrealHappy.github.io"
+
+# Author information
+author:
+  name: "Jesse James Boyes"
+  email: "jesse.boyes@oakmosswoodcraft.com"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# Collections
+collections:
+  interviews:
+    output: true
+    permalink: /interviews/:name/
+  gallery:
+    output: true
+    permalink: /gallery/:name/
+  newsletter:
+    output: true
+    permalink: /unblockedcarver/:name/
+
+# Pagination
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# SEO and social media
+twitter:
+  username: oakmoss
+facebook:
+  app_id: 3827372067482851
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /blog/:title/
+  - scope:
+      path: ""
+      type: "interviews"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "gallery"
+    values:
+      layout: "gallery"
+  - scope:
+      path: ""
+      type: "newsletter"
+    values:
+      layout: "newsletter-issue"
+      body_class: "newsletter-dark-theme"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page" 

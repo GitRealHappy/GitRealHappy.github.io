@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<article class="page">
+  
+  {% unless page.hide_page_header %}
+    {% if page.featured_image %}
+      <div class="page-hero">
+        <img src="{{ page.featured_image | relative_url }}" 
+             alt="{{ page.title }}" 
+             class="page-hero-image">
+        <div class="page-hero-overlay">
+          <div class="page-hero-content">
+            <h1 class="page-title">{{ page.title }}</h1>
+            {% if page.subtitle %}
+              <p class="page-subtitle">{{ page.subtitle }}</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% else %}
+      <div class="page-header">
+        <div class="container">
+          <h1 class="page-title">{{ page.title }}</h1>
+          {% if page.subtitle %}
+            <p class="page-subtitle">{{ page.subtitle }}</p>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+  {% endunless %}
+
+  <div class="page-content">
+    <div class="container">
+      {{ content }}
+    </div>
+  </div>
+
+</article> 

@@ -1,0 +1,996 @@
+/* The Unblocked Carver Newsletter Page Styles - Dark Mode Theme */
+
+/* Apply Dark Theme to Newsletter Page */
+body.newsletter-dark-theme {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+  
+  /* Improved Typography */
+  font-size: 1.125rem; /* Larger base font size */
+  line-height: 1.8; /* Better line spacing */
+  
+  /* Paragraphs with more spacing */
+  p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem; /* Larger spacing between paragraphs */
+    
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+      line-height: 1.9;
+    }
+  }
+  
+  /* Lighter headings for visibility on dark background */
+  h1, h2, h3, h4, h5, h6 {
+    color: #f5f5f5; /* Light color for headings */
+    font-weight: 700;
+    margin-top: 2.5rem; /* More space above headings */
+    margin-bottom: 1.5rem; /* More space below headings */
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #8B7355; /* Add underline to h2s */
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #e6c89e;
+  }
+  
+  /* Blockquotes */
+  blockquote {
+    border-left: 4px solid #8B7355;
+    padding-left: 2rem;
+    margin: 2rem 0;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #d4d4d4;
+    background: rgba(139, 115, 85, 0.1);
+    padding: 1.5rem 2rem;
+    
+    p {
+      margin-bottom: 1rem;
+    }
+    
+    footer {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #b8b8b8;
+    }
+  }
+  
+  /* Horizontal rules for section breaks */
+  hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #8B7355, transparent);
+    margin: 3rem auto;
+    width: 60%;
+  }
+  
+  /* Special section dividers */
+  .section-divider {
+    border: none;
+    height: 1px;
+    background: #444;
+    margin: 2.5rem 0;
+    width: 100%;
+  }
+  
+  /* Links */
+  a {
+    color: #e6c89e;
+    
+    &:hover {
+      color: #f4d799;
+    }
+  }
+  
+  /* Lists */
+  ul, ol {
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    
+    li {
+      margin-bottom: 0.75rem;
+      line-height: 1.7;
+    }
+  }
+  
+  /* Strong/bold text */
+  strong, b {
+    color: #f5f5f5;
+    font-weight: 700;
+  }
+  
+  /* Emphasis */
+  em, i {
+    color: #e6c89e;
+  }
+}
+
+/* Newsletter Hero Section */
+.newsletter-hero {
+  background: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), 
+              url('/assets/images/gallery/gallery5.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #333;
+}
+
+.hero-content {
+  text-align: center;
+  color: #faf8f5;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  letter-spacing: 3px;
+  color: #faf8f5;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin: 1rem 0 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  color: #e0e0e0;
+}
+
+.hero-tagline {
+  font-size: 1.1rem;
+  margin: 0;
+  font-style: italic;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  color: #7a8471;
+  font-weight: 500;
+}
+
+/* Newsletter Introduction */
+.newsletter-intro {
+  max-width: 900px;
+  margin: 0 auto 4rem auto;
+  padding: 0 2rem;
+}
+
+.newsletter-intro .lead {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #d0d0d0;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* Podcast Announcement */
+.podcast-announcement {
+  background: linear-gradient(135deg, #2c3e34, #7a8471);
+  color: #faf8f5;
+  padding: 2.5rem;
+  border-radius: 12px;
+  text-align: center;
+  margin: 3rem 0;
+  border: 1px solid #444;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.podcast-announcement h3 {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.6rem;
+  color: #faf8f5;
+}
+
+.podcast-announcement p {
+  margin: 0 0 2rem 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.podcast-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.podcast-link {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.podcast-link.spotify {
+  background: #1db954;
+  color: #fff;
+  border-color: #1db954;
+}
+
+.podcast-link.spotify:hover {
+  background: #1ed760;
+  border-color: #1ed760;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(29, 185, 84, 0.4);
+  text-decoration: none;
+  color: #fff;
+}
+
+.podcast-link.youtube {
+  background: #ff0000;
+  color: #fff;
+  border-color: #ff0000;
+}
+
+.podcast-link.youtube:hover {
+  background: #ff3333;
+  border-color: #ff3333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .podcast-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .podcast-link {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+/* Newsletter Signup */
+.newsletter-signup {
+  background: #2a2a2a;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid #444;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter-signup h3 {
+  color: #faf8f5;
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.newsletter-signup p {
+  color: #d0d0d0;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.signup-form iframe {
+  border-radius: 8px !important;
+  border: 1px solid #555 !important;
+  background: #333 !important;
+}
+
+/* Newsletter Issues Grid */
+.newsletter-issues {
+  max-width: 1200px; /* Slightly smaller max-width for single column */
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.newsletter-issues h2 {
+  color: #faf8f5;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.issues-grid {
+  display: grid;
+  grid-template-columns: 1fr !important; /* Always single column */
+  gap: 2rem; /* Less gap since we have single column */
+  margin-bottom: 4rem;
+}
+
+/* Increase gap on larger screens */
+@media (min-width: 768px) {
+  .issues-grid {
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .issues-grid {
+    gap: 3rem;
+  }
+}
+
+/* Issue Cards - Responsive Layout */
+.issue-card {
+  background: #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  border: 1px solid #444;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  height: auto; /* Auto height on mobile to fit content */
+  min-height: 300px; /* Minimum height to ensure good proportions */
+  flex-direction: column; /* Vertical on mobile */
+}
+
+/* Horizontal layout for desktop */
+@media (min-width: 768px) {
+  .issue-card {
+    height: 280px; /* Fixed height for horizontal layout */
+    min-height: 280px;
+    flex-direction: row; /* Horizontal on desktop */
+  }
+}
+
+@media (min-width: 1024px) {
+  .issue-card {
+    height: 320px; /* Even taller on large screens */
+    min-height: 320px;
+  }
+}
+
+.issue-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+  border-color: #7a8471;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Image area - responsive */
+.issue-image {
+  width: 100%; /* Full width on mobile */
+  height: 180px; /* Taller height for mobile to match content proportions */
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Desktop image layout */
+@media (min-width: 768px) {
+  .issue-image {
+    width: 280px; /* Wider image area on desktop since we have full width */
+    height: 100%; /* Full height of card on desktop */
+  }
+}
+
+@media (min-width: 1024px) {
+  .issue-image {
+    width: 320px; /* Even wider on large screens */
+  }
+}
+
+@media (min-width: 1200px) {
+  .issue-image {
+    width: 360px; /* Maximum width on very large screens */
+  }
+}
+
+.issue-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+  filter: brightness(0.9) contrast(1.1);
+}
+
+.issue-card:hover .issue-image img {
+  transform: scale(1.08);
+  filter: brightness(1) contrast(1.2);
+}
+
+/* Content Area - responsive */
+.issue-content {
+  flex: 1;
+  padding: 1.5rem; /* Good padding on mobile */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 0;
+  gap: 0.75rem;
+}
+
+/* Desktop content layout */
+@media (min-width: 768px) {
+  .issue-content {
+    padding: 2rem; /* More padding on desktop */
+    gap: 1rem; /* More space between elements */
+  }
+}
+
+@media (min-width: 1024px) {
+  .issue-content {
+    padding: 2.5rem; /* Even more padding on large screens */
+    gap: 1.25rem; /* Even more space */
+  }
+}
+
+@media (min-width: 1200px) {
+  .issue-content {
+    padding: 3rem; /* Maximum padding on very large screens */
+    gap: 1.5rem; /* Maximum space between elements */
+  }
+}
+
+.issue-number {
+  color: #7a8471;
+  font-weight: 700;
+  font-size: 1rem; /* Increased size */
+  margin: 0; /* Remove margins, use gap instead */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  flex-shrink: 0; /* Don't shrink */
+}
+
+.issue-title {
+  margin: 0;
+  color: #faf8f5;
+  font-size: 1rem; /* Smaller on mobile */
+  line-height: 1.4;
+  font-weight: 600;
+  flex-shrink: 0;
+  overflow: visible;
+  display: block;
+}
+
+/* Desktop typography */
+@media (min-width: 768px) {
+  .issue-title {
+    font-size: 1.25rem; /* Larger on desktop */
+    line-height: 1.3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .issue-title {
+    font-size: 1.4rem; /* Even larger on big screens */
+  }
+}
+
+.issue-meta {
+  display: flex;
+  gap: 1.25rem;
+  margin: 0; /* Remove margins, use gap instead */
+  font-size: 0.9rem; /* Increased size */
+  color: #999;
+  flex-wrap: wrap;
+  flex-shrink: 0; /* Don't shrink */
+}
+
+.issue-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0; /* Remove margins, use gap instead */
+  flex-wrap: wrap;
+  flex-shrink: 0; /* Don't shrink */
+}
+
+.tag {
+  background-color: #444;
+  color: #d0d0d0;
+  padding: 0.25rem 0.6rem; /* Increased padding */
+  border-radius: 10px;
+  font-size: 0.75rem; /* Increased size */
+  font-weight: 500;
+  border: 1px solid #555;
+}
+
+.issue-excerpt {
+  color: #bbb;
+  line-height: 1.5;
+  margin: 0;
+  font-size: 0.9rem; /* Smaller on mobile */
+  flex: 1;
+  overflow: visible; /* Allow text to be fully visible */
+}
+
+/* Desktop excerpt */
+@media (min-width: 768px) {
+  .issue-excerpt {
+    font-size: 1rem; /* Larger on desktop */
+    overflow: hidden; /* Only clip on desktop where we have fixed heights */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Reasonable clamp on desktop */
+    -webkit-box-orient: vertical;
+  }
+}
+
+@media (min-width: 1200px) {
+  .issue-excerpt {
+    font-size: 1.1rem; /* Even larger on big screens */
+    -webkit-line-clamp: 4; /* More lines on very large screens */
+  }
+}
+
+.read-more {
+  color: #7a8471;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.85rem; /* Slightly increased */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid #7a8471;
+  padding: 0.5rem 1rem; /* Increased padding */
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  align-self: flex-start;
+  margin: 0; /* Remove margins, use gap instead */
+  flex-shrink: 0; /* Don't shrink */
+}
+
+.read-more:hover {
+  background: #7a8471;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+/* Hidden Issues (for Load More functionality) */
+.hidden-issue {
+  display: none;
+}
+
+/* Load More Button */
+.load-more-container {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.load-more-btn {
+  background: linear-gradient(135deg, #7a8471, #8b5a3c);
+  color: #faf8f5;
+  border: none;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.load-more-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.load-more-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.load-more-btn:hover::after {
+  left: 100%;
+}
+
+/* Author Section */
+.author-section {
+  background: #2a2a2a;
+  color: #faf8f5;
+  padding: 4rem 2rem;
+  margin: 5rem 0;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid #444;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.author-section h3 {
+  margin: 0 0 2rem 0;
+  font-size: 2rem;
+  color: #faf8f5;
+}
+
+.author-section p {
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.7;
+  font-size: 1.15rem;
+  color: #d0d0d0;
+}
+
+.author-section a {
+  color: #7a8471;
+  text-decoration: none;
+  border-bottom: 2px solid #7a8471;
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+}
+
+.author-section a:hover {
+  color: #8b5a3c;
+  border-bottom-color: #8b5a3c;
+  text-decoration: none;
+}
+
+/* Creative Wayfinder CTA */
+.wayfinder-cta {
+  background: linear-gradient(135deg, #2c3e34, #7a8471);
+  color: #faf8f5;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 12px;
+  margin: 3rem 0;
+  border: 1px solid #444;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.wayfinder-cta h3 {
+  margin: 0 0 1.5rem 0;
+  font-size: 2rem;
+  color: #faf8f5;
+}
+
+.wayfinder-cta p {
+  max-width: 700px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.7;
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+.wayfinder-cta .cta-button {
+  display: inline-block;
+  background: #faf8f5;
+  color: #2c3e34;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.wayfinder-cta .cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  color: #2c3e34;
+  text-decoration: none;
+}
+
+.wayfinder-cta .cta-note {
+  margin: 1.5rem 0 0 0;
+  font-style: italic;
+  opacity: 0.8;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+  
+  .newsletter-hero {
+    height: 280px;
+    margin-bottom: 3rem;
+  }
+  
+  .issues-grid {
+    gap: 1.5rem; /* Slightly less gap on mobile */
+    padding: 0 1rem;
+  }
+  
+  /* Mobile stays vertical with auto height */
+  .issue-card {
+    flex-direction: column;
+    height: auto; /* Auto height on mobile */
+    min-height: 300px; /* Ensure minimum height */
+  }
+  
+  .issue-image {
+    width: 100%;
+    height: 180px; /* Good height for mobile */
+  }
+  
+  .issue-content {
+    padding: 1.5rem; /* Good padding for mobile */
+    flex: 1; /* Take remaining space */
+  }
+  
+  .issue-title {
+    font-size: 1.1rem; /* Good size on mobile */
+  }
+  
+  .issue-excerpt {
+    font-size: 0.95rem;
+    overflow: visible; /* No clipping on mobile */
+  }
+  
+  .newsletter-intro,
+  .newsletter-signup {
+    padding: 0 1rem;
+  }
+  
+  .issue-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .podcast-announcement,
+  .newsletter-signup,
+  .author-section,
+  .wayfinder-cta {
+    padding: 2rem 1.5rem;
+  }
+  
+  .newsletter-issues h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter-hero {
+    height: 220px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .issues-grid {
+    gap: 1rem; /* Even less gap on very small screens */
+    padding: 0 0.5rem;
+  }
+  
+  .issue-card {
+    min-height: 280px; /* Slightly smaller minimum on very small screens */
+  }
+  
+  .issue-tags {
+    flex-wrap: wrap;
+  }
+  
+  .load-more-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  
+  .issue-image {
+    height: 160px; /* Good height for very small screens */
+  }
+  
+  .issue-content {
+    padding: 1.25rem; /* Less padding on very small screens */
+  }
+  
+  .issue-title {
+    font-size: 1rem;
+  }
+  
+  .issue-excerpt {
+    font-size: 0.9rem;
+    overflow: visible; /* No clipping on small screens */
+  }
+}
+
+/* Newsletter Issue Layout */
+.newsletter-issue-header {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  padding: 2rem 0 3rem 0;
+  border-bottom: 3px solid #8B7355;
+  
+  .back-navigation {
+    margin-bottom: 2rem; /* Add space below back link */
+    padding-top: 1rem; /* Add space above back link */
+  }
+  
+  .back-link {
+    color: #e6c89e;
+    text-decoration: none;
+    font-size: 1rem;
+    
+    &:hover {
+      color: #f4d799;
+      text-decoration: underline;
+    }
+  }
+  
+  .issue-meta {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    
+    span {
+      color: #b8b8b8;
+      font-size: 0.95rem;
+    }
+    
+    .issue-number {
+      color: #e6c89e;
+      font-weight: 600;
+    }
+  }
+  
+  .issue-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+    
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+  
+  .featured-image {
+    margin-top: 2rem;
+    text-align: center;
+    
+    img {
+      width: auto;
+      max-width: 400px;
+      height: auto;
+      max-height: 250px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      object-fit: cover;
+      
+      @media (max-width: 768px) {
+        max-width: 300px;
+        max-height: 200px;
+      }
+    }
+  }
+}
+
+.newsletter-content {
+  padding: 3rem 0;
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+}
+
+.newsletter-footer {
+  background: #111;
+  padding: 3rem 0;
+  border-top: 2px solid #333;
+  
+  .enjoyed-section {
+    text-align: center;
+    margin-bottom: 2rem;
+    
+    h3 {
+      color: #e6c89e;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      color: #b8b8b8;
+      font-size: 1.1rem;
+    }
+  }
+  
+  .subscription-form {
+    margin: 2rem 0;
+    
+    iframe {
+      border-radius: 8px !important;
+    }
+  }
+  
+  .issue-navigation {
+    margin: 2rem 0;
+    
+    .nav-links {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+    
+    .nav-link {
+      color: #e6c89e;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border: 1px solid #444;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background: #2a2a2a;
+        border-color: #8B7355;
+        color: #f4d799;
+      }
+      
+      &.prev {
+        margin-right: auto;
+      }
+      
+      &.next {
+        margin-left: auto;
+      }
+    }
+  }
+  
+  .back-to-list {
+    text-align: center;
+    margin-top: 2rem;
+    
+    .back-link-footer {
+      color: #b8b8b8;
+      text-decoration: none;
+      font-size: 0.95rem;
+      
+      &:hover {
+        color: #e6c89e;
+        text-decoration: underline;
+      }
+    }
+  }
+} 

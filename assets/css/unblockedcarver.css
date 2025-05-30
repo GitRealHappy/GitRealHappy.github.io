@@ -1,0 +1,524 @@
+/* The Unblocked Carver Newsletter Page Styles - Dark Mode Theme */
+
+/* Apply Dark Theme to Newsletter Page */
+body.newsletter-dark-theme {
+  background: #1a1a1a !important;
+  color: #e0e0e0 !important;
+}
+
+body.newsletter-dark-theme .main-content {
+  background: #1a1a1a;
+}
+
+body.newsletter-dark-theme .page-header {
+  background: #1a1a1a;
+}
+
+body.newsletter-dark-theme .page-title,
+body.newsletter-dark-theme .page-subtitle {
+  color: #faf8f5 !important;
+}
+
+/* Newsletter Hero Section */
+.newsletter-hero {
+  background: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), 
+              url('/assets/images/gallery/gallery5.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #333;
+}
+
+.hero-content {
+  text-align: center;
+  color: #faf8f5;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  letter-spacing: 3px;
+  color: #faf8f5;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin: 1rem 0 0 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  color: #e0e0e0;
+}
+
+/* Newsletter Introduction */
+.newsletter-intro {
+  max-width: 900px;
+  margin: 0 auto 4rem auto;
+  padding: 0 2rem;
+}
+
+.newsletter-intro .lead {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #d0d0d0;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* Podcast Announcement */
+.podcast-announcement {
+  background: linear-gradient(135deg, #2c3e34, #7a8471);
+  color: #faf8f5;
+  padding: 2.5rem;
+  border-radius: 12px;
+  text-align: center;
+  margin: 3rem 0;
+  border: 1px solid #444;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.podcast-announcement h3 {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.6rem;
+  color: #faf8f5;
+}
+
+.podcast-announcement p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+/* Newsletter Signup */
+.newsletter-signup {
+  background: #2a2a2a;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid #444;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter-signup h3 {
+  color: #faf8f5;
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.newsletter-signup p {
+  color: #d0d0d0;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.signup-form iframe {
+  border-radius: 8px !important;
+  border: 1px solid #555 !important;
+  background: #333 !important;
+}
+
+/* Newsletter Issues Grid */
+.newsletter-issues {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.newsletter-issues h2 {
+  color: #faf8f5;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.issues-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* Wide screen: 3 columns */
+@media (min-width: 1200px) {
+  .issues-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Issue Cards - Darker Theme */
+.issue-card {
+  background: #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  border: 1px solid #444;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.issue-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+  border-color: #7a8471;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Smaller Images */
+.issue-image {
+  height: 140px;
+  overflow: hidden;
+  position: relative;
+}
+
+.issue-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  filter: brightness(0.9) contrast(1.1);
+}
+
+.issue-card:hover .issue-image img {
+  transform: scale(1.08);
+  filter: brightness(1) contrast(1.2);
+}
+
+/* Content Area */
+.issue-content {
+  padding: 1.2rem;
+}
+
+.issue-number {
+  color: #7a8471;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.issue-title {
+  margin: 0 0 1rem 0;
+  color: #faf8f5;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-weight: 600;
+  height: 2.8rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.issue-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.issue-tags {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #444;
+  color: #d0d0d0;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid #555;
+}
+
+.issue-excerpt {
+  color: #bbb;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  height: 3rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.read-more {
+  color: #7a8471;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid #7a8471;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.read-more:hover {
+  background: #7a8471;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+/* Hidden Issues (for Load More functionality) */
+.hidden-issue {
+  display: none;
+}
+
+/* Load More Button */
+.load-more-container {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.load-more-btn {
+  background: linear-gradient(135deg, #7a8471, #8b5a3c);
+  color: #faf8f5;
+  border: none;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.load-more-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.load-more-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.load-more-btn:hover::after {
+  left: 100%;
+}
+
+/* Author Section */
+.author-section {
+  background: #2a2a2a;
+  color: #faf8f5;
+  padding: 4rem 2rem;
+  margin: 5rem 0;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid #444;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.author-section h3 {
+  margin: 0 0 2rem 0;
+  font-size: 2rem;
+  color: #faf8f5;
+}
+
+.author-section p {
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.7;
+  font-size: 1.15rem;
+  color: #d0d0d0;
+}
+
+.author-section a {
+  color: #7a8471;
+  text-decoration: none;
+  border-bottom: 2px solid #7a8471;
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+}
+
+.author-section a:hover {
+  color: #8b5a3c;
+  border-bottom-color: #8b5a3c;
+  text-decoration: none;
+}
+
+/* Creative Wayfinder CTA */
+.wayfinder-cta {
+  background: linear-gradient(135deg, #2c3e34, #7a8471);
+  color: #faf8f5;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 12px;
+  margin: 3rem 0;
+  border: 1px solid #444;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.wayfinder-cta h3 {
+  margin: 0 0 1.5rem 0;
+  font-size: 2rem;
+  color: #faf8f5;
+}
+
+.wayfinder-cta p {
+  max-width: 700px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.7;
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+.wayfinder-cta .cta-button {
+  display: inline-block;
+  background: #faf8f5;
+  color: #2c3e34;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.wayfinder-cta .cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  color: #2c3e34;
+  text-decoration: none;
+}
+
+.wayfinder-cta .cta-note {
+  margin: 1.5rem 0 0 0;
+  font-style: italic;
+  opacity: 0.8;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+  
+  .newsletter-hero {
+    height: 280px;
+    margin-bottom: 3rem;
+  }
+  
+  .issues-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .newsletter-intro,
+  .newsletter-signup {
+    padding: 0 1rem;
+  }
+  
+  .issue-content {
+    padding: 1.25rem;
+  }
+  
+  .issue-title {
+    font-size: 1rem;
+    height: auto;
+    -webkit-line-clamp: unset;
+  }
+  
+  .issue-excerpt {
+    height: auto;
+    -webkit-line-clamp: unset;
+  }
+  
+  .issue-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .podcast-announcement,
+  .newsletter-signup,
+  .author-section,
+  .wayfinder-cta {
+    padding: 2rem 1.5rem;
+  }
+  
+  .newsletter-issues h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter-hero {
+    height: 220px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .issues-grid {
+    padding: 0 0.5rem;
+  }
+  
+  .issue-tags {
+    flex-wrap: wrap;
+  }
+  
+  .load-more-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  
+  .issue-image {
+    height: 120px;
+  }
+} 
