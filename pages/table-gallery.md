@@ -17,40 +17,25 @@ body_class: 'newsletter-dark-theme'
 <section class="gallery-container">
     <div class="gallery-grid">
         <div class="gallery-item">
+            <img src="/assets/images/gallery/gallery1.jpeg" alt="Cherry Sun Table - Full View" onclick="openLightbox(this.src);">
+        </div>
+        <div class="gallery-item">
+            <img src="/assets/images/gallery/gallery2.jpeg" alt="Cherry Sun Table - Side Angle" onclick="openLightbox(this.src);">
+        </div>
+        <div class="gallery-item">
+            <img src="/assets/images/gallery/gallery3.jpeg" alt="Cherry Sun Table - Close-up Detail" onclick="openLightbox(this.src);">
+        </div>
+        <div class="gallery-item">
             <img src="/assets/images/gallery/gallery4.jpeg" alt="Cherry Sun Table - Detailed Top View" onclick="openLightbox(this.src);">
         </div>
         <div class="gallery-item">
             <img src="/assets/images/gallery/gallery5.jpeg" alt="Cherry Sun Table - Living Room Setting" onclick="openLightbox(this.src);">
         </div>
         <div class="gallery-item">
-            <img src="/assets/images/gallery/gallery1.jpeg" alt="Cherry Sun Table - Full View" onclick="openLightbox(this.src);">
-        </div>
-        <div class="gallery-item">
-            <img src="/assets/images/gallery/gallery3.jpeg" alt="Cherry Sun Table - Close-up Detail" onclick="openLightbox(this.src);">
-        </div>
-        <div class="gallery-item">
-            <img src="/assets/images/gallery/gallery2.jpeg" alt="Cherry Sun Table - Side Angle" onclick="openLightbox(this.src);">
-        </div>
-        <div class="gallery-item">
             <img src="/assets/images/gallery/gallery6.jpeg" alt="Cherry Sun Table - Artistic Perspective" onclick="openLightbox(this.src);">
         </div>
         <div class="gallery-item">
             <img src="/assets/images/gallery/gallery7.jpeg" alt="Cherry Sun Table - Natural Light" onclick="openLightbox(this.src);">
-        </div>
-        <div class="gallery-item">
-            <img src="/assets/images/gallery/gallery8.jpeg" alt="Cherry Sun Table - Design Detail" onclick="openLightbox(this.src);">
-        </div>
-        <div class="gallery-item">
-            <img src="/assets/images/gallery/gallery9.jpeg" alt="Cherry Sun Table - Craftsmanship Focus" onclick="openLightbox(this.src);">
-        </div>
-        <div class="gallery-item">
-            <img src="/assets/images/gallery/gallery10.jpeg" alt="Cherry Sun Table - Texture Detail" onclick="openLightbox(this.src);">
-        </div>
-        <div class="gallery-item">
-            <img src="/assets/images/gallery/gallery11.jpeg" alt="Cherry Sun Table - Spiral Pattern" onclick="openLightbox(this.src);">
-        </div>
-        <div class="gallery-item">
-            <img src="/assets/images/gallery/gallery12.jpeg" alt="Cherry Sun Table - Wood Grain" onclick="openLightbox(this.src);">
         </div>
     </div>
 </section>
