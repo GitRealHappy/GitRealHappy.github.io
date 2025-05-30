@@ -12,11 +12,7 @@ main:
   - name: "Partners"
     url: "/partners/"
 
-footer:
-  - name: "Privacy Policy"
-    url: "/privacy-policy/"
-  - name: "Terms of Service"
-    url: "/terms/"
+footer: []
 
 social:
   - name: "Facebook"
