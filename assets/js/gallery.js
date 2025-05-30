@@ -2,6 +2,11 @@
 let currentImageIndex = 0;
 let galleryImages = [];
 
+// Touch/swipe variables
+let touchStartX = 0;
+let touchEndX = 0;
+let minSwipeDistance = 50; // Minimum distance for a swipe
+
 // Initialize gallery when page loads
 document.addEventListener('DOMContentLoaded', function() {
     // Collect all gallery images
@@ -11,7 +16,44 @@ document.addEventListener('DOMContentLoaded', function() {
         alt: img.alt,
         title: img.title || img.alt
     }));
+    
+    // Add touch event listeners to lightbox
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox) {
+        lightbox.addEventListener('touchstart', handleTouchStart, { passive: true });
+        lightbox.addEventListener('touchend', handleTouchEnd, { passive: true });
+    }
 });
+
+// Handle touch start
+function handleTouchStart(e) {
+    touchStartX = e.changedTouches[0].screenX;
+}
+
+// Handle touch end and detect swipe
+function handleTouchEnd(e) {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+}
+
+// Detect swipe direction and navigate
+function handleSwipe() {
+    const swipeDistance = touchEndX - touchStartX;
+    
+    // Only trigger swipe if distance is greater than minimum
+    if (Math.abs(swipeDistance) < minSwipeDistance) {
+        return;
+    }
+    
+    // Swipe right (previous image)
+    if (swipeDistance > 0) {
+        changeImage(-1);
+    }
+    // Swipe left (next image)
+    else {
+        changeImage(1);
+    }
+}
 
 // Open lightbox with specific image
 function openLightbox(imageSrc, imageTitle) {
