@@ -26,7 +26,7 @@ This first issue is also the story of how I came to understand these things.
 
 ### This piece of wood art is for her. It's called *Ecology of Time:*
 
-[Click here to see a video of the gears turning while the drawer opens!](https://www.instagram.com/p/DBKOn_PzAnQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
+[Click here to see a video of the gears turning while the drawer opens!](https://www.instagram.com/p/DBKOn_PzAnQ/?img_index=1)
 
 ---
 
