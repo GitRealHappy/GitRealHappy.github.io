@@ -663,7 +663,7 @@ body.newsletter-dark-theme {
   text-align: center;
   border-radius: 12px;
   margin: 3rem 0;
-  border: 1px solid #444;
+  border: 2px solid #000;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
@@ -677,37 +677,70 @@ body.newsletter-dark-theme {
   max-width: 700px;
   margin: 0 auto 2.5rem auto;
   line-height: 1.7;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
   color: #e0e0e0;
 }
 
 .wayfinder-cta .cta-button {
   display: inline-block;
-  background: #faf8f5;
-  color: #2c3e34;
+  background: linear-gradient(135deg, #ffd700, #ffed4e, #ffc107, #b8860b);
+  color: #1a1a1a;
   padding: 1.2rem 2.5rem;
   font-size: 1.2rem;
   font-weight: 700;
   border-radius: 8px;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 
+    0 6px 20px rgba(255, 215, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   letter-spacing: 1px;
+  border: 2px solid #b8860b;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.wayfinder-cta .cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.wayfinder-cta .cta-button:hover::before {
+  left: 100%;
 }
 
 .wayfinder-cta .cta-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-  color: #2c3e34;
+  box-shadow: 
+    0 8px 25px rgba(255, 215, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #ffed4e, #ffd700, #ffed4e, #ffc107);
+  color: #1a1a1a;
   text-decoration: none;
 }
 
 .wayfinder-cta .cta-note {
   margin: 1.5rem 0 0 0;
   font-style: italic;
-  opacity: 0.8;
-  font-size: 1rem;
+  opacity: 0.9;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: #ccc;
 }
 
