@@ -208,4 +208,4 @@ Going forward, I'll be sharing not just my personal journey, but diving deeper i
 
 ---
 
-Ready to transform your creative blocks? Join "The Creative Wayfinder" - 8 Weeks of Creative Transformation starting May 10th, 2025! 
+Ready to transform your creative blocks? Join "The Creative Wayfinder" - 8 Weeks of Creative Transformation starting August 3rd, 2025! 
