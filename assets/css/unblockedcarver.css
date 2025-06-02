@@ -123,10 +123,20 @@ body.newsletter-dark-theme .page-subtitle {
   line-height: 1.6;
 }
 
+/* Newsletter Signup Form */
+.signup-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
 .signup-form iframe {
+  width: 100% !important;
+  height: 320px !important;
+  border: 1px solid #444 !important;
   border-radius: 8px !important;
-  border: 1px solid #555 !important;
-  background: #333 !important;
+  background: #2a2a2a !important;
 }
 
 /* Newsletter Issues Grid */
@@ -435,32 +445,39 @@ body.newsletter-dark-theme .page-subtitle {
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;
-    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
   }
   
   .hero-subtitle {
-    font-size: 1.1rem;
-    letter-spacing: 1px;
+    font-size: 1rem;
   }
   
   .newsletter-hero {
-    height: 280px;
-    margin-bottom: 3rem;
+    padding: 3rem 1rem;
   }
   
   .issues-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
     padding: 0 1rem;
   }
   
   .newsletter-intro,
-  .newsletter-signup {
+  .newsletter-issues {
     padding: 0 1rem;
   }
   
+  .signup-form {
+    max-width: 95%;
+    padding: 0 0.5rem;
+  }
+  
+  .signup-form iframe {
+    height: 280px !important;
+  }
+  
   .issue-content {
-    padding: 1.25rem;
+    padding: 1rem;
   }
   
   .issue-title {
@@ -493,29 +510,29 @@ body.newsletter-dark-theme .page-subtitle {
 
 @media (max-width: 480px) {
   .newsletter-hero {
-    height: 220px;
+    padding: 2rem 0.5rem;
   }
-  
+
   .hero-title {
     font-size: 2rem;
-    letter-spacing: 1px;
   }
-  
+
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .signup-form {
+    max-width: 98%;
+    padding: 0 0.25rem;
   }
   
+  .signup-form iframe {
+    height: 250px !important;
+  }
+
   .issues-grid {
-    padding: 0 0.5rem;
-  }
-  
-  .issue-tags {
-    flex-wrap: wrap;
-  }
-  
-  .load-more-btn {
-    padding: 1rem 2rem;
-    font-size: 1rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
   
   .issue-image {

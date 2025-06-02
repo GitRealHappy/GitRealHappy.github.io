@@ -22,6 +22,19 @@ hide_page_header: true
   <p class="lead">Monthly explorations of Zen, Dharma, the art of wood carving, and creative power. A newsletter that weaves together philosophy, spirituality, and practical wisdom for living creatively.</p>
 </div>
 
+<div class="signup-form">
+  <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+  <iframe 
+    src="https://subscribe-forms.beehiiv.com/ca914118-9ec2-4f69-b81d-12098391d9d6" 
+    data-test-id="beehiiv-embed" 
+    width="100%" 
+    height="320" 
+    frameborder="0" 
+    scrolling="no"
+    style="border-radius: 8px; background: transparent;">
+  </iframe>
+</div>
+
 <!-- Newsletter Issues Grid -->
 <div class="newsletter-issues">
   <h2 class="text-center mb-3">All Issues</h2>
@@ -197,10 +210,6 @@ hide_page_header: true
     </a>
 
   </div>
-
-  <div class="load-more-container text-center">
-    <button class="load-more-btn" id="load-more-btn">Load More Issues</button>
-  </div>
 </div>
 
 <div class="podcast-announcement">
@@ -209,22 +218,6 @@ hide_page_header: true
   <div class="podcast-links">
     <a href="https://open.spotify.com/show/0YBpcWq0R7P1mWKLCVKuIA?si=b56d343c71bb41cd" target="_blank" class="podcast-link spotify">🎧 Listen on Spotify</a>
     <a href="https://www.youtube.com/playlist?list=PLdQ91meMfIHnv8FCCRoRHisLY6g6fgqr1" target="_blank" class="podcast-link youtube">▶️ Watch on YouTube</a>
-  </div>
-</div>
-
-<!-- Email Signup Form -->
-<div class="newsletter-signup mb-4">
-  <h3>Join The Community</h3>
-  <p>Get new issues delivered directly to your inbox, plus exclusive insights on creativity and craftsmanship.</p>
-  <div class="signup-form">
-    <iframe src="https://embeds.beehiiv.com/d090f079-e994-4f8a-9845-e3d83d0e656d" 
-            data-test-id="beehiiv-embed" 
-            width="100%" 
-            height="280" 
-            frameborder="0" 
-            scrolling="no" 
-            style="border-radius: 8px; border: 1px solid #555; margin: 0; background-color: transparent;">
-    </iframe>
   </div>
 </div>
 
