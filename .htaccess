@@ -1,4 +1,8 @@
 RewriteEngine On
+
+# Redirect old Taoist Threads URL to new Unblocked Carver issue
+RewriteRule ^taoistthreads/tao4\.html$ /unblockedcarver/issue-4/ [R=301,L]
+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [L]
