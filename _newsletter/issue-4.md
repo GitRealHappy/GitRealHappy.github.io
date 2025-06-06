@@ -1,5 +1,5 @@
 ---
-title: "The Tao of AI: Finding Meaning in a Machine World"
+title: "The Tao of AI: Finding Meaning in a Machine World (& Meeting Dan Koe)"
 issue_number: 4
 date: 2025-02-04
 read_time: "20 min read"

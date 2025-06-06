@@ -132,7 +132,7 @@ hide_page_header: true
       </div>
       <div class="issue-content">
         <div class="issue-number">#4</div>
-        <h3 class="issue-title">The Tao of AI: Finding Meaning in a Machine World</h3>
+        <h3 class="issue-title">The Tao of AI: Finding Meaning in a Machine World (& Meeting Dan Koe)</h3>
         <div class="issue-meta">
           <span class="date">February 4, 2025</span>
           <span class="read-time">20 min read</span>
