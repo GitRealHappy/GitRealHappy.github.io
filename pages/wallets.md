@@ -7,95 +7,64 @@ body_class: 'newsletter-dark-theme'
 ---
 
 <section id="wallets">
-    <h1>Oakmoss Wood Wallets</h1>
     
-    <!-- Intro Explanation in Box -->
-    <div class="text-box">
-        <div class="intro-box">
-        <p>Hold a piece of art every time you reach for your wallet. The Oakmoss Wood Wallet is a handmade carving born from passion and crafted with precision by artisan Jesse Boyes in Abbotsford, BC.</p>
-        
-        <p>Each wallet is made from premium hardwoods like padauk, birdseye maple, walnut, and cherry.
+    <div class="wallet-container">
+        <!-- Gallery Section - Left Side -->
+        <div class="gallery-section">
+            <div class="main-image-container">
+                <img id="main-image" src="/assets/images/wallets/wallet1.jpg" alt="Oakmoss Wood Wallet" onclick="openLightbox(this.src);">
+            </div>
+            <div class="thumbnail-grid">
+                <img src="/assets/images/wallets/wallet1.jpg" alt="Padauk Wallet" class="thumbnail active" onclick="changeMainImage(this);">
+                <img src="/assets/images/wallets/wallet2.jpg" alt="Padauk Wallet" class="thumbnail" onclick="changeMainImage(this);">
+                <img src="/assets/images/wallets/wallet3.jpg" alt="Wallet Collection" class="thumbnail" onclick="changeMainImage(this);">
+                <img src="/assets/images/wallets/IMG_20240925_115235_482.jpg" alt="Detailed View" class="thumbnail" onclick="changeMainImage(this);">
+                <img src="/assets/images/wallets/IMG_20240925_115243_560.jpg" alt="Profile View" class="thumbnail" onclick="changeMainImage(this);">
+                <img src="/assets/images/wallets/IMG_20240925_115248_987.jpg" alt="Card Capacity" class="thumbnail" onclick="changeMainImage(this);">
+                <img src="/assets/images/wallets/IMG_20240925_115306_782.jpg" alt="Leather Detail" class="thumbnail" onclick="changeMainImage(this);">
+            </div>
+
+            <div class="testimonial-highlight">
+                <blockquote>
+                    "I really like the size and shape of the wallet, which is especially low profile. It's way less cumbersome than my previous wallet."
+                </blockquote>
+                <cite>— Fabio Bollinger, CEO Bollingerhouse</cite>
+            </div>
+        </div>
+
+        <!-- Content Section - Right Side -->
+        <div class="content-section">
+            <h2>Handcrafted Excellence</h2>
+            <p class="luxury-subtitle">Premium hardwood wallets by artisan Jesse Boyes</p>
             
-        <p>These final 25 wallets are extra special, as I'm offering custom carved and burned designs.
-        <p> What began with a simple client request blossomed into a beautiful accessory cherished by over 50 happy customers.</p>
-        
-        <p>Compact and sleek, the Oakmoss Wood Wallet effortlessly fits into your front pocket or even a shirt pocket. When you're traveling light, such simplicity is a relief.
-        <p>The high-quality elastic is sourced from Warkov Shafir, a hundred-year-old Canadian shoe company. It allows the wallet to securely hold anywhere from 1 to 18 cards, adapting to your needs without compromising style or functionality. The genuine leather cash holder tightly grips your folded cash or receipts while granting quick and easy access.</p>
-    </div>
-        <iframe src="https://www.youtube.com/embed/FWLzALRWJcY" title="Oakmoss wooden wallets, the final 20 to fund a crazy bicycle trip" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        
-    </div>
-    
-    <!-- Mini Gallery Section -->
-    <div class="wallet-showcase">
-        <div class="wallet-item">
-            <img src="/assets/images/wallets/wallet1.jpg" alt="Oakmoss Wallet - Padauk" class="wallet-image" onclick="openLightbox(this.src);">
-            <p>Padauk - A beautiful red wood from Africa</p>
-        </div>
-        <div class="wallet-item">
-            <img src="/assets/images/wallets/wallet2.jpg" alt="Oakmoss Wallet - Padauk" class="wallet-image" onclick="openLightbox(this.src);">
-            <p>Padauk - Rich red hardwood</p>
-        </div>
-        <div class="wallet-item">
-            <img src="/assets/images/wallets/wallet3.jpg" alt="Oakmoss Wallet Collection" class="wallet-image" onclick="openLightbox(this.src);">
-            <p>(Left to right) Roasted Birdseye Maple, Padauk, Walnut, Birdseye Maple</p>
-        </div>
-        <div class="wallet-item">
-            <img src="/assets/images/wallets/IMG_20240925_115235_482.jpg" alt="Oakmoss Wallet - Detailed View" class="wallet-image" onclick="openLightbox(this.src);">
-            <p>Detailed craftsmanship and grain showcase</p>
-        </div>
-        <div class="wallet-item">
-            <img src="/assets/images/wallets/IMG_20240925_115243_560.jpg" alt="Oakmoss Wallet - Profile View" class="wallet-image" onclick="openLightbox(this.src);">
-            <p>Sleek profile - fits perfectly in your front pocket</p>
-        </div>
-        <div class="wallet-item">
-            <img src="/assets/images/wallets/IMG_20240925_115248_987.jpg" alt="Oakmoss Wallet - Card Capacity" class="wallet-image" onclick="openLightbox(this.src);">
-            <p>Holds 1-18 cards with premium elastic band</p>
-        </div>
-        <div class="wallet-item">
-            <img src="/assets/images/wallets/IMG_20240925_115306_782.jpg" alt="Oakmoss Wallet - Leather Detail" class="wallet-image" onclick="openLightbox(this.src);">
-            <p>Genuine leather cash holder with secure grip</p>
-        </div>
-    </div>
+            <div class="product-details">
+                <p>Each wallet is meticulously crafted from premium hardwoods including padauk, birdseye maple, walnut, and cherry. The high-quality elastic securely holds 1-18 cards while the genuine leather cash holder provides effortless access.</p>
+                
+                <p>Compact and elegant, these wallets fit perfectly in your front pocket. Over 50 satisfied customers have experienced the luxury of carrying a piece of functional art.</p>
+            </div>
 
-    <!-- Testimonial Box -->
-    <div class="reviews">
-        <div class="review">
-            <p>"I really like the size and shape of the wallet, which is especially low profile in the clothes I use when making things. It's way less cumbersome than my previous wallet. I'm using it as my business wallet, so it's got my business credit card and things like that."</p>
-            <p><strong>— Fabio Bollinger, CEO at https://bollingerhouse.com/</strong></p>
-        </div>
-        <div class="review">
-            <p>"I got a custom piece from Oakmoss and I love the design. His craftsmanship is amazing. If you're looking for something custom and handcrafted I highly reccomend this guy."</p>
-            <p><strong>— Nicholas Man, CEO at https://iias.ca/</strong></p>
+            <div class="woods-section">
+                <h3>Available Woods:</h3>
+                <ul class="woods-list">
+                    <li>Padauk</li>
+                    <li>Birdseye Maple</li>
+                    <li>Walnut</li>
+                    <li>Cherry</li>
+                </ul>
+            </div>
+
+            <div class="guarantee-section">
+                <p><strong>Three-year craftsmanship guarantee.</strong> Only 2 of 50+ wallets have ever needed repair.</p>
+            </div>
+
+            <div class="cta-section">
+                <div class="price">$415.00 USD</div>
+                <p class="final-run">Final collection of 25 wallets</p>
+                <a href="https://stan.store/oakmoss/p/oakmoss-wooden-wallet" class="cta-button">Buy Now</a>
+            </div>
         </div>
     </div>
-
-    <!-- Closing Pitch in Box -->
-    <div class="text-box">
-        <p>Oakmoss is an art outlet, not a factory. I create when inspiration strikes, and while I've loved crafting these wallets, my journey is evolving.</p>
-        <p>This is the final run of 25 wallets.</p>
-        <p>The Oakmoss Wood Wallet offers a tactile experience that's both luxurious and practical. I stand by my craftsmanship with a three-year guarantee.</p>
-        <p>Of over 50 wallets sold, only two have ever needed repair—one of which was run over by a van!</p>
-    </div>
-
-    <!-- Call to Action -->
-    <div class="cta-section">
-        <h2>Woods:</h2>
-        <ul>
-            <li>Padauk</li>
-            <li>Birdseye Maple</li>
-            <li>Walnut</li>
-            <li>Cherry</li>
-        </ul>
-        <hr>
-        <p>To secure your limited edition Oakmoss Wood Wallet, please email me with the type of wallet you'd like, your shipping address, and your custom carving request. I'll send you a PayPal invoice.<br>
-            <p> Once these 25 are sold, that may be the end of Oakmoss Wood Wallets.</p>
-            <hr>
-        <p>$200.00 USD.</p>
-        <p>+ $15 for custom carving.</p>
-        <a href="mailto:jesse.boyes@oakmosswoodcraft.com?subject=Oakmoss%20Wallet%20Inquiry&body=I%20am%20interested%20in%20Wallet%20[number]%20from%20your%20collection." class="cta-button">Request a Wallet</a>
-        <p class="email-address">jesse.boyes@oakmosswoodcraft.com</p>
-        
+</section>
 
 <!-- Lightbox Modal -->
 <div id="lightbox" style="display: none;">
@@ -103,11 +72,78 @@ body_class: 'newsletter-dark-theme'
     <button id="prevBtn" onclick="changeImage(-1)">&#10094;</button>
     <img id="lightbox-image" src="" alt="Lightbox image">
     <button id="nextBtn" onclick="changeImage(1)">&#10095;</button>
-    <div id="lightbox-caption"></div>
 </div>
 
+<script>
+// Gallery functionality
+function changeMainImage(thumbnail) {
+    const mainImage = document.getElementById('main-image');
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    
+    // Update main image
+    mainImage.src = thumbnail.src;
+    mainImage.alt = thumbnail.alt;
+    
+    // Update active thumbnail
+    thumbnails.forEach(thumb => thumb.classList.remove('active'));
+    thumbnail.classList.add('active');
+}
+
+// Lightbox functionality
+const images = [
+    '/assets/images/wallets/wallet1.jpg',
+    '/assets/images/wallets/wallet2.jpg',
+    '/assets/images/wallets/wallet3.jpg',
+    '/assets/images/wallets/IMG_20240925_115235_482.jpg',
+    '/assets/images/wallets/IMG_20240925_115243_560.jpg',
+    '/assets/images/wallets/IMG_20240925_115248_987.jpg',
+    '/assets/images/wallets/IMG_20240925_115306_782.jpg'
+];
+
+let currentImageIndex = 0;
+
+function openLightbox(imageSrc) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    
+    currentImageIndex = images.indexOf(imageSrc);
+    lightboxImage.src = imageSrc;
+    lightbox.style.display = 'flex';
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+}
+
+function changeImage(direction) {
+    currentImageIndex += direction;
+    
+    if (currentImageIndex < 0) {
+        currentImageIndex = images.length - 1;
+    } else if (currentImageIndex >= images.length) {
+        currentImageIndex = 0;
+    }
+    
+    document.getElementById('lightbox-image').src = images[currentImageIndex];
+}
+
+// Close lightbox on click outside
+document.getElementById('lightbox').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeLightbox();
+    }
+});
+
+// Close lightbox on escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeLightbox();
+    }
+});
+</script>
+
 <style>
-/* Dark Mode Wallet Page Styles */
+/* Dark Mode Base */
 body.newsletter-dark-theme {
   background-color: #1a1a1a !important;
   color: #e0e0e0 !important;
@@ -126,219 +162,241 @@ body.newsletter-dark-theme .page-subtitle {
   color: #faf8f5 !important;
 }
 
-/* Wallet Page Container */
+/* Main Container */
 #wallets {
   padding: 2rem;
   background-color: #1a1a1a;
-  text-align: center;
+  min-height: 100vh;
 }
 
 #wallets h1 {
-  font-size: 2.8rem;
-  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
   color: #faf8f5;
-  display: none; /* Hide redundant title */
+  font-weight: 300;
+  letter-spacing: 2px;
 }
 
-/* Dark Box styling for text sections */
-.text-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #2a2a2a;
-  border: 2px solid #444;
-  padding: 3rem;
-  margin: 3rem auto;
-  max-width: 1000px;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.8;
-}
-
-.text-box iframe {
-  max-width: 500px;
-  max-height: 400px;
-  height: auto;
-  width: 90%;
-  margin: 2rem auto;
-  border-radius: 12px;
-  border: 2px solid #444;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-}
-
-.text-box p {
-  color: #d0d0d0;
-  margin-bottom: 1.5rem;
-  font-size: 1.15rem;
-  line-height: 1.7;
-}
-
-.text-box strong {
-  color: #e6c89e;
-}
-
-/* Enhanced Wallet Showcase - Dark Theme */
-.wallet-showcase {
+/* Horizontal Layout Container */
+.wallet-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
   max-width: 1400px;
-  margin: 4rem auto;
-  padding: 2rem;
+  margin: 0 auto;
+  align-items: start;
 }
 
-.wallet-item {
-  text-align: center;
-  background: #2a2a2a;
+/* Gallery Section - Left Side */
+.gallery-section {
+  position: sticky;
+  top: 2rem;
+}
+
+.main-image-container {
+  margin-bottom: 1.5rem;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-  border: 1px solid #444;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
 }
 
-.wallet-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
-  border-color: #7a8471;
-}
-
-.wallet-image {
+#main-image {
   width: 100%;
-  height: 280px;
+  height: 400px;
   object-fit: cover;
   cursor: pointer;
   transition: transform 0.3s ease;
-  filter: brightness(0.9) contrast(1.1);
+  filter: brightness(0.95) contrast(1.1);
 }
 
-.wallet-image:hover {
+#main-image:hover {
+  transform: scale(1.02);
+}
+
+.thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  filter: brightness(0.8) contrast(1.1);
+}
+
+.thumbnail:hover {
+  border-color: #7a8471;
   transform: scale(1.05);
   filter: brightness(1) contrast(1.2);
 }
 
-.wallet-item p {
-  padding: 1.5rem 2rem;
-  margin: 0;
+.thumbnail.active {
+  border-color: #e6c89e;
+  filter: brightness(1) contrast(1.2);
+}
+
+/* Content Section - Right Side */
+.content-section {
+  padding: 2rem 0;
+  color: #e0e0e0;
+}
+
+.content-section h2 {
+  font-size: 2.2rem;
+  color: #faf8f5;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.luxury-subtitle {
+  font-size: 1.2rem;
+  color: #e6c89e;
+  margin-bottom: 2rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.product-details {
+  margin-bottom: 2.5rem;
+}
+
+.product-details p {
   font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
   color: #d0d0d0;
-  line-height: 1.6;
+}
+
+.woods-section {
+  margin-bottom: 2.5rem;
+}
+
+.woods-section h3 {
+  font-size: 1.3rem;
+  color: #faf8f5;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.woods-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.woods-list li {
+  font-size: 1.1rem;
+  color: #e6c89e;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #333;
+}
+
+.testimonial-highlight {
   background: #2a2a2a;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #e6c89e;
+  margin-bottom: 2.5rem;
+}
+
+.testimonial-highlight blockquote {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+  color: #d0d0d0;
+  font-style: italic;
+}
+
+.testimonial-highlight cite {
+  font-size: 0.95rem;
+  color: #e6c89e;
   font-weight: 500;
 }
 
-/* Dark Testimonial Box */
-.reviews {
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.review {
-  background-color: #2a2a2a;
-  border: 2px solid #444;
-  max-width: 800px;
-  padding: 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-  text-align: left;
-  color: #d0d0d0;
-  font-size: 1.2rem;
-  flex: 1;
-  line-height: 1.7;
-}
-
-.review p {
-  margin-bottom: 1.5rem;
-}
-
-.review strong {
-  color: #e6c89e;
-  font-weight: 600;
-}
-
-/* Dark CTA Section */
-.cta-section {
-  background: linear-gradient(135deg, #2c3e34, #7a8471);
-  color: #faf8f5;
-  padding: 4rem 3rem;
-  margin: 4rem auto;
-  max-width: 1000px;
-  border-radius: 12px;
-  text-align: center;
+.guarantee-section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: #2a2a2a;
+  border-radius: 8px;
   border: 1px solid #444;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
-.cta-section h2 {
+.guarantee-section p {
+  margin: 0;
+  font-size: 1rem;
+  color: #d0d0d0;
+  text-align: center;
+}
+
+.guarantee-section strong {
+  color: #e6c89e;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #2c3e34, #7a8471);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 300;
   color: #faf8f5;
-  margin-bottom: 2rem;
-  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
 }
 
-.cta-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 2rem 0;
-}
-
-.cta-section li {
-  margin: 0.8rem 0;
-  font-size: 1.2rem;
-  color: #e0e0e0;
-}
-
-.cta-section hr {
-  border: none;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #e6c89e, transparent);
-  margin: 2rem auto;
-  width: 60%;
-}
-
-.cta-section p {
-  color: #e0e0e0;
+.final-run {
   font-size: 1.1rem;
-  line-height: 1.6;
-  margin: 1.5rem 0;
+  color: #e6c89e;
+  margin-bottom: 2rem;
+  font-style: italic;
 }
 
 .cta-button {
+  display: inline-block;
   background: #faf8f5;
   color: #2c3e34;
   text-decoration: none;
-  padding: 1.2rem 2.5rem;
+  padding: 1.2rem 3rem;
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: 8px;
-  display: inline-block;
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  margin: 2rem 0;
+  margin-bottom: 1.5rem;
 }
 
 .cta-button:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
   text-decoration: none;
   color: #2c3e34;
 }
 
-.email-address {
-  font-size: 1rem;
+.contact-info {
+  font-size: 0.95rem;
   color: #bbb;
-  margin-top: 1rem;
+  margin: 0;
   font-style: italic;
 }
 
-/* Dark Lightbox Styles */
+/* Lightbox Styles */
 #lightbox {
   display: none;
   position: fixed;
@@ -352,31 +410,12 @@ body.newsletter-dark-theme .page-subtitle {
   justify-content: center;
 }
 
-#lightbox.active {
-  display: flex !important;
-}
-
 #lightbox-image {
   max-width: 90%;
   max-height: 90%;
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
-}
-
-#lightbox-caption {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #faf8f5;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  text-align: center;
-  max-width: 80%;
-  font-size: 1.2rem;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .close {
@@ -388,7 +427,6 @@ body.newsletter-dark-theme .page-subtitle {
   font-weight: bold;
   cursor: pointer;
   z-index: 1001;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
   transition: opacity 0.3s ease;
 }
 
@@ -425,107 +463,101 @@ body.newsletter-dark-theme .page-subtitle {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .wallet-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .gallery-section {
+    position: static;
+    order: 1;
+  }
+  
+  .content-section {
+    order: 2;
+  }
+  
+  #main-image {
+    height: 350px;
+  }
+}
+
 @media (max-width: 768px) {
   #wallets {
     padding: 1rem;
   }
   
-  .text-box {
-    padding: 2rem;
-    margin: 2rem auto;
-    font-size: 1.1rem;
-  }
-  
-  .text-box iframe {
-    width: 100%;
-    max-width: 350px;
-    max-height: 300px;
-  }
-  
-  .wallet-showcase {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 1rem;
-  }
-  
-  .wallet-image {
-    height: 250px;
-  }
-  
-  .wallet-item p {
-    font-size: 1rem;
-    padding: 1.25rem 1.5rem;
-  }
-  
-  .reviews {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
-  .review {
-    font-size: 1.1rem;
-    padding: 2rem;
-  }
-  
-  .cta-section {
-    padding: 2.5rem 2rem;
-  }
-  
-  #lightbox-image {
-    max-width: 95%;
-    max-height: 85%;
-  }
-  
-  #prevBtn, #nextBtn {
-    font-size: 1.5rem;
-    padding: 0.8rem 1rem;
-  }
-  
-  .close {
-    top: 15px;
-    right: 20px;
+  #wallets h1 {
     font-size: 2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .text-box {
-    padding: 1.5rem;
-    font-size: 1rem;
+    margin-bottom: 2rem;
   }
   
-  .wallet-showcase {
-    gap: 1.5rem;
-    padding: 0.5rem;
+  .wallet-container {
+    gap: 2rem;
   }
   
-  .wallet-image {
-    height: 220px;
+  #main-image {
+    height: 300px;
   }
   
-  .wallet-item p {
-    font-size: 0.95rem;
-    padding: 1rem 1.25rem;
+  .thumbnail-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
   
-  .review {
-    font-size: 1rem;
-    padding: 1.5rem;
+  .thumbnail {
+    height: 70px;
+  }
+  
+  .content-section {
+    padding: 1rem 0;
+  }
+  
+  .content-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .woods-list {
+    grid-template-columns: 1fr;
   }
   
   .cta-section {
     padding: 2rem 1.5rem;
   }
   
-  #prevBtn, #nextBtn {
-    font-size: 1.2rem;
-    padding: 0.6rem 0.8rem;
+  .price {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .thumbnail-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
   
-  .close {
+  .thumbnail {
+    height: 60px;
+  }
+  
+  .content-section h2 {
+    font-size: 1.6rem;
+  }
+  
+  .luxury-subtitle {
+    font-size: 1rem;
+  }
+  
+  .cta-section {
+    padding: 1.5rem 1rem;
+  }
+  
+  .price {
     font-size: 1.8rem;
-    top: 10px;
-    right: 15px;
+  }
+  
+  .cta-button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
   }
 }
 </style> 
