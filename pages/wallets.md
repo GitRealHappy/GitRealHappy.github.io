@@ -35,7 +35,7 @@ body_class: 'newsletter-dark-theme'
         <!-- Content Section - Right Side -->
         <div class="content-section">
             <h2>Handcrafted Excellence</h2>
-            <p class="luxury-subtitle">Premium hardwood wallets by artisan Jesse Boyes</p>
+            <p class="luxury-subtitle">Premium hardwood wallets by artisan Jesse Carver</p>
             
             <div class="product-details">
                 <p>Each wallet is meticulously crafted from premium hardwoods including padauk, birdseye maple, walnut, and cherry. The high-quality elastic securely holds 1-18 cards while the genuine leather cash holder provides effortless access.</p>

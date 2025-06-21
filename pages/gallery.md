@@ -3,7 +3,7 @@ layout: page
 title: "Gallery"
 subtitle: "Wood Art Collection"
 permalink: /gallery/
-description: "Explore a collection of handcrafted wood art and furniture by Jesse James Boyes, featuring custom tables, sculptures, and wooden accessories."
+description: "Explore a collection of handcrafted wood art and furniture by Jesse James Carver, featuring custom tables, sculptures, and wooden accessories."
 custom_js: ['gallery.js']
 body_class: 'newsletter-dark-theme'
 ---
@@ -27,7 +27,7 @@ body_class: 'newsletter-dark-theme'
     
     {% for image in gallery_images %}
       {% assign index = forloop.index0 %}
-      {% assign title = gallery_titles[index] | default: "Wood Art by Jesse James Boyes" %}
+      {% assign title = gallery_titles[index] | default: "Wood Art by Jesse James Carver" %}
       <div class="gallery-item">
         <img src="/assets/images/gallery/{{ image }}" 
              alt="{{ title }}" 

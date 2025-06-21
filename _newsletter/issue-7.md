@@ -50,7 +50,7 @@ Thanks for reading, and let me know if it inspires any adjustments in your space
 
 Until next time,
 
-**Jesse James Boyes**
+**Jesse James Carver**
 
 ---
 

@@ -14,12 +14,12 @@ We are proud to collaborate with talented artists and creatives who share our va
 
   <div class="partner-card">
     <div class="partner-image">
-      <img src="/assets/images/headshot.jpg" alt="The Unblocked Carver by Jesse Boyes" loading="lazy">
+      <img src="/assets/images/headshot.jpg" alt="The Unblocked Carver by Jesse Carver" loading="lazy">
     </div>
     <div class="partner-content">
       <h3>The Unblocked Carver</h3>
       <p class="partner-subtitle">Monthly Creative Missive</p>
-      <p>Jesse Boyes' monthly exploration of Zen, Dharma, the art of wood carving, and creative power. A newsletter that weaves together philosophy, spirituality, and practical wisdom for living creatively.</p>
+      <p>Jesse Carver's monthly exploration of Zen, Dharma, the art of wood carving, and creative power. A newsletter that weaves together philosophy, spirituality, and practical wisdom for living creatively.</p>
       <a href="/unblockedcarver/" class="partner-link">Read the Newsletter</a>
     </div>
   </div>

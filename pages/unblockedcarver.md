@@ -3,7 +3,7 @@ layout: page
 title: "The Unblocked Carver"
 subtitle: "Creative Power. Future Skills. Inner Peace."
 permalink: /unblockedcarver/
-description: "Monthly explorations of Zen, Dharma, wood carving, and creative power by Jesse James Boyes. Unblock your creative flow and master your generative drive."
+description: "Monthly explorations of Zen, Dharma, wood carving, and creative power by Jesse James Carver. Unblock your creative flow and master your generative drive."
 custom_css: ['unblockedcarver.css']
 custom_js: ['unblockedcarver.js']
 body_class: 'newsletter-dark-theme'
@@ -13,7 +13,7 @@ hide_page_header: true
 <div class="newsletter-hero">
   <div class="hero-content">
     <h1 class="hero-title">THE UNBLOCKED CARVER</h1>
-    <p class="hero-subtitle">by Jesse James Boyes</p>
+    <p class="hero-subtitle">by Jesse James Carver</p>
     <p class="hero-tagline">Creativity. Consciousness. Clarity.</p>
   </div>
 </div>
@@ -211,7 +211,7 @@ hide_page_header: true
 <div class="author-section">
   <div class="container">
     <h3>About the Author</h3>
-    <p><strong>Jesse James Boyes</strong> is the creator of <a href="/">Oakmoss Woodcraft</a> and teacher of <a href="https://stan.store/oakmoss/p/the-creative-wayfinder" target="_blank">The Creative Wayfinder</a> — an 8-week transformative course for artists and creatives.</p>
+    <p><strong>Jesse James Carver</strong> is the creator of <a href="/">Oakmoss Woodcraft</a> and teacher of <a href="https://stan.store/oakmoss/p/the-creative-wayfinder" target="_blank">The Creative Wayfinder</a> — an 8-week transformative course for artists and creatives.</p>
     <p>Through his newsletter, Jesse weaves together Zen philosophy, practical creativity techniques, and insights from his journey as a wood carver to help others unlock their creative potential.</p>
   </div>
 </div>

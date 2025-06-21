@@ -262,4 +262,4 @@ Whatever creative path calls to you, remember that your wounds don't disqualify 
 
 ---
 
-*Jesse James Boyes* 
+*Jesse James Carver* 

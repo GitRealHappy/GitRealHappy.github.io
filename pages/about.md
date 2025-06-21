@@ -1,13 +1,13 @@
 ---
 layout: page
 title: "About"
-subtitle: "Meet Jesse James Boyes"
+subtitle: "Meet Jesse James Carver"
 permalink: /about/
 featured_image: "/assets/images/headshot.jpg"
-description: "Learn about Jesse James Boyes, wood artist and author, who creates handcrafted furniture and teaches creative purpose through The Creative Wayfinder."
+description: "Learn about Jesse James Carver, wood artist and author, who creates handcrafted furniture and teaches creative purpose through The Creative Wayfinder."
 ---
 
-## Jesse James Boyes
+## Jesse James Carver
 ### Wood Artist and Author of The Unblocked Carver
 
 > "Trees are full of stories. I carve them."

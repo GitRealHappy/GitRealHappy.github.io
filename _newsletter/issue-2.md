@@ -196,7 +196,7 @@ Now, though, I will present a short collection of the insights I hoped to encaps
 
 Thanks for giving your attention to this letter—I sincerely hope something here unlocks something for you. Your creative power offers you the discovery of deep meaning and fulfillment, and offers many treasures to those around you.
 
-Jesse James Boyes
+Jesse James Carver
 
 ---
 
