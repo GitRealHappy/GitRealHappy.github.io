@@ -967,9 +967,13 @@ body.newsletter-dark-theme {
   
   .subscription-form {
     margin: 2rem 0;
+    text-align: center;
     
     iframe {
       border-radius: 8px !important;
+      height: 320px;
+      width: 100%;
+      max-width: 480px;
     }
   }
   
@@ -1025,5 +1029,18 @@ body.newsletter-dark-theme {
         text-decoration: underline;
       }
     }
+  }
+}
+
+// Responsive adjustments for subscription form
+@media (max-width: 768px) {
+  .newsletter-footer .subscription-form iframe {
+    height: 380px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter-footer .subscription-form iframe {
+    height: 420px !important;
   }
 } 

@@ -14,25 +14,11 @@ hide_page_header: true
   <div class="hero-content">
     <h1 class="hero-title">THE UNBLOCKED CARVER</h1>
     <p class="hero-subtitle">by Jesse James Boyes</p>
-    <p class="hero-tagline">Creative Power. Future Skills. Inner Peace.</p>
+    <p class="hero-tagline">Creativity. Consciousness. Clarity.</p>
   </div>
 </div>
-
-<div class="newsletter-intro text-center mb-3">
-  <p class="lead">Monthly explorations of Zen, Dharma, the art of wood carving, and creative power. A newsletter that weaves together philosophy, spirituality, and practical wisdom for living creatively.</p>
-</div>
-
 <div class="signup-form">
-  <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
-  <iframe 
-    src="https://subscribe-forms.beehiiv.com/ca914118-9ec2-4f69-b81d-12098391d9d6" 
-    data-test-id="beehiiv-embed" 
-    width="100%" 
-    height="320" 
-    frameborder="0" 
-    scrolling="no"
-    style="border-radius: 8px; background: transparent;">
-  </iframe>
+  <iframe src="https://jessejamescarver.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 </div>
 
 <!-- Newsletter Issues Grid -->

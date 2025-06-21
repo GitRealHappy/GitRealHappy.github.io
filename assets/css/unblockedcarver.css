@@ -58,20 +58,6 @@ body.newsletter-dark-theme .page-subtitle {
   color: #e0e0e0;
 }
 
-/* Newsletter Introduction */
-.newsletter-intro {
-  max-width: 900px;
-  margin: 0 auto 4rem auto;
-  padding: 0 2rem;
-}
-
-.newsletter-intro .lead {
-  font-size: 1.3rem;
-  line-height: 1.7;
-  color: #d0d0d0;
-  margin-bottom: 3rem;
-  text-align: center;
-}
 
 /* Podcast Announcement */
 .podcast-announcement {
@@ -468,8 +454,14 @@ body.newsletter-dark-theme .page-subtitle {
     padding: 0 0.5rem;
   }
   
-  .signup-form iframe[data-test-id="beehiiv-embed"] {
-    height: 280px !important;
+  .subscription-form iframe {
+    height: 380px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .signup-form iframe {
+    height: 380px !important;
     width: 100% !important;
     max-width: 100% !important;
   }
@@ -516,7 +508,12 @@ body.newsletter-dark-theme .page-subtitle {
   }
 
   .hero-subtitle {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.1rem;
+    font-weight: 700;
   }
 
   .signup-form {
@@ -524,8 +521,14 @@ body.newsletter-dark-theme .page-subtitle {
     padding: 0 0.25rem;
   }
   
-  .signup-form iframe[data-test-id="beehiiv-embed"] {
-    height: 250px !important;
+  .subscription-form iframe {
+    height: 350px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .signup-form iframe {
+    height: 400px !important;
     width: 100% !important;
     max-width: 100% !important;
   }
