@@ -27,6 +27,27 @@ hide_page_header: true
   
   <div class="issues-grid">
     
+    <!-- Issue #9 -->
+    <a href="/unblockedcarver/issue-9/" class="issue-card">
+      <div class="issue-image">
+        <img src="/assets/images/unblocked-letters/icecream.png" alt="Spirituality Is the Ego's Final Disguise" loading="lazy">
+      </div>
+      <div class="issue-content">
+        <div class="issue-number">#9</div>
+        <h3 class="issue-title">Spirituality Is the Ego's Final Disguise</h3>
+        <div class="issue-meta">
+          <span class="date">May 7, 2025</span>
+          <span class="read-time">12 min read</span>
+        </div>
+        <div class="issue-tags">
+          <span class="tag">Spirituality</span>
+          <span class="tag">Psychology</span>
+        </div>
+        <p class="issue-excerpt">Spirituality is the ego's final disguise. While most people chase money, status, or pleasure, spiritual seekers chase something far more insidious: the identity of being above it all...</p>
+        <span class="read-more">Read Full Issue</span>
+      </div>
+    </a>
+
     <!-- Issue #8 -->
     <a href="/unblockedcarver/issue-8/" class="issue-card">
       <div class="issue-image">
