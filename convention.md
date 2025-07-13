@@ -30,9 +30,9 @@ permalink: /convention/
     <div class="section-content">
       <h2 class="section-title">The Future of Expertise is Here</h2>
       <p class="section-description">
-        The creator economy is valued at $104+ billion and growing. The next generation of thought leaders 
+        The creator economy is valued at $224+ billion and growing. The next generation of thought leaders 
         are transforming how expertise is packaged, shared, and monetized. This is where you position 
-        yourself at the forefront of that transformation.
+        yourself at the forefront of that transformation, and network with those who have forged the cutting edge.
       </p>
       <div class="stats-grid">
         <div class="stat-card">
