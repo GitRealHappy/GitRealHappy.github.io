@@ -145,7 +145,7 @@ p {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding-top: calc(var(--space-xxl) + 60px);
+  padding-top: calc(var(--space-lg) + 60px);
   padding-bottom: var(--space-xxl);
 }
 
@@ -163,7 +163,7 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 60%;
+  height: 80%;
   background: linear-gradient(135deg, 
     transparent 45%, 
     var(--light-sage) 45%, 
