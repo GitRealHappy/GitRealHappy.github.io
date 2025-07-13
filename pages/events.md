@@ -6,13 +6,18 @@ permalink: /events/
 description: "Join Oakmoss Woodcraft for art galleries, music events, and creative gatherings in the Fraser Valley. Discover past events and upcoming collaborations."
 ---
 
-## Connecting Through Art & Music
-
-Events can be quite a feat to pull off... but they're also where magic happens! I love bringing together artists, musicians, and creative souls for memorable gatherings here in the Fraser Valley. Whether you're looking to collaborate or simply want to be part of the creative community, I'd love to hear from you.
-
-### Want to Collaborate?
-
-We've had some incredible times, and we're always excited for more! Check back here for updates or [reach out to discuss possibilities](/contact/).
+<div class="convention-banner">
+  <div class="banner-content">
+    <div class="banner-text">
+      <h3 class="banner-title">Something Extraordinary is Coming</h3>
+      <p class="banner-subtitle">The Creative Economy Convention</p>
+      <p class="banner-description">Where personal brands become profitable empires. Vancouver, July 2026.</p>
+    </div>
+    <div class="banner-cta">
+      <a href="/convention/" class="banner-button">Discover More</a>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -71,6 +76,123 @@ These gatherings are more than just parties — they're opportunities to:
 *Interested in hosting or collaborating on an event? Let's create something beautiful together.*
 
 <style>
+.convention-banner {
+  background: linear-gradient(135deg, #1B4332 0%, #2D5A42 50%, #95A985 100%);
+  border-radius: 16px;
+  margin: 2rem 0 3rem 0;
+  padding: 3rem 2rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(27, 67, 50, 0.3);
+}
+
+.convention-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="0.3" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.banner-text {
+  flex: 1;
+  color: #fff;
+}
+
+.banner-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+  opacity: 0.9;
+}
+
+.banner-subtitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #B7971B;
+  letter-spacing: -0.01em;
+}
+
+.banner-description {
+  font-size: 1.1rem;
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.banner-cta {
+  flex-shrink: 0;
+  margin-left: 2rem;
+}
+
+.banner-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  letter-spacing: 0.5px;
+}
+
+.banner-button:hover {
+  background: rgba(183, 151, 27, 0.9);
+  border-color: rgba(183, 151, 27, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(183, 151, 27, 0.3);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .convention-banner {
+    padding: 2rem 1.5rem;
+  }
+  
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .banner-cta {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  
+  .banner-title {
+    font-size: 2rem;
+  }
+  
+  .banner-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .banner-description {
+    font-size: 1rem;
+  }
+}
+
 .video-container {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */

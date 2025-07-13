@@ -22,6 +22,7 @@ Allow: /taoistthreads/tao3.html
 Allow: /taoistthreads/tao4.html
 Allow: /taoistthreads/tao5.html
 Allow: /taoistthreads/tao6.html
+Allow: /convention/
 
 
 # Prevent crawling of any admin or private areas (if they exist)

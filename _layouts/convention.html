@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Tags -->
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="keywords" content="creator economy conference, vancouver, personal brand, content creation, entrepreneur">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/images/convention-og.svg' | absolute_url }}">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+  <meta name="twitter:image" content="{{ '/assets/images/convention-og.svg' | absolute_url }}">
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Convention-specific CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/convention.css' | relative_url }}">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#1B4332">
+  
+  <!-- Structured Data for Event -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "The Creative Economy Convention",
+    "description": "{{ page.description }}",
+    "startDate": "2026-07-24",
+    "endDate": "2026-07-26",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Vancouver",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vancouver",
+        "addressRegion": "BC",
+        "addressCountry": "CA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Oakmoss",
+      "url": "https://oakmoss.ca"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "{{ page.url | absolute_url }}",
+      "availability": "https://schema.org/PreOrder",
+      "validFrom": "2024-01-01"
+    }
+  }
+  </script>
+  
+  <!-- Google Analytics (add your tracking ID) -->
+  <!-- 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  -->
+</head>
+<body class="convention-page">
+  
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Minimal Header -->
+  <header class="convention-header">
+    <div class="container">
+      <nav class="convention-nav">
+        <a href="{{ '/' | relative_url }}" class="back-link">← Back to Oakmoss</a>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <main id="main-content" class="convention-main" role="main">
+    {{ content }}
+  </main>
+  
+  <!-- Footer -->
+  <footer class="convention-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <p>&copy; 2024 Oakmoss. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Convention JavaScript -->
+  <script src="{{ '/assets/js/convention.js' | relative_url }}"></script>
+  
+  <!-- Beehiiv Integration Script -->
+  <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</body>
+</html> 

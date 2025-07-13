@@ -1,0 +1,702 @@
+/* ==========================================================================
+   Convention Landing Page Styles
+   ========================================================================== */
+
+/* CSS Variables */
+:root {
+  --primary-green: #1B4332;
+  --accent-gold: #B7971B;
+  --clean-white: #FFFFFF;
+  --light-sage: #95A985;
+  --charcoal-text: #2D2D2D;
+  --light-gray: #F8F9FA;
+  
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 3rem;
+  --space-xl: 4rem;
+  --space-xxl: 6rem;
+  
+  /* Transitions */
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.6s ease;
+}
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body.convention-page {
+  font-family: var(--font-body);
+  color: var(--charcoal-text);
+  line-height: 1.6;
+  background-color: var(--clean-white);
+  overflow-x: hidden;
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary-green);
+  color: var(--clean-white);
+  padding: var(--space-sm);
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 9999;
+  transition: top var(--transition-base);
+}
+
+.skip-link:focus {
+  top: 20px;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--space-md);
+}
+
+h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+h2 { font-size: clamp(2rem, 4vw, 3rem); }
+h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
+
+p {
+  margin-bottom: var(--space-sm);
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.convention-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: var(--space-sm) 0;
+  transition: all var(--transition-base);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.convention-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.back-link {
+  color: var(--charcoal-text);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color var(--transition-base);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.back-link:hover {
+  color: var(--primary-green);
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: calc(var(--space-xxl) + 60px);
+  padding-bottom: var(--space-xxl);
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.geometric-mountains {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(135deg, 
+    transparent 45%, 
+    var(--light-sage) 45%, 
+    var(--light-sage) 55%, 
+    transparent 55%
+  ),
+  linear-gradient(45deg, 
+    transparent 35%, 
+    var(--primary-green) 35%, 
+    var(--primary-green) 65%, 
+    transparent 65%
+  );
+  opacity: 0.1;
+  transform: translateY(0);
+  transition: transform 1s ease;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeInUp 1s ease;
+}
+
+.hero-title {
+  color: var(--primary-green);
+  margin-bottom: var(--space-sm);
+  font-weight: 900;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  color: var(--accent-gold);
+  margin-bottom: var(--space-sm);
+  font-weight: 600;
+}
+
+.hero-tagline {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  color: var(--charcoal-text);
+  margin-bottom: var(--space-md);
+  font-family: var(--font-heading);
+  font-style: italic;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--charcoal-text);
+  margin-bottom: var(--space-lg);
+  opacity: 0.9;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cta-button.primary {
+  background: var(--primary-green);
+  color: var(--clean-white);
+  box-shadow: 0 4px 15px rgba(27, 67, 50, 0.3);
+}
+
+.cta-button.primary:hover {
+  background: var(--accent-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(183, 151, 27, 0.4);
+}
+
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.cta-button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+
+.section {
+  padding: var(--space-xxl) 0;
+  position: relative;
+}
+
+.section:nth-child(even) {
+  background: var(--light-gray);
+}
+
+.section-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  color: var(--primary-green);
+  margin-bottom: var(--space-md);
+}
+
+.section-description {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: var(--space-lg);
+  color: var(--charcoal-text);
+  opacity: 0.9;
+}
+
+/* ==========================================================================
+   Stats Grid
+   ========================================================================== */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.stat-card {
+  background: var(--clean-white);
+  padding: var(--space-lg);
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: all var(--transition-base);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  font-family: var(--font-heading);
+  margin-bottom: var(--space-xs);
+}
+
+.stat-label {
+  font-size: 1.125rem;
+  color: var(--charcoal-text);
+  opacity: 0.8;
+}
+
+/* ==========================================================================
+   Features Grid
+   ========================================================================== */
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.feature-card {
+  background: var(--clean-white);
+  padding: var(--space-lg);
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: all var(--transition-base);
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: var(--light-sage);
+  border-radius: 50%;
+  margin-bottom: var(--space-md);
+  color: var(--primary-green);
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-sm);
+  color: var(--primary-green);
+}
+
+.feature-description {
+  color: var(--charcoal-text);
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Benefits List
+   ========================================================================== */
+
+.benefits-list {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) 0;
+  font-size: 1.125rem;
+}
+
+.benefit-item svg {
+  color: var(--accent-gold);
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Email Capture Section
+   ========================================================================== */
+
+.email-capture {
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-sage) 100%);
+  color: var(--clean-white);
+  text-align: center;
+}
+
+.email-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.email-title {
+  color: var(--clean-white);
+  margin-bottom: var(--space-sm);
+}
+
+.email-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  margin-bottom: var(--space-lg);
+}
+
+.email-form-container {
+  background: var(--clean-white);
+  border-radius: 16px;
+  padding: var(--space-md);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Beehiiv Embed Styling */
+.beehiiv-embed {
+  width: 100%;
+  max-width: 592px;
+  height: 587px;
+  margin: 0 auto;
+  border: none;
+}
+
+/* Fallback Form */
+.email-form-fallback {
+  display: flex;
+  gap: var(--space-sm);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.email-form-fallback input[type="email"] {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border: 2px solid var(--light-sage);
+  border-radius: 50px;
+  outline: none;
+  transition: border-color var(--transition-base);
+}
+
+.email-form-fallback input[type="email"]:focus {
+  border-color: var(--primary-green);
+}
+
+.email-form-fallback button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: var(--primary-green);
+  color: var(--clean-white);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.email-form-fallback button:hover {
+  background: var(--accent-gold);
+  transform: translateY(-2px);
+}
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.convention-footer {
+  background: var(--primary-green);
+  color: var(--clean-white);
+  padding: var(--space-lg) 0;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-info p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll Animations */
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Parallax Effect */
+@supports (transform: translateZ(0)) {
+  .hero-background {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  /* Typography */
+  html {
+    font-size: 14px;
+  }
+  
+  /* Spacing */
+  :root {
+    --space-xxl: 4rem;
+    --space-xl: 3rem;
+    --space-lg: 2rem;
+  }
+  
+  /* Hero */
+  .hero {
+    min-height: 80vh;
+  }
+  
+  .hero-content {
+    padding: 0 var(--space-sm);
+  }
+  
+  /* Grids */
+  .stats-grid,
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  
+  /* Email Form */
+  .email-form-fallback {
+    flex-direction: column;
+  }
+  
+  .email-form-fallback input[type="email"],
+  .email-form-fallback button {
+    width: 100%;
+  }
+  
+  /* Footer */
+  .footer-content {
+    text-align: center;
+  }
+  
+  /* Beehiiv Embed */
+  .beehiiv-embed {
+    height: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Additional mobile styles can go here */
+}
+
+/* ==========================================================================
+   Loading State
+   ========================================================================== */
+
+body.convention-page::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--clean-white);
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+body.convention-page.loaded::before {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Loading spinner */
+body.convention-page::after {
+  content: '';
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  border: 3px solid var(--light-sage);
+  border-top-color: var(--primary-green);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  z-index: 10000;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+body.convention-page.loaded::after {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ==========================================================================
+   Performance Optimizations
+   ========================================================================== */
+
+/* Optimize font loading */
+.font-display-swap {
+  font-display: swap;
+}
+
+/* Hardware acceleration for animations */
+.hero-background,
+.geometric-mountains,
+.stat-card,
+.feature-card {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .hero-background,
+  .geometric-mountains {
+    transform: none !important;
+  }
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+  .convention-header,
+  .convention-footer,
+  .email-capture,
+  .cta-button {
+    display: none;
+  }
+  
+  .section {
+    page-break-inside: avoid;
+  }
+} 
