@@ -36,8 +36,8 @@ permalink: /convention/
       </p>
       <div class="stats-grid">
         <div class="stat-card">
-          <div class="stat-number">$104B+</div>
-          <div class="stat-label">Creator Economy Value</div>
+          <div class="stat-number">$224B+</div>
+          <div class="stat-label">Creator Economy Value in 2025</div>
         </div>
         <div class="stat-card">
           <div class="stat-number">50M+</div>
@@ -48,6 +48,15 @@ permalink: /convention/
           <div class="stat-label">Of Transformation</div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- Creator Economy Graph -->
+<section class="section creator-economy-graph">
+  <div class="container">
+    <div class="graph-container">
+      <img src="/assets/images/creatoreconomy.png" alt="Creator Economy Market Projections 2024-2027" class="economy-graph" loading="lazy">
     </div>
   </div>
 </section>
