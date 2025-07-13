@@ -2,7 +2,17 @@
 
 ## Oakmoss Woodcraft Website
 
-Jekyll-based website for Oakmoss Woodcraft featuring The Unblocked Carver newsletter, gallery, and woodworking content.
+Jekyll-based website for Oakmoss Woodcraft featuring The Unblocked Carver newsletter, gallery, woodworking content, and The Creative Economy Convention landing page.
+
+### 🌟 **The Creative Economy Convention**
+A premium landing page for the Creative Economy Convention in Vancouver, July 2026. Features:
+- Independent styling and layout from the main site
+- Email capture with Beehiiv integration
+- SEO optimized with structured data
+- Mobile-first responsive design
+- Located at `/convention/`
+
+For convention page maintenance, see `CONVENTION_README.md`.
 
 ## Newsletter Issue Workflow
 
