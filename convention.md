@@ -109,6 +109,18 @@ permalink: /convention/
           <h3 class="feature-title">International Community</h3>
           <p class="feature-description">Join creators from around the globe building the future together</p>
         </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 1l3 3 3-3v6l-3-3-3 3V1z"/>
+              <path d="M12 12c-1.5 0-3 1.5-3 3s1.5 3 3 3 3-1.5 3-3-1.5-3-3-3z"/>
+              <path d="M5 12l7-7 7 7"/>
+              <path d="M12 19v4"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">The Living Internet</h3>
+          <p class="feature-description">Celebrate the value of humanity, set apart from the dead internet</p>
+        </div>
       </div>
     </div>
   </div>
