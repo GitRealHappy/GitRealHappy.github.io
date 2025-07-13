@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Events"
-subtitle: "Art Gatherings & Creative Collaborations"
+title: ""
+subtitle: ""
 permalink: /events/
 description: "Join Oakmoss Woodcraft for art galleries, music events, and creative gatherings in the Fraser Valley. Discover past events and upcoming collaborations."
 ---
@@ -9,7 +9,7 @@ description: "Join Oakmoss Woodcraft for art galleries, music events, and creati
 <div class="convention-banner">
   <div class="banner-content">
     <div class="banner-text">
-      <h3 class="banner-title">Something Extraordinary is Coming</h3>
+      <h3 class="banner-title" style="color: #B7971B;">Something Extraordinary is Coming</h3>
       <p class="banner-subtitle">The Creative Economy Convention</p>
       <p class="banner-description">Where personal brands become profitable empires. Vancouver, July 2026.</p>
     </div>

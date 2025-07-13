@@ -186,7 +186,7 @@ p {
   max-width: 800px;
   margin: 0 auto;
   animation: fadeInUp 1s ease;
-}
+  }
 
 .hero-title {
   color: var(--primary-green);

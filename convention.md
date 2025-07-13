@@ -17,7 +17,7 @@ permalink: /convention/
       <p class="hero-tagline">Where Personal Brands Become Profitable Empires</p>
       <p class="hero-description">
         The premier gathering for creators who are serious about building sustainable, profitable personal brands. 
-        Join visionaries from around the world for three days of transformational content and premium connections.
+        Join trailblazers and visionaries from around the world for three days of transformational work and shaking hands with industry leaders.
       </p>
       <a href="#email-capture" class="cta-button primary">Join the Waitlist</a>
     </div>
@@ -40,12 +40,12 @@ permalink: /convention/
           <div class="stat-label">Creator Economy Value in 2025</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number">50M+</div>
+          <div class="stat-number">207M+</div>
           <div class="stat-label">Global Creators</div>
         </div>
         <div class="stat-card">
           <div class="stat-number">3 Days</div>
-          <div class="stat-label">Of Transformation</div>
+          <div class="stat-label">Of Transformation And Connection</div>
         </div>
       </div>
     </div>
@@ -70,6 +70,9 @@ permalink: /convention/
         An immersive experience featuring world-class keynotes, intimate workshops, and exclusive 
         networking opportunities. From VIP dinners to after-parties, every moment is designed to 
         accelerate your creator journey.
+      </p>
+      <p>
+      The gathering the creator economy has been waiting for.
       </p>
       <div class="features-grid">
         <div class="feature-card">
