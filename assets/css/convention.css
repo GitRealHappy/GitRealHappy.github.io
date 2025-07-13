@@ -469,11 +469,12 @@ p {
 }
 
 .email-title {
-  color: var(--clean-white);
+  color: var(--charcoal-text);
   margin-bottom: var(--space-sm);
 }
 
 .email-subtitle {
+  color: var(--charcoal-text);
   font-size: 1.25rem;
   opacity: 0.9;
   margin-bottom: var(--space-lg);
