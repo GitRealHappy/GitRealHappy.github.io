@@ -195,23 +195,32 @@ permalink: /convention/
       <h2 class="email-title">Stay Connected</h2>
       <p class="email-subtitle">Be the first to know when speakers are announced and tickets become available.</p>
       
-      <!-- Beehiiv Form Integration -->
-      <div class="email-form-container">
-        <iframe src="https://subscribe-forms.beehiiv.com/a9e02beb-1000-4af2-b37c-e2343079c0a0" 
-                class="beehiiv-embed" 
-                data-test-id="beehiiv-embed" 
-                frameborder="0" 
-                scrolling="no">
-        </iframe>
-      </div>
-      
-      <!-- Fallback form (in case Beehiiv doesn't load) -->
-      <noscript>
-        <form class="email-form-fallback" action="#" method="post">
-          <input type="email" placeholder="Enter your email address" required>
-          <button type="submit">Join Waitlist</button>
+      <!-- Formspree Form Integration -->
+      <div class="webform-container">
+        <form
+          action="https://formspree.io/f/xnnzawqg"
+          method="POST"
+          class="webform"
+        >
+          <label>
+            Your email:
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            First and Last Name:
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Your Website (optional):
+            <input type="text" name="website" placeholder="https://yourwebsite.com">
+          </label>
+          <label>
+            Social Media Links (optional):
+            <textarea name="social" placeholder="Paste your social media links here" rows="2" style="resize: vertical;"></textarea>
+          </label>
+          <button type="submit">Join the Waitlist</button>
         </form>
-      </noscript>
+      </div>
     </div>
   </div>
 </section>

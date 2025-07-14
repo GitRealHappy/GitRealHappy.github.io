@@ -142,24 +142,22 @@
    * Form Handling
    */
   function initFormHandling() {
-    // Handle fallback form submission
-    const fallbackForm = document.querySelector('.email-form-fallback');
+    // Handle Formspree form submission feedback
+    const webform = document.querySelector('.webform');
     
-    if (fallbackForm) {
-      fallbackForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const email = this.querySelector('input[type="email"]').value;
-        const button = this.querySelector('button');
+    if (webform) {
+      webform.addEventListener('submit', function(e) {
+        const button = this.querySelector('button[type="submit"]');
         const originalText = button.textContent;
         
-        // Simulate form submission
-        button.textContent = 'Submitting...';
+        // Show loading state
+        button.textContent = 'Sending...';
         button.disabled = true;
         
-        // In a real implementation, you would send the email to your server here
+        // Formspree will handle the submission automatically
+        // We just need to show feedback
         setTimeout(() => {
-          button.textContent = 'Success! Check your email';
+          button.textContent = 'Thank you!';
           button.style.background = 'var(--accent-gold)';
           
           // Reset after 3 seconds
@@ -167,29 +165,9 @@
             button.textContent = originalText;
             button.disabled = false;
             button.style.background = '';
-            fallbackForm.reset();
           }, 3000);
         }, 1000);
       });
-    }
-
-    // Monitor Beehiiv iframe load
-    const beehiivContainer = document.querySelector('.email-form-container');
-    if (beehiivContainer) {
-      const checkIframe = setInterval(() => {
-        const iframe = beehiivContainer.querySelector('.beehiiv-embed');
-        if (iframe && iframe.contentWindow) {
-          clearInterval(checkIframe);
-          // Hide fallback form if iframe loads successfully
-          const fallback = document.querySelector('.email-form-fallback');
-          if (fallback) {
-            fallback.style.display = 'none';
-          }
-        }
-      }, 1000);
-
-      // Stop checking after 5 seconds
-      setTimeout(() => clearInterval(checkIframe), 5000);
     }
   }
 
