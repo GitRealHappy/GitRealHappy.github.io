@@ -1,6 +1,6 @@
 ---
 layout: convention
-title: "The Creative Economy Convention"
+title: "The Creator Economy Convention"
 description: "The premier gathering for creators who are serious about building sustainable, profitable personal brands. Join visionaries from around the world for three days of transformational content and premium connections."
 permalink: /convention/
 ---
@@ -12,7 +12,7 @@ permalink: /convention/
   </div>
   <div class="container">
     <div class="hero-content">
-      <h1 class="hero-title">The Creative Economy Convention</h1>
+      <h1 class="hero-title">The Creator Economy Convention</h1>
       <p class="hero-subtitle">Vancouver | July 24-26, 2026</p>
       <p class="hero-tagline">Where Personal Brands Become Profitable Empires</p>
       <p class="hero-description">
