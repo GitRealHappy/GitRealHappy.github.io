@@ -12,11 +12,11 @@ permalink: /convention/
   </div>
   <div class="container">
     <div class="hero-content">
-      <h1 class="hero-title">The Creator Economy Convention</h1>
+      <h1 class="hero-title">The Gathering The Creator Economy Has Been Waiting For.</h1>
       <p class="hero-subtitle">Vancouver | July 24-26, 2026</p>
-      <p class="hero-tagline">Where Personal Brands Become Profitable Empires</p>
+      <p class="hero-tagline">The Creator Economy Convention</p>
       <p class="hero-description">
-        The premier gathering for creators who are serious about building sustainable, profitable personal brands. 
+        The premier convention for creators who are serious about building sustainable, profitable personal brands. 
         Join trailblazers and visionaries from around the world for three days of transformational work and shaking hands with industry leaders.
       </p>
       <a href="#email-capture" class="cta-button primary">Join the Waitlist</a>
@@ -28,7 +28,7 @@ permalink: /convention/
 <section class="section why-matters" id="why-matters">
   <div class="container">
     <div class="section-content">
-      <h2 class="section-title">The Future of Expertise is Here</h2>
+      <h2 class="section-title">The Future of Work</h2>
       <p class="section-description">
         The creator economy is valued at $224+ billion and growing. The next generation of thought leaders 
         are transforming how expertise is packaged, shared, and monetized. This is where you position 
@@ -68,11 +68,7 @@ permalink: /convention/
       <h2 class="section-title">Three Days. Infinite Possibilities.</h2>
       <p class="section-description">
         An immersive experience featuring world-class keynotes, intimate workshops, and exclusive 
-        networking opportunities. From VIP dinners to after-parties, every moment is designed to 
-        accelerate your creator journey.
-      </p>
-      <p>
-      The gathering the creator economy has been waiting for.
+        networking opportunities. Dine with A-Players at a VIP dinner, and let loose at the after-party on Sunday night. Every moment is designed to accelerate your creator journey.
       </p>
       <div class="features-grid">
         <div class="feature-card">
@@ -192,7 +188,7 @@ permalink: /convention/
 <section class="section email-capture" id="email-capture">
   <div class="container">
     <div class="email-content">
-      <h2 class="email-title">Stay Connected</h2>
+      <h2 class="email-title">Stay Tuned:</h2>
       <p class="email-subtitle">Be the first to know when speakers are announced and tickets become available.</p>
       
       <!-- Formspree Form Integration -->
