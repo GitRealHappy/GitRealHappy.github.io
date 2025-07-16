@@ -119,23 +119,7 @@ permalink: /convention/
         </div>
         <div class="feature-card">
           <div class="feature-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <!-- Prohibition circle -->
-              <circle cx="12" cy="12" r="10"/>
-              <!-- Diagonal line through -->
-              <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
-              <!-- Skull shape -->
-              <path d="M8 6c0-2.21 1.79-4 4-4s4 1.79 4 4v4c0 1.1-.9 2-2 2h-4c-1.1 0-2-.9-2-2V6z"/>
-              <!-- Eye sockets -->
-              <circle cx="10" cy="8" r="1" fill="currentColor"/>
-              <circle cx="14" cy="8" r="1" fill="currentColor"/>
-              <!-- Nasal cavity -->
-              <path d="M12 9.5v2"/>
-              <!-- Teeth/jaw -->
-              <path d="M10 13h1v1h-1z"/>
-              <path d="M12 13h1v1h-1z"/>
-              <path d="M13 13h1v1h-1z"/>
-            </svg>
+            <img src="/assets/images/convention-icons/livinginternet.png" alt="Living Internet" class="feature-icon-image" />
           </div>
           <h3 class="feature-title">The Living Internet</h3>
           <p class="feature-description">Celebrate the value of humanity, set apart from the dead internet</p>
