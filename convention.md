@@ -119,7 +119,9 @@ permalink: /convention/
         </div>
         <div class="feature-card">
           <div class="feature-icon">
-            <img src="/assets/images/convention-icons/livinginternet.png" alt="Living Internet" class="feature-icon-image" />
+            <span class="feature-icon-circle" style="display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;overflow:hidden;background:#f5f5f5;">
+              <img src="/assets/images/convention-icons/livinginternet.png" alt="Living Internet" class="feature-icon-image" style="width:32px;height:32px;object-fit:contain;display:block;" />
+            </span>
           </div>
           <h3 class="feature-title">The Living Internet</h3>
           <p class="feature-description">Celebrate the value of humanity, set apart from the dead internet</p>
