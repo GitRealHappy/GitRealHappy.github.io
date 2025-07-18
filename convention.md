@@ -13,7 +13,7 @@ permalink: /convention/
   <div class="container">
     <div class="hero-content">
       <h1 class="hero-title">The Gathering The Creator Economy Has Been Waiting For.</h1>
-      <p class="hero-subtitle">Vancouver | July 24-26, 2026</p>
+      <p class="hero-subtitle">Vancouver | May 29-31, 2026</p>
       <p class="hero-tagline">The Creator Economy Convention</p>
       <p class="hero-description">
         The premier convention for creators who are serious about building sustainable, profitable personal brands. 

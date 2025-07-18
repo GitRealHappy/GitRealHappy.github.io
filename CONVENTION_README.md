@@ -1,7 +1,7 @@
 # The Creative Economy Convention Landing Page
 
 ## Overview
-This is a premium landing page for "The Creative Economy Convention - Vancouver - July 2026" hosted at `/convention/` on the Oakmoss website. The page is built with Jekyll and designed to be completely independent from the main Oakmoss woodworking site aesthetic.
+This is a premium landing page for "The Creative Economy Convention - Vancouver - May 2026" hosted at `/convention/` on the Oakmoss website. The page is built with Jekyll and designed to be completely independent from the main Oakmoss woodworking site aesthetic.
 
 ## Technical Implementation
 

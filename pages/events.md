@@ -11,7 +11,7 @@ description: "Join Oakmoss Woodcraft for art galleries, music events, and creati
     <div class="banner-text">
       <h3 class="banner-title" style="color: #B7971B;">Something Extraordinary is Coming</h3>
       <p class="banner-subtitle">The Creative Economy Convention</p>
-      <p class="banner-description">Where personal brands become profitable empires. Vancouver, July 2026.</p>
+      <p class="banner-description">Where personal brands become profitable empires. Vancouver, May 2026.</p>
     </div>
     <div class="banner-cta">
       <a href="/convention/" class="banner-button">Discover More</a>
