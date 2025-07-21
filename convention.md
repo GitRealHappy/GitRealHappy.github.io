@@ -119,9 +119,7 @@ permalink: /convention/
         </div>
         <div class="feature-card">
           <div class="feature-icon">
-            <span class="feature-icon-circle" style="display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;overflow:hidden;background:#f5f5f5;">
-              <img src="/assets/images/convention-icons/livinginternet.png" alt="Living Internet" class="feature-icon-image" style="width:32px;height:32px;object-fit:contain;display:block;" />
-            </span>
+            <img src="/assets/images/convention-icons/livinginternet.png" alt="Living Internet" class="feature-icon-image" style="width:48px;height:48px;object-fit:contain;display:block;" />
           </div>
           <h3 class="feature-title">The Living Internet</h3>
           <p class="feature-description">Celebrate the value of humanity, set apart from the dead internet</p>
@@ -131,15 +129,15 @@ permalink: /convention/
   </div>
 </section>
 
-<!-- Early Access Benefits Section -->
-<section class="section early-access" id="early-access">
+<!-- Stay Connected Section -->
+<section class="section email-capture" id="email-capture">
   <div class="container">
     <div class="section-content">
-      <h2 class="section-title">Be Among the First</h2>
+      <h2 class="section-title">Stay Connected</h2>
       <p class="section-description">
-        Join the waitlist to receive exclusive speaker announcements, early access to tickets, 
-        and behind-the-scenes content as we build something extraordinary.
+        Subscribe to The Living Internet for exclusive updates, speaker announcements, and insights about the future of the creator economy.
       </p>
+      
       <div class="benefits-list">
         <div class="benefit-item">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -166,42 +164,12 @@ permalink: /convention/
           <span>Community access</span>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- Email Capture Section -->
-<section class="section email-capture" id="email-capture">
-  <div class="container">
-    <div class="email-content">
-      <h2 class="email-title">Stay Tuned:</h2>
-      <p class="email-subtitle">Be the first to know when speakers are announced and tickets become available.</p>
       
-      <!-- Formspree Form Integration -->
-      <div class="webform-container">
-        <form
-          action="https://formspree.io/f/xnnzawqg"
-          method="POST"
-          class="webform"
-        >
-          <label>
-            Your email:
-            <input type="email" name="email" required>
-          </label>
-          <label>
-            First and Last Name:
-            <input type="text" name="name" required>
-          </label>
-          <label>
-            Your Website (optional):
-            <input type="text" name="website" placeholder="https://yourwebsite.com">
-          </label>
-          <label>
-            Social Media Links (optional):
-            <textarea name="social" placeholder="Paste your social media links here" rows="2" style="resize: vertical;"></textarea>
-          </label>
-          <button type="submit">Join the Waitlist</button>
-        </form>
+      <!-- Substack Subscribe Section -->
+      <div style="text-align: center; margin-top: 3rem;">
+        <div style="display: flex; justify-content: center;">
+          <iframe src="https://livinginternet.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white; border-radius: 12px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);" frameborder="0" scrolling="no"></iframe>
+        </div>
       </div>
     </div>
   </div>
