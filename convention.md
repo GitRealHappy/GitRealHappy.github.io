@@ -149,13 +149,13 @@ permalink: /convention/
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polyline points="20 6 9 17 4 12"/>
           </svg>
-          <span>Early bird ticket pricing</span>
+          <span>Access to the one-day ticket mega-sale on September 6th</span>
         </div>
         <div class="benefit-item">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polyline points="20 6 9 17 4 12"/>
           </svg>
-          <span>Exclusive event updates</span>
+          <span>Exclusive event updates from the headline speakers</span>
         </div>
         <div class="benefit-item">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

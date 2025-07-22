@@ -462,15 +462,23 @@ p {
 }
 
 .email-title {
-  color: var(--charcoal-text);
+  color: var(--clean-white);
   margin-bottom: var(--space-sm);
 }
 
 .email-subtitle {
-  color: var(--charcoal-text);
+  color: var(--clean-white);
   font-size: 1.25rem;
   opacity: 0.9;
   margin-bottom: var(--space-lg);
+}
+
+.email-capture .section-title {
+  color: var(--accent-gold);
+}
+
+.email-capture .section-description {
+  color: var(--clean-white);
 }
 
 .email-form-container {
