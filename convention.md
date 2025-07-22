@@ -17,8 +17,10 @@ permalink: /convention/
       <p class="hero-tagline">The Creator Economy Convention</p>
       <p class="hero-description">
         The premier convention for creators who are serious about building sustainable, profitable personal brands. 
-        Join trailblazers and visionaries from around the world for three days of transformational work and shaking hands with industry leaders.
+        Join trailblazers and visionaries from around the world for three days of education, transformational work, and shaking hands with industry leaders.
       </p>
+      
+      <a href="#email-capture" class="cta-button primary">Join the Waitlist</a>
       
       <!-- Speaker Icons -->
       <div class="speaker-icons">
@@ -46,9 +48,10 @@ permalink: /convention/
         <div class="speaker-icon">
           <img src="/assets/images/convention-icons/speaker8-valentinsounds.jpg" alt="Speaker 8" loading="lazy">
         </div>
+        <div class="speaker-icon">
+          <img src="/assets/images/convention-icons/speaker9-nickserpico.jpg" alt="Speaker 9" loading="lazy">
+        </div>
       </div>
-      
-      <a href="#email-capture" class="cta-button primary">Join the Waitlist</a>
     </div>
   </div>
 </section>

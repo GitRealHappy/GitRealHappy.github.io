@@ -216,7 +216,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: var(--space-md);
-  margin-bottom: var(--space-lg);
+  margin-top: var(--space-lg);
   flex-wrap: wrap;
 }
 
@@ -730,18 +730,20 @@ p {
     padding: 0 var(--space-sm);
   }
   
-  /* Speaker Icons Mobile Layout */
+  /* Speaker Icons Mobile Layout - 3x3 Grid */
   .speaker-icons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-sm);
-    max-width: 280px;
-    margin: 0 auto var(--space-lg) auto;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
+  /* All icons 50px on mobile */
   .speaker-icon {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
   
   /* Grids */
