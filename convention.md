@@ -19,6 +19,35 @@ permalink: /convention/
         The premier convention for creators who are serious about building sustainable, profitable personal brands. 
         Join trailblazers and visionaries from around the world for three days of transformational work and shaking hands with industry leaders.
       </p>
+      
+      <!-- Speaker Icons -->
+      <div class="speaker-icons">
+        <div class="speaker-icon">
+          <img src="/assets/images/convention-icons/speaker1-thedankoe.jpg" alt="Speaker 1" loading="lazy">
+        </div>
+        <div class="speaker-icon">
+          <img src="/assets/images/convention-icons/speaker2-brianmaierhofer.jpg" alt="Speaker 2" loading="lazy">
+        </div>
+        <div class="speaker-icon">
+          <img src="/assets/images/convention-icons/speaker3-dangoldfield.jpg" alt="Speaker 3" loading="lazy">
+        </div>
+        <div class="speaker-icon">
+          <img src="/assets/images/convention-icons/speaker4-hussainibarra.jpg" alt="Speaker 4" loading="lazy">
+        </div>
+        <div class="speaker-icon">
+          <img src="/assets/images/convention-icons/speaker5-noahvincent.jpg" alt="Speaker 5" loading="lazy">
+        </div>
+        <div class="speaker-icon">
+          <img src="/assets/images/convention-icons/speaker6-nathalieagnes.jpg" alt="Speaker 6" loading="lazy">
+        </div>
+        <div class="speaker-icon">
+          <img src="/assets/images/convention-icons/speaker7-jessejames.jpg" alt="Speaker 7" loading="lazy">
+        </div>
+        <div class="speaker-icon">
+          <img src="/assets/images/convention-icons/speaker8-valentinsounds.jpg" alt="Speaker 8" loading="lazy">
+        </div>
+      </div>
+      
       <a href="#email-capture" class="cta-button primary">Join the Waitlist</a>
     </div>
   </div>

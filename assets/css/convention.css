@@ -210,6 +210,42 @@ p {
   opacity: 0.9;
 }
 
+/* Speaker Icons */
+.speaker-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.speaker-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all var(--transition-base);
+  cursor: default;
+  position: relative;
+}
+
+.speaker-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all var(--transition-base);
+  filter: grayscale(0%);
+}
+
+.speaker-icon:hover {
+  transform: scale(1.1);
+}
+
+.speaker-icon:hover img {
+  filter: grayscale(70%);
+}
+
 /* ==========================================================================
    Buttons
    ========================================================================== */
@@ -692,6 +728,20 @@ p {
   
   .hero-content {
     padding: 0 var(--space-sm);
+  }
+  
+  /* Speaker Icons Mobile Layout */
+  .speaker-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-sm);
+    max-width: 280px;
+    margin: 0 auto var(--space-lg) auto;
+  }
+  
+  .speaker-icon {
+    width: 60px;
+    height: 60px;
   }
   
   /* Grids */
