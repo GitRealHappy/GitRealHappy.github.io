@@ -31,6 +31,9 @@ permalink: /convention/
           <img src="/assets/images/convention-icons/speaker2-brianmaierhofer.jpg" alt="Speaker 2" loading="lazy">
         </div>
         <div class="speaker-icon">
+          <img src="/assets/images/convention-icons/speaker10-kimianora.jpg" alt="Speaker 10" loading="lazy">
+        </div>
+        <div class="speaker-icon">
           <img src="/assets/images/convention-icons/speaker3-dangoldfield.jpg" alt="Speaker 3" loading="lazy">
         </div>
         <div class="speaker-icon">

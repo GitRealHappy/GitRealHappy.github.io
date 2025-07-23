@@ -730,7 +730,7 @@ p {
     padding: 0 var(--space-sm);
   }
   
-  /* Speaker Icons Mobile Layout - 3x3 Grid */
+  /* Speaker Icons Mobile Layout - 3x3+ Grid (allows 4th row) */
   .speaker-icons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
