@@ -20,40 +20,42 @@ permalink: /convention/
         Join trailblazers and visionaries from around the world for three days of education, transformational work, and shaking hands with industry leaders.
       </p>
       
-      <a href="#email-capture" class="cta-button primary">Join the Waitlist</a>
+      <p class="super-sale-text">Don't miss the one-day super-sale on September 6th, 2025:</p>
+      
+      <a href="#email-capture" class="cta-button primary">Get Access</a>
       
       <!-- Speaker Icons -->
       <div class="speaker-icons">
-        <div class="speaker-icon">
+        <a href="https://x.com/thedankoe" target="_blank" rel="noopener noreferrer" class="speaker-icon">
           <img src="/assets/images/convention-icons/speaker1-thedankoe.jpg" alt="Speaker 1" loading="lazy">
-        </div>
-        <div class="speaker-icon">
+        </a>
+        <a href="https://x.com/IamProHuman" target="_blank" rel="noopener noreferrer" class="speaker-icon">
           <img src="/assets/images/convention-icons/speaker2-brianmaierhofer.jpg" alt="Speaker 2" loading="lazy">
-        </div>
-        <div class="speaker-icon">
+        </a>
+        <a href="https://x.com/iamkimianora" target="_blank" rel="noopener noreferrer" class="speaker-icon">
           <img src="/assets/images/convention-icons/speaker10-kimianora.jpg" alt="Speaker 10" loading="lazy">
-        </div>
-        <div class="speaker-icon">
+        </a>
+        <a href="https://x.com/itsdangoldfield" target="_blank" rel="noopener noreferrer" class="speaker-icon">
           <img src="/assets/images/convention-icons/speaker3-dangoldfield.jpg" alt="Speaker 3" loading="lazy">
-        </div>
-        <div class="speaker-icon">
+        </a>
+        <a href="https://x.com/HussainIbarra" target="_blank" rel="noopener noreferrer" class="speaker-icon">
           <img src="/assets/images/convention-icons/speaker4-hussainibarra.jpg" alt="Speaker 4" loading="lazy">
-        </div>
-        <div class="speaker-icon">
+        </a>
+        <a href="https://x.com/noahvnct" target="_blank" rel="noopener noreferrer" class="speaker-icon">
           <img src="/assets/images/convention-icons/speaker5-noahvincent.jpg" alt="Speaker 5" loading="lazy">
-        </div>
-        <div class="speaker-icon">
+        </a>
+        <a href="https://x.com/NathalieAgnesk" target="_blank" rel="noopener noreferrer" class="speaker-icon">
           <img src="/assets/images/convention-icons/speaker6-nathalieagnes.jpg" alt="Speaker 6" loading="lazy">
-        </div>
-        <div class="speaker-icon">
+        </a>
+        <a href="https://x.com/UnblockedCarver" target="_blank" rel="noopener noreferrer" class="speaker-icon">
           <img src="/assets/images/convention-icons/speaker7-jessejames.jpg" alt="Speaker 7" loading="lazy">
-        </div>
-        <div class="speaker-icon">
+        </a>
+        <a href="https://x.com/valentinmakes" target="_blank" rel="noopener noreferrer" class="speaker-icon">
           <img src="/assets/images/convention-icons/speaker8-valentinsounds.jpg" alt="Speaker 8" loading="lazy">
-        </div>
-        <div class="speaker-icon">
+        </a>
+        <a href="https://x.com/sensibleclarity" target="_blank" rel="noopener noreferrer" class="speaker-icon">
           <img src="/assets/images/convention-icons/speaker9-nickserpico.jpg" alt="Speaker 9" loading="lazy">
-        </div>
+        </a>
       </div>
     </div>
   </div>

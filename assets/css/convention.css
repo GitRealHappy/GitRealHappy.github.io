@@ -210,6 +210,14 @@ p {
   opacity: 0.9;
 }
 
+.super-sale-text {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--accent-gold);
+  margin-bottom: var(--space-sm);
+  text-align: center;
+}
+
 /* Speaker Icons */
 .speaker-icons {
   display: flex;
@@ -221,13 +229,15 @@ p {
 }
 
 .speaker-icon {
+  display: block;
   width: 70px;
   height: 70px;
   border-radius: 50%;
   overflow: hidden;
   transition: all var(--transition-base);
-  cursor: default;
+  cursor: pointer;
   position: relative;
+  text-decoration: none;
 }
 
 .speaker-icon img {
