@@ -20,7 +20,7 @@ permalink: /convention/
         Join trailblazers and visionaries from around the world for three days of education, transformational work, and shaking hands with industry leaders.
       </p>
       
-      <p class="super-sale-text">Don't miss the one-day super-sale on September 6th, 2025:</p>
+      <p class="super-sale-text">Tickets go on sale in August 2025:</p>
       
       <a href="#email-capture" class="cta-button primary">Get Access</a>
       
@@ -186,7 +186,7 @@ permalink: /convention/
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polyline points="20 6 9 17 4 12"/>
           </svg>
-          <span style="color: var(--accent-gold); font-size: 1.4rem;">Access to the one-day ticket mega-sale on September 6th, 2025</span>
+          <span style="color: var(--accent-gold); font-size: 1.4rem;">Early access to discounted tickets in August 2025</span>
         </div>
         <div class="benefit-item">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
