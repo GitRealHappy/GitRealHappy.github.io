@@ -29,5 +29,3 @@ My grand vision is to one day build **The Perennial Academy** — a small educat
 ---
 
 *Ready to explore my work? Check out the [gallery](/gallery/) or [get in touch](/contact/) to discuss a custom piece.*
-
-{% include wayfinder-cta.html %} 

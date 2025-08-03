@@ -141,7 +141,7 @@ These five practices create a solid foundation for mental bandwidth management. 
 
 Rearranging the icons on your smartphone home screen is one of those little tasks that seem insignificant, but when you do it, the reduction in friction adds up to a big difference in mental bandwidth.
 
-If you find this helpful, this has been just a taste of what we'll be exploring in Module 2 of *The Creative Wayfinders* course. If these ideas resonate, I invite you to experience the complete Mental Bandwidth module as a free mini-course ahead of the full 8-week course launch on May 10th.
+If you find this helpful, this has been just a taste of what we'll be exploring in Module 2 of *The Creative Wayfinders* course. If these ideas resonate, I invite you to experience the complete Mental Bandwidth module as a free mini-course ahead of the full 8-week course launch on May 10th, 2025.
 
 The free mini-course includes video segments, an interactive workbook, and practical exercises designed to permanently expand your creative capacity.
 
@@ -154,5 +154,3 @@ Until next time,
 **Jesse James Carver**
 
 ---
-
-**P.S.** The full Creative Wayfinders course launches May 10th (register before then). There's a limit of 8 participants, allowing for an intimate creative community with weekly live encouragement calls. If you're ready to transform your relationship with creativity, I'd love to have you join us. 
