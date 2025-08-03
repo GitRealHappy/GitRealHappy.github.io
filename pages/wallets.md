@@ -58,9 +58,9 @@ body_class: 'newsletter-dark-theme'
             </div>
 
             <div class="cta-section">
-                <div class="price">$415.00 USD</div>
+                <div class="price">$200.00 USD</div>
                 <p class="final-run">Final collection of 25 wallets</p>
-                <a href="https://stan.store/oakmoss/p/oakmoss-wooden-wallet" class="cta-button">Buy Now</a>
+                <p class="contact-info">To order Oakmoss wallets, please send your request to jesse.boyes@oakmosswoodcraft.com</p>
             </div>
         </div>
     </div>
