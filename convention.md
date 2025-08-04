@@ -20,7 +20,7 @@ permalink: /convention/
         Join trailblazers and visionaries from around the world for three days of education, transformational work, and shaking hands with industry leaders.
       </p>
       
-      <p class="super-sale-text">Tickets go on sale in August 2025:</p>
+      <p class="super-sale-text">Tickets go on sale on August 8th, 2025 at 6:00am PST:</p>
       
       <a href="#email-capture" class="cta-button primary">Get Access</a>
       
