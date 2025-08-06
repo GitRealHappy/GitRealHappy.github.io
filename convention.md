@@ -62,6 +62,9 @@ permalink: /convention/
         <a href="https://x.com/itskierandrew" target="_blank" rel="noopener noreferrer" class="speaker-icon">
           <img src="/assets/images/convention-icons/speaker12-kierandrew.jpg" alt="Speaker 12" loading="lazy">
         </a>
+        <a href="https://x.com/taylinsimmonds" target="_blank" rel="noopener noreferrer" class="speaker-icon">
+          <img src="/assets/images/convention-icons/speaker13-taylinsimmonds.jpg" alt="Speaker 13" loading="lazy">
+        </a>
       </div>
     </div>
   </div>
