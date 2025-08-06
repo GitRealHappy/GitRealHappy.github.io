@@ -53,8 +53,14 @@ permalink: /convention/
         <a href="https://x.com/valentinmakes" target="_blank" rel="noopener noreferrer" class="speaker-icon">
           <img src="/assets/images/convention-icons/speaker8-valentinsounds.jpg" alt="Speaker 8" loading="lazy">
         </a>
-        <a href="https://x.com/sensibleclarity" target="_blank" rel="noopener noreferrer" class="speaker-icon">
+        <a href="https://x.com/thenickserpico" target="_blank" rel="noopener noreferrer" class="speaker-icon">
           <img src="/assets/images/convention-icons/speaker9-nickserpico.jpg" alt="Speaker 9" loading="lazy">
+        </a>
+        <a href="https://x.com/jackmoses0" target="_blank" rel="noopener noreferrer" class="speaker-icon">
+          <img src="/assets/images/convention-icons/speaker11-jackmoses.jpg" alt="Speaker 11" loading="lazy">
+        </a>
+        <a href="https://x.com/itskierandrew" target="_blank" rel="noopener noreferrer" class="speaker-icon">
+          <img src="/assets/images/convention-icons/speaker12-kierandrew.jpg" alt="Speaker 12" loading="lazy">
         </a>
       </div>
     </div>
