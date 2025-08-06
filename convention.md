@@ -13,16 +13,16 @@ permalink: /convention/
   <div class="container">
     <div class="hero-content">
       <h1 class="hero-title">The Gathering The Creator Economy Has Been Waiting For.</h1>
-      <p class="hero-subtitle">Vancouver | May 29-31, 2026</p>
+      <p class="hero-subtitle">Vancouver | June 5th-7th, 2026</p>
       <p class="hero-tagline">The Creator Economy Convention</p>
       <p class="hero-description">
         The premier convention for creators who are serious about building sustainable, profitable personal brands. 
         Join trailblazers and visionaries from around the world for three days of education, transformational work, and shaking hands with industry leaders.
       </p>
       
-      <p class="super-sale-text">Tickets go on sale on August 8th, 2025 at 6:00am PST:</p>
+      <p class="super-sale-text">Tickets go on sale mid-August 2025:</p>
       
-      <a href="#email-capture" class="cta-button primary">Get Access</a>
+      <a href="#email-capture" class="cta-button primary">Get Early Access</a>
       
       <!-- Speaker Icons -->
       <div class="speaker-icons">
