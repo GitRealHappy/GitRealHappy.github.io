@@ -268,6 +268,111 @@
   }
 }
 
+// VIP Application Form
+.vip-form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e8e6e3;
+}
+
+.vip-application-form {
+  .form-group {
+    margin-bottom: 1.8rem;
+    
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #2c3e34;
+      font-size: 1rem;
+      font-weight: 500;
+      
+      strong {
+        color: #2c3e34;
+      }
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    textarea {
+      width: 100%;
+      padding: 0.875rem 1rem;
+      border: 2px solid #e8e6e3;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: inherit;
+      color: #2c3e34;
+      background-color: #faf8f5;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      
+      &:focus {
+        outline: none;
+        border-color: #8b5a3c;
+        box-shadow: 0 0 0 3px rgba(139, 90, 60, 0.1);
+        background-color: #fff;
+      }
+      
+      &::placeholder {
+        color: #999;
+        opacity: 1;
+      }
+      
+      &:required {
+        border-left: 4px solid #8b5a3c;
+      }
+    }
+    
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+      line-height: 1.5;
+    }
+  }
+  
+  .form-submit {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// Form validation styles
+.vip-application-form {
+  input:invalid:not(:placeholder-shown),
+  textarea:invalid:not(:placeholder-shown) {
+    border-color: #dc3545;
+    background-color: #fff5f5;
+  }
+  
+  input:valid:not(:placeholder-shown),
+  textarea:valid:not(:placeholder-shown) {
+    border-color: #28a745;
+  }
+}
+
+// Responsive form adjustments
+@media (max-width: 768px) {
+  .vip-form-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .vip-application-form .form-submit {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
 // Lazy loading images
 .lazy {
   opacity: 0;
