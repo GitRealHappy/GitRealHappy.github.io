@@ -12,7 +12,7 @@ Thank you for your interest in VIP access to the Creator Economy Convention. VIP
 
 **VIP privileges include:**
 - Reserved seating in premium sections
-- Exclusive VIP networking session with speakers
+- Exclusive VIP networking dinner with speakers
 - Priority access for photos and autographs
 - VIP swag bag with exclusive items
 - Debrief webinars in the weeks following the convention
