@@ -6,7 +6,7 @@ permalink: /vip-tickets/
 description: "Apply for VIP access to the Creator Economy Convention - limited exclusive spots available."
 ---
 
-## Apply for VIP Access
+## Apply for one of 40 VIP Access Tickets
 
 Thank you for your interest in VIP access to the Creator Economy Convention. VIP guests enjoy exclusive networking opportunities, priority seating, and special access to speakers and organizers.
 
@@ -42,7 +42,7 @@ Please complete all required fields below. Applications are reviewed on a rollin
     <div class="form-group">
       <label for="relationship">
         <strong>Relationship to Organizers or Speakers</strong>
-        <textarea id="relationship" name="relationship" rows="3" placeholder="Describe any connection you have with the organizers, speakers, or previous attendees..."></textarea>
+        <textarea id="relationship" name="relationship" rows="3" placeholder="Describe any connection you have with the organizers, speakers, or other VIP attendees..."></textarea>
       </label>
     </div>
 
