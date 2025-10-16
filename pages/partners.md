@@ -26,6 +26,17 @@ We are proud to collaborate with talented artists and creatives who share our va
 
   <div class="partner-card">
     <div class="partner-image">
+      <img src="/assets/images/livinginternet.png" alt="Living Internet" loading="lazy">
+    </div>
+    <div class="partner-content">
+      <h3>The Living Internet Alliance</h3>
+      <p>The Living Internet Alliance is a community of entrepreneur creators who are writing the future of commerce and content — We are hosting the Creator Economy Convention in Vancouver, June 2026.</p>
+      <a href="https://thelivinginternet.com/" class="partner-link">Visit Website</a>
+    </div>
+  </div>
+
+  <div class="partner-card">
+    <div class="partner-image">
       <img src="/assets/images/jack_hendsbee.jpg" alt="Jack Hendsbee, landscape painter" loading="lazy">
     </div>
     <div class="partner-content">
