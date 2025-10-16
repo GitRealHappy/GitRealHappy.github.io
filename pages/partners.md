@@ -30,7 +30,7 @@ We are proud to collaborate with talented artists and creatives who share our va
     </div>
     <div class="partner-content">
       <h3>The Living Internet Alliance</h3>
-      <p>The Living Internet Alliance is a community of entrepreneur creators who are writing the future of commerce and content — We are hosting the Creator Economy Convention in Vancouver, June 2026.</p>
+      <p>The Living Internet Alliance is a community of entrepreneur creators who are writing the future of commerce and content — We are hosting the Creator Economy Convention in Vancouver, June 2026 with speakers such as Dan Koe, Kieran Drew, Hussain Ibarra, Taylin Simmonds, and Jack Moses.</p>
       <a href="https://thelivinginternet.com/" class="partner-link">Visit Website</a>
     </div>
   </div>
