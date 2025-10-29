@@ -4,7 +4,7 @@ issue_number: 4
 date: 2025-02-04
 read_time: "20 min read"
 tags: ["Technology", "Philosophy"]
-featured_image: "/assets/images/dankoe.jpeg"
+featured_image: "/assets/images/dankoe-small.jpeg"
 excerpt: "Exploring the intersection of artificial intelligence, creativity, and human meaning."
 ---
 
@@ -272,4 +272,4 @@ You are not a machine.
 
 ---
 
-Reclaim your creative agency in a machine world: Join "The Creative Wayfinder" - 8 Weeks of Creative Transformation starting May 10th, 2025! 
+Don't miss your chance to hear Mr. Koe speak in person at the Creator Economy Convention in Vancouver, June 2026! [Click here](https://thelivinginternet.com/) to learn more.
