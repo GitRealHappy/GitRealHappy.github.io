@@ -41,4 +41,13 @@ Based in **British Columbia, Canada**. I work with clients locally and can arran
 
 ---
 
-*Questions about The Creative Wayfinder course or my writing? Visit [JesseBoyes.com](https://www.jesseboyes.com) for those inquiries.* 
+<script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1SOlArIyguPpY1p9xUhZIzgA"
+  publishable-key="pk_live_51SOknAIyguPpY1p92uzDMwRlCyACtTKxjIYhAr5ztfJpXm54Zqza7fsHIBhm0v4LvIaLONeqidUxjL0FAX1VpETP00SRPjZX8u"
+>
+</stripe-buy-button>
+

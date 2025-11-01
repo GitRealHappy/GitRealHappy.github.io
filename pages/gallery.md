@@ -23,7 +23,7 @@ body_class: 'newsletter-dark-theme'
   <div class="gallery-grid">
     {% assign gallery_images = "ecologytime2.jpg,ecologytime1.jpg,gallery1.jpeg,gallery2.jpeg,gallery3.jpeg,gallery4.jpeg,gallery5.jpeg,gallery6.jpeg,gallery7.jpeg,gallery8.jpeg,gallery9.jpeg,gallery10.jpeg,gallery11.jpeg,gallery12.jpeg,gallery13.jpeg,gallery14.jpeg,gallery15.jpeg,gallery16.jpeg,gallery17.jpeg,gallery18.jpeg,gallery19.jpeg,gallery20.jpeg" | split: "," %}
     
-    {% assign gallery_titles = "Ecology of Time II,Ecology of Time I,Cherry Table,Cherry Table Detail,Cherry Table Craftsmanship,Cherry Table Joinery,Cherry Table Grain,Cherry Table Finish,Cherry Table Profile,Cherry Table Underside,Cherry Table Complete,Wood Wallet,Wood Art Sculpture,Wood Carving Detail,Wood Carving Art,Wood Carving Craft,Wood Carving Design,Wood Carving Form,Wood Carving Texture,Wood Carving Profile,Wood Carving Complete,Wood Carving Finish" | split: "," %}
+    {% assign gallery_titles = "Ecology of Time II,Ecology of Time I, Solar Rays Table 1,Solar Rays Table 2,Solar Rays Table 3,Solar Rays Table 4,Solar Rays Table 5,Solar Rays Table 6,Solar Rays Table 7,Wooden Gear,Giraffe Charcuterie Board,Giraffe Board 2,Fisher Birdman,Handcarved Ganja Box 1,Handcarved Ganja Box 2,Handcarved Ganja Box 3,Lily Pad Frog Box 1,Lily Pad Frog Box 2,Oakmoss Wood Wallet,Oakmoss Furniture,Playing Card Box,Wooden Bowl" | split: "," %}
     
     {% for image in gallery_images %}
       {% assign index = forloop.index0 %}
