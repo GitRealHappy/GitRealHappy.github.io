@@ -9,9 +9,10 @@ description: "Join Oakmoss Woodcraft for art galleries, music events, and creati
 <div class="convention-banner">
   <div class="banner-content">
     <div class="banner-text">
-      <h3 class="banner-title" style="color: #B7971B;">Something Extraordinary is Coming</h3>
-      <p class="banner-subtitle">The Creator Economy Convention</p>
-      <p class="banner-description">Where personal brands become profitable empires. Vancouver, May 2026.</p>
+      <h3 class="banner-title" style="color:rgb(254, 206, 13);">The Creator Economy Convention</h3>
+      <p class="banner-subtitle">Vancouver, Canada, June 2026:</p>
+      <p class="banner-description">A New Vision of the Future for Creators.<br>
+      Three Days of Transformation, Education from the Best in the Business, and Community Building.</p>
     </div>
     <div class="banner-cta">
       <a href="https://thelivinginternet.com/" class="banner-button">Discover More</a>
@@ -77,7 +78,11 @@ These gatherings are more than just parties — they're opportunities to:
 
 <style>
 .convention-banner {
-  background: linear-gradient(135deg, #1B4332 0%, #2D5A42 50%, #95A985 100%);
+  background: linear-gradient(135deg, rgba(27, 67, 50, 0.8) 0%, rgba(45, 90, 66, 0.8) 50%, rgba(149, 169, 133, 0.8) 100%),
+              url('/assets/images/convention.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 16px;
   margin: 2rem 0 3rem 0;
   padding: 3rem 2rem;
@@ -114,7 +119,7 @@ These gatherings are more than just parties — they're opportunities to:
 }
 
 .banner-title {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 300;
   margin-bottom: 0.5rem;
   letter-spacing: -0.02em;
@@ -122,7 +127,7 @@ These gatherings are more than just parties — they're opportunities to:
 }
 
 .banner-subtitle {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #B7971B;
@@ -130,7 +135,7 @@ These gatherings are more than just parties — they're opportunities to:
 }
 
 .banner-description {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   opacity: 0.8;
   line-height: 1.6;
   margin-bottom: 0;
@@ -145,7 +150,7 @@ These gatherings are more than just parties — they're opportunities to:
 .banner-button {
   display: inline-block;
   padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.1);
+  background:rgba(230, 116, 40, 0.66);
   color: #fff;
   text-decoration: none;
   border-radius: 50px;
@@ -181,15 +186,15 @@ These gatherings are more than just parties — they're opportunities to:
   }
   
   .banner-title {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
   
   .banner-subtitle {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   
   .banner-description {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 
