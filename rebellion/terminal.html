@@ -1042,7 +1042,7 @@
         lineElem.textContent = text.slice(0, charIndex);
         if (charIndex < text.length) {
           charIndex++;
-          setTimeout(typeChar, 18); // speed per char
+          setTimeout(typeChar, 12); // speed per char
         } else {
           // Add blinking cursor to last line when it's the final prompt
           if (typingIndex === introLines.length - 1) {
@@ -1051,7 +1051,7 @@
             lineElem.appendChild(cursorSpan);
           }
           typingIndex++;
-          setTimeout(typeNextLine, 160); // delay between lines
+          setTimeout(typeNextLine, 120); // delay between lines
         }
       }
 
