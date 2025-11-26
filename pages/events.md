@@ -15,7 +15,7 @@ description: "Join Oakmoss Woodcraft for art galleries, music events, and creati
       Three Days of Transformation, Education from the Best in the Business, and Community Building.</p>
     </div>
     <div class="banner-cta">
-      <a href="https://thelivinginternet.com/" class="banner-button">Discover More</a>
+      <a href="http://thelivinginternet.com?via=jesse" class="banner-button">Discover More</a>
     </div>
   </div>
 </div>

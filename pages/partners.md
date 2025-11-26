@@ -26,6 +26,18 @@ We are proud to collaborate with talented artists and creatives who share our va
 
   <div class="partner-card">
     <div class="partner-image">
+      <img src="/assets/images/rebellion.png" alt="Web Design Rebellion" loading="lazy">
+    </div>
+    <div class="partner-content">
+      <h3>Web Design Rebellion</h3>
+      <p class="partner-subtitle">Freelance Web Design Training</p>
+      <p>A 4-week training program teaching freelancers how to build $1,000 websites in 60 minutes using AI and modern tools. Learn to escape the 9-5 and build a high-value freelance skill that gives you sovereignty in the digital world.</p>
+      <a href="/rebellion/terminal.html" class="partner-link">Exit the matrix</a>
+    </div>
+  </div>
+
+  <div class="partner-card">
+    <div class="partner-image">
       <img src="/assets/images/livinginternet.png" alt="Living Internet" loading="lazy">
     </div>
     <div class="partner-content">

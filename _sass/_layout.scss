@@ -176,6 +176,11 @@
   
   .footer-text {
     margin-bottom: 0.5rem;
+    
+    &.footer-text-small {
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
   }
   
   .footer-link {
@@ -185,6 +190,32 @@
     &:hover,
     &:focus {
       color: #faf8f5;
+    }
+  }
+  
+  // Terminal-style CTA button
+  .terminal-cta {
+    padding: 0.5rem 1rem !important;
+    background-color: transparent !important;
+    border: 1px solid #7ce3c6 !important;
+    color: #7ce3c6 !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    border-radius: 4px !important;
+    font-family: "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace !important;
+    letter-spacing: 0.05em !important;
+    
+    &:hover,
+    &:focus {
+      background-color: rgba(124, 227, 198, 0.1) !important;
+      color: #7ce3c6 !important;
+      border-color: #7ce3c6 !important;
+      box-shadow: 0 0 12px rgba(124, 227, 198, 0.3) !important;
+      transform: translateY(-1px) !important;
+    }
+    
+    &:active {
+      transform: translateY(0) !important;
     }
   }
   
