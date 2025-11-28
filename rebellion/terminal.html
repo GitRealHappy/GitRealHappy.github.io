@@ -467,6 +467,24 @@
       margin: 14px 0;
     }
 
+    .sale-announcement {
+      background: rgba(124, 227, 198, 0.1);
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .sale-announcement h2 {
+      color: var(--accent);
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
     .final-cta {
       margin-top: 36px;
       text-align: left;
@@ -577,6 +595,9 @@
 
   <!-- Sales page -->
   <main id="sales-page" class="hidden">
+    <div class="sale-announcement">
+      <h2>Black Friday - Cyber Monday Sale: 40% Off</h2>
+    </div>
     <section class="sales-section">
       <h1 class="main-title">Web Design Rebellion</h1>
       <div class="headline">Build $1,000 websites in 60 minutes.</div>
@@ -788,11 +809,10 @@
     <section class="sales-section">
       <h2>The Investment</h2>
       <div id="pricing-container">
-        <p id="regular-price" class="hidden">$1,500 USD</p>
-        <p id="discount-price" class="hidden">
+        <p>
           <span style="text-decoration: line-through; color: var(--muted); margin-right: 8px;">$1,500</span>
           <span class="sales-highlight">$900 USD</span>
-          <span style="color: var(--accent); font-size: 13px; margin-left: 8px;">(40% off Black Friday)</span>
+          <span style="color: var(--accent); font-size: 13px; margin-left: 8px;">(40% off Black Friday - Cyber Monday Sale)</span>
         </p>
         <p>
           This skill easily pays for itself with your first 3 clients.
@@ -852,17 +872,11 @@
       <div style="margin-top: 24px;">
         <h3 style="font-size: 15px; color: var(--text); margin-bottom: 12px; font-weight: 500;">Option 1: Pay in Full</h3>
         <p style="font-size: 14px; color: var(--muted); margin-bottom: 16px;">
-          <span id="full-price-amount" class="sales-highlight">$900</span> (one-time payment)
+          <span style="text-decoration: line-through; color: var(--muted); margin-right: 8px;">$1,500</span>
+          <span class="sales-highlight">$900</span> (one-time payment)
         </p>
         <div id="full-payment-container" style="margin-bottom: 32px;">
           <stripe-buy-button
-            id="full-payment-btn-discount"
-            class="hidden"
-            buy-button-id="YOUR_BUY_BUTTON_ID_FOR_900"
-            publishable-key="pk_live_51Rw6gO4zBgvudDjiihpZ55ED8u101W9LtCc2ED4QhxSergenfWJUC73eOzsYqz58esTSn0sFMBFGB2mn11ZiKzQA00G9wl2sew">
-          </stripe-buy-button>
-          <stripe-buy-button
-            id="full-payment-btn-regular"
             buy-button-id="buy_btn_1SXZfS4zBgvudDjiPCi9Z60i"
             publishable-key="pk_live_51Rw6gO4zBgvudDjiihpZ55ED8u101W9LtCc2ED4QhxSergenfWJUC73eOzsYqz58esTSn0sFMBFGB2mn11ZiKzQA00G9wl2sew">
           </stripe-buy-button>
@@ -872,21 +886,15 @@
       <div style="margin-top: 24px;">
         <h3 style="font-size: 15px; color: var(--text); margin-bottom: 12px; font-weight: 500;">Option 2: Pay in Two Installments</h3>
         <p style="font-size: 14px; color: var(--muted); margin-bottom: 16px;">
-          <span id="installment-amount" class="sales-highlight">$465</span> now, 
-          <span id="installment-amount-2" class="sales-highlight">$465</span> before the third class
+          <span style="text-decoration: line-through; color: var(--muted); margin-right: 8px;">$775</span>
+          <span class="sales-highlight">$465</span> now, 
+          <span style="text-decoration: line-through; color: var(--muted); margin-right: 8px; margin-left: 8px;">$775</span>
+          <span class="sales-highlight">$465</span> before the third class
           <br>
-          <span style="font-size: 13px; color: var(--muted);">(Total: <span id="installment-total">$930</span>)</span>
+          <span style="font-size: 13px; color: var(--muted);">(Total: <span style="text-decoration: line-through; color: var(--muted); margin-right: 8px;">$1,550</span><span class="sales-highlight">$930</span>)</span>
         </p>
         <div id="installment-payment-container" style="margin-bottom: 32px;">
           <stripe-buy-button
-            id="installment-payment-btn-discount"
-            class="hidden"
-            buy-button-id="YOUR_BUY_BUTTON_ID_FOR_465"
-            publishable-key="pk_live_51Rw6gO4zBgvudDjiihpZ55ED8u101W9LtCc2ED4QhxSergenfWJUC73eOzsYqz58esTSn0sFMBFGB2mn11ZiKzQA00G9wl2sew">
-          </stripe-buy-button>
-          <stripe-buy-button
-            id="installment-payment-btn-regular"
-            class="hidden"
             buy-button-id="buy_btn_1SXZmp4zBgvudDjiU6PGOXOw"
             publishable-key="pk_live_51Rw6gO4zBgvudDjiihpZ55ED8u101W9LtCc2ED4QhxSergenfWJUC73eOzsYqz58esTSn0sFMBFGB2mn11ZiKzQA00G9wl2sew">
           </stripe-buy-button>
@@ -901,78 +909,6 @@
   </main>
 
   <script>
-    // Black Friday discount period: Nov 28 - Dec 1
-    function isBlackFridayPeriod() {
-      const now = new Date();
-      const currentYear = now.getFullYear();
-      
-      // Black Friday: November 28
-      const blackFridayStart = new Date(currentYear, 10, 28); // Month is 0-indexed, so 10 = November
-      blackFridayStart.setHours(0, 0, 0, 0);
-      
-      // Cyber Monday: December 1
-      const cyberMondayEnd = new Date(currentYear, 11, 1); // 11 = December
-      cyberMondayEnd.setHours(23, 59, 59, 999);
-      
-      return now >= blackFridayStart && now <= cyberMondayEnd;
-    }
-
-    // Set pricing based on discount period
-    function initializePricing() {
-      const isDiscount = isBlackFridayPeriod();
-      
-      // Update pricing display
-      const regularPrice = document.getElementById('regular-price');
-      const discountPrice = document.getElementById('discount-price');
-      
-      if (isDiscount) {
-        regularPrice.classList.add('hidden');
-        discountPrice.classList.remove('hidden');
-      } else {
-        regularPrice.classList.remove('hidden');
-        discountPrice.classList.add('hidden');
-      }
-      
-      // Update payment amounts
-      const fullPriceAmount = document.getElementById('full-price-amount');
-      const installmentAmount = document.getElementById('installment-amount');
-      const installmentAmount2 = document.getElementById('installment-amount-2');
-      const installmentTotal = document.getElementById('installment-total');
-      
-      // Get Stripe buy button elements
-      const fullPaymentBtnDiscount = document.getElementById('full-payment-btn-discount');
-      const fullPaymentBtnRegular = document.getElementById('full-payment-btn-regular');
-      const installmentBtnDiscount = document.getElementById('installment-payment-btn-discount');
-      const installmentBtnRegular = document.getElementById('installment-payment-btn-regular');
-      
-      if (isDiscount) {
-        fullPriceAmount.textContent = '$900';
-        installmentAmount.textContent = '$465';
-        installmentAmount2.textContent = '$465';
-        installmentTotal.textContent = '$930';
-        
-        // Show discount buttons, hide regular buttons
-        if (fullPaymentBtnDiscount) fullPaymentBtnDiscount.classList.remove('hidden');
-        if (fullPaymentBtnRegular) fullPaymentBtnRegular.classList.add('hidden');
-        if (installmentBtnDiscount) installmentBtnDiscount.classList.remove('hidden');
-        if (installmentBtnRegular) installmentBtnRegular.classList.add('hidden');
-      } else {
-        fullPriceAmount.textContent = '$1,500';
-        installmentAmount.textContent = '$775';
-        installmentAmount2.textContent = '$775';
-        installmentTotal.textContent = '$1,550';
-        
-        // Show regular buttons, hide discount buttons
-        if (fullPaymentBtnDiscount) fullPaymentBtnDiscount.classList.add('hidden');
-        if (fullPaymentBtnRegular) fullPaymentBtnRegular.classList.remove('hidden');
-        if (installmentBtnDiscount) installmentBtnDiscount.classList.add('hidden');
-        if (installmentBtnRegular) installmentBtnRegular.classList.remove('hidden');
-      }
-    }
-
-    // Initialize pricing on page load
-    window.addEventListener('DOMContentLoaded', initializePricing);
-
     const terminalOverlay = document.getElementById("terminal-overlay");
     const terminalOutput = document.getElementById("terminal-output");
     const terminalInputRow = document.getElementById("terminal-input-row");
