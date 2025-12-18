@@ -232,7 +232,7 @@ hide_page_header: true
 <div class="author-section">
   <div class="container">
     <h3>About the Author</h3>
-    <p><strong>Jesse James Carver</strong> is the creator of <a href="/">Oakmoss Woodcraft.</a>
+          <p><strong>Jesse James Carver</strong> is the creator of <a href="/">Oakmoss Woodcraft.</a></p>
     <p>Through his newsletter, Jesse weaves together Zen philosophy, practical creativity techniques, and insights from his journey as a wood carver to help others unlock their creative potential.</p>
   </div>
 </div>
