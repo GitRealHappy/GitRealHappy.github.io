@@ -31,8 +31,8 @@ We are proud to collaborate with talented artists and creatives who share our va
     <div class="partner-content">
       <h3>Web Design Rebellion</h3>
       <p class="partner-subtitle">Freelance Web Design Training</p>
-      <p>A 4-week training program teaching freelancers how to build $1,000 websites in 60 minutes using AI and modern tools. Learn to escape the 9-5 and build a high-value freelance skill that gives you sovereignty in the digital world.</p>
-      <a href="/rebellion/terminal.html" class="partner-link">Exit the matrix</a>
+      <p>A 4-week training program teaching creators how to build $1,000 websites in a weekend. You can escape the 9-5 and build a high-value freelance skill that gives you sovereignty in the digital world.</p>
+      <a href="www.webrebellion.com" class="partner-link">Exit the matrix</a>
     </div>
   </div>
 
