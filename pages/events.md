@@ -9,7 +9,7 @@ description: "Join Oakmoss Woodcraft for art galleries, music events, and creati
 <div class="convention-banner">
   <div class="banner-content">
     <div class="banner-text">
-      <h3 class="banner-title" style="color:rgb(254, 206, 13);">The Creator Economy Convention</h3>
+      <h3 class="banner-title" style="color:rgb(254, 206, 13);">The Future-Proof Creator Summit</h3>
       <p class="banner-subtitle">Vancouver, Canada, June 2026:</p>
       <p class="banner-description">A New Vision of the Future for Creators.<br>
       Three Days of Transformation, Education from the Best in the Business, and Community Building.</p>
