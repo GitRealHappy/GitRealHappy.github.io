@@ -35,7 +35,7 @@ body_class: 'newsletter-dark-theme'
         <!-- Content Section - Right Side -->
         <div class="content-section">
             <h2>Handcrafted Excellence</h2>
-            <p class="luxury-subtitle">Premium hardwood wallets by artisan Jesse Carver</p>
+            <p class="luxury-subtitle">Premium hardwood wallets by Jesse Carver</p>
             
             <div class="product-details">
                 <p>Each wallet is meticulously crafted from premium hardwoods including padauk, birdseye maple, walnut, and cherry. The high-quality elastic securely holds 1-18 cards while the genuine leather cash holder provides effortless access.</p>
@@ -54,7 +54,7 @@ body_class: 'newsletter-dark-theme'
             </div>
 
             <div class="guarantee-section">
-                <p><strong>Three-year craftsmanship guarantee.</strong> Only 2 of 50+ wallets have ever needed repair.</p>
+                <p><strong>Three-year craftsmanship guarantee.</strong> If any part of the wallet needs repair, Jesse will repair it for free.</p>
             </div>
 
             <div class="cta-section">
