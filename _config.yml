@@ -1,5 +1,5 @@
-title: "Oakmoss Woodcraft"
-description: "Wood Art & Furniture by Jesse James Carver - Handcrafted with timeless craftsmanship"
+title: "Oakmoss Wood Art"
+description: "Handcrafted wood art by Jesse James Carver"
 baseurl: ""
 url: "https://gitrealHappy.github.io"
 
@@ -18,23 +18,12 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-paginate
 
 # Collections
 collections:
-  interviews:
-    output: true
-    permalink: /interviews/:name/
   gallery:
     output: true
     permalink: /gallery/:name/
-  newsletter:
-    output: true
-    permalink: /unblockedcarver/:name/
-
-# Pagination
-paginate: 6
-paginate_path: "/blog/page:num/"
 
 # Sass
 sass:
@@ -62,28 +51,11 @@ facebook:
 defaults:
   - scope:
       path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      permalink: /blog/:title/
-  - scope:
-      path: ""
-      type: "interviews"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
       type: "gallery"
     values:
       layout: "gallery"
   - scope:
       path: ""
-      type: "newsletter"
-    values:
-      layout: "newsletter-issue"
-      body_class: "newsletter-dark-theme"
-  - scope:
-      path: ""
       type: "pages"
     values:
-      layout: "page" 
+      layout: "page"

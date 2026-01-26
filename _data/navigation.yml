@@ -1,26 +1,19 @@
 main:
+  - name: "Gallery"
+    url: "/"
+  - name: "Wallets"
+    url: "/wallets/"
+  - name: "Table Gallery"
+    url: "/table-gallery/"
   - name: "About"
     url: "/about/"
-  - name: "Gallery"
-    url: "/gallery/"
-  - name: "Newsletter"
-    url: "/unblockedcarver/"
-  - name: "Contact"
-    url: "/contact/"
-  - name: "Events"
-    url: "/events/"
-  - name: "Partners"
-    url: "/partners/"
 
 footer: []
 
 social:
-  - name: "Facebook"
-    url: "https://www.facebook.com/oakmosswoodcraft"
-    icon: "fab fa-facebook"
   - name: "Instagram"
     url: "https://www.instagram.com/jesse.oakmoss/"
     icon: "fab fa-instagram"
   - name: "YouTube"
     url: "https://www.youtube.com/@oakmosswoodcraft"
-    icon: "fab fa-youtube" 
+    icon: "fab fa-youtube"

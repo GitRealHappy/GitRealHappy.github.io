@@ -1,53 +1,15 @@
 User-agent: *
 Allow: /
 
-# Allow search engines to crawl all important pages
-Allow: /index.html
-Allow: /about.html
-Allow: /gallery.html
-Allow: /events.html
-Allow: /interviews.html
-Allow: /contact.html
-Allow: /wallets.html
-Allow: /interviews/wadedavis.html
-Allow: /interviews/monicagagliano.html
-Allow: /interviews/trevorcarolan.html
-Allow: /interviews/dennismckenna.html
-Allow: /jesseboyes.html
-Allow: /taoistthreads/index.html
-Allow: /tablegallery.html
-Allow: /taoistthreads/tao1.html
-Allow: /taoistthreads/tao2.html
-Allow: /taoistthreads/tao3.html
-Allow: /taoistthreads/tao4.html
-Allow: /taoistthreads/tao5.html
-Allow: /taoistthreads/tao6.html
-Allow: /convention/
+# Allow search engines to crawl all pages
+Allow: /
+Allow: /about/
+Allow: /wallets/
+Allow: /table-gallery/
 
-
-# Prevent crawling of any admin or private areas (if they exist)
+# Prevent crawling of any admin or private areas
 Disallow: /admin/
 Disallow: /private/
-Disallow: / GitRealHapppy.github.io
 
 # Sitemap location
 Sitemap: https://www.oakmoss.ca/sitemap.xml
-
-# handmade furniture fraser valley
-# custom wooden art abbotsford
-# artisan woodcraft chilliwack
-# bespoke wood tables mission bc
-# wooden wallets canada
-# eco-friendly wood products british columbia
-# custom hardwood furniture langley
-# artisanal woodworking maple ridge
-# sustainable wood art fraser valley
-# handcrafted wooden gifts bc
-# custom woodworking
-# jesse carver
-# oakmoss wood art
-# abbotsford artists
-# custom carved doors
-# wooden wallet
-# abbotsford gallery
-# oakmoss lichen

@@ -1,52 +1,49 @@
 ---
 layout: default
-title: "Oakmoss Woodcraft | Wood Art & Furniture"
-description: "Handcrafted wooden art and furniture by Canadian Artist Jesse James Carver. Timeless craftsmanship meets modern design."
-featured_image: "/assets/images/cherry-table.jpg"
+title: "Oakmoss Wood Art"
+description: "Handcrafted wood art by Jesse James Carver. Explore a collection of custom furniture, sculptures, and wooden accessories."
+featured_image: "/assets/images/gallery/gallery1.jpeg"
+custom_js: ['gallery.js']
+body_class: 'gallery-home'
 ---
 
-<section class="hero">
+<section class="gallery-hero">
   <div class="hero-content">
     <h1 class="hero-title">OAKMOSS</h1>
-    <p class="hero-subtitle">Wooden art and furniture for those who value timeless craftsmanship</p>
-    <p class="hero-byline">Handcrafted by Canadian Artist, Jesse James Carver</p>
-    <a href="/gallery/" class="cta-button">Explore Our Collection</a>
+    <p class="hero-tagline">Wood Art by Jesse James Carver</p>
   </div>
 </section>
 
-<section class="intro">
-  <div class="container">
-    <div class="intro-content">
-      <h2>Welcome to Oakmoss</h2>
-      <p>Every piece tells a story of patience, skill, and respect for the natural beauty of wood. From custom furniture to artistic sculptures, each creation is a testament to traditional craftsmanship in our modern world.</p>
-    </div>
+<section class="gallery-section">
+  <div class="gallery-grid">
+    {% assign gallery_images = "ecologytime2.jpg,ecologytime1.jpg,gallery1.jpeg,gallery2.jpeg,gallery3.jpeg,gallery4.jpeg,gallery5.jpeg,gallery6.jpeg,gallery7.jpeg,gallery8.jpeg,gallery9.jpeg,gallery10.jpeg,gallery11.jpeg,gallery12.jpeg,gallery13.jpeg,gallery14.jpeg,gallery15.jpeg,gallery16.jpeg,gallery17.jpeg,gallery18.jpeg,gallery19.jpeg,gallery20.jpeg" | split: "," %}
+    
+    {% assign gallery_titles = "Ecology of Time II,Ecology of Time I,Solar Rays Table,Solar Rays Table,Solar Rays Table,Solar Rays Table,Solar Rays Table,Solar Rays Table,Solar Rays Table,Wooden Gear,Giraffe Charcuterie Board,Giraffe Board,Fisher Birdman,Handcarved Ganja Box,Handcarved Ganja Box,Handcarved Ganja Box,Lily Pad Frog Box,Lily Pad Frog Box,Oakmoss Wood Wallet,Oakmoss Furniture,Playing Card Box,Wooden Bowl" | split: "," %}
+    
+    {% for image in gallery_images %}
+      {% assign index = forloop.index0 %}
+      {% assign title = gallery_titles[index] | default: "Wood Art by Jesse James Carver" %}
+      <div class="gallery-item">
+        <img src="/assets/images/gallery/{{ image }}" 
+             alt="{{ title }}" 
+             title="{{ title }}"
+             loading="lazy"
+             onclick="openLightbox(this.src, '{{ title }}')">
+        <div class="gallery-overlay">
+          <span class="gallery-title">{{ title }}</span>
+        </div>
+      </div>
+    {% endfor %}
   </div>
 </section>
 
-<section class="featured-work">
-  <div class="container">
-    <h2>Featured Work</h2>
-    <div class="work-grid">
-      <a href="/table-gallery/" class="work-item">
-        <img src="/assets/images/gallery/gallery1.jpeg" alt="Handcrafted wooden piece" loading="lazy">
-        <h3>Custom Furniture</h3>
-        <p>Bespoke pieces designed for your space</p>
-      </a>
-      <a href="/wallets/" class="work-item">
-        <img src="/assets/images/oakmoss-wallets.jpeg" alt="Wooden wallets" loading="lazy">
-        <h3>Wood Wallets</h3>
-        <p>Precision-crafted wooden accessories</p>
-      </a>
-    </div>
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" style="display: none;" tabindex="-1">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close lightbox">&times;</button>
+  <button class="lightbox-btn lightbox-prev" onclick="changeImage(-1)" aria-label="Previous image">&#10094;</button>
+  <div class="lightbox-content">
+    <img src="" alt="" id="lightbox-image">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
   </div>
-</section>
-
-<section class="podcast">
-  <div class="container">
-    <h2>Listen to Our Podcast</h2>
-    <div class="podcast-embed">
-      <div id='buzzsprout-large-player'></div>
-      <script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/2500127.js?container_id=buzzsprout-large-player&player=large'></script>
-    </div>
-  </div>
-</section> 
+  <button class="lightbox-btn lightbox-next" onclick="changeImage(1)" aria-label="Next image">&#10095;</button>
+</div>

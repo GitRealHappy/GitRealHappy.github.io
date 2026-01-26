@@ -1,41 +1,48 @@
 // =============================================================================
-// LAYOUT STYLES
+// LAYOUT STYLES - Modern, Minimal
 // =============================================================================
 
 // Site Header
 .site-header {
-  background-color: #7a8471;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #0d0d0d;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+  border-bottom: 1px solid #1a1a1a;
 }
 
 // Navigation
 .main-nav {
   .nav-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
+    height: 70px;
     
     @media (min-width: 768px) {
       padding: 0 2rem;
+      height: 80px;
     }
   }
   
   .logo {
-    height: 80px;
+    height: 50px;
     width: auto;
     
     @media (min-width: 768px) {
-      height: 100px;
+      height: 60px;
     }
+  }
+  
+  .logo-link {
+    display: flex;
+    align-items: center;
   }
   
   // Navigation Links
@@ -57,47 +64,45 @@
       top: 100%;
       left: 0;
       right: 0;
-      background-color: #7a8471;
-      padding: 1rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #0d0d0d;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid #1a1a1a;
       
       @media (min-width: 768px) {
         position: static;
         flex-direction: row;
         background: none;
         padding: 0;
-        box-shadow: none;
+        border: none;
       }
     }
   }
   
   .nav-link {
     display: block;
-    padding: 0.75rem 1rem;
-    color: #faf8f5;
-    font-weight: 500;
-    font-size: 1.1rem;
+    padding: 0.75rem 1.25rem;
+    color: #a0a0a0;
+    font-weight: 400;
+    font-size: 0.875rem;
     text-decoration: none;
-    background-color: #5a6350;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: color 0.2s ease;
+    margin-bottom: 0.25rem;
     
     @media (min-width: 768px) {
       margin-bottom: 0;
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
     
     &:hover,
     &:focus {
-      background-color: #4a5340;
-      color: #faf8f5;
+      color: #ffffff;
       text-decoration: none;
-      transform: translateY(-1px);
     }
     
     &--active {
-      background-color: #3a4330;
+      color: #ffffff;
     }
   }
   
@@ -116,42 +121,42 @@
     .nav-toggle-bar {
       display: block;
       width: 24px;
-      height: 3px;
-      background-color: #faf8f5;
-      margin: 4px 0;
+      height: 2px;
+      background-color: #a0a0a0;
+      margin: 5px 0;
       transition: 0.3s;
-      border-radius: 2px;
+      border-radius: 1px;
     }
     
     &:hover .nav-toggle-bar,
     &:focus .nav-toggle-bar {
-      background-color: #e5e3e0;
+      background-color: #ffffff;
     }
   }
 }
 
 // Main Content
 .main-content {
-  margin-top: 80px; // Account for fixed header
-  min-height: calc(100vh - 80px);
+  margin-top: 70px;
+  min-height: calc(100vh - 70px);
   
   @media (min-width: 768px) {
-    margin-top: 100px;
-    min-height: calc(100vh - 100px);
+    margin-top: 80px;
+    min-height: calc(100vh - 80px);
   }
 }
 
 // Footer
 .site-footer {
-  background-color: #2c3e34;
-  color: #faf8f5;
-  padding: 3rem 0 1rem;
-  margin-top: 4rem;
+  background-color: #0a0a0a;
+  color: #606060;
+  padding: 2rem 0;
+  border-top: 1px solid #1a1a1a;
   
   .footer-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     
     @media (min-width: 768px) {
       padding: 0 2rem;
@@ -159,79 +164,15 @@
   }
   
   .footer-content {
-    display: grid;
-    gap: 2rem;
-    
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 3rem;
-    }
-  }
-  
-  .footer-title {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    color: #faf8f5;
-  }
-  
-  .footer-text {
-    margin-bottom: 0.5rem;
-    
-    &.footer-text-small {
-      font-size: 0.85rem;
-      line-height: 1.5;
-    }
-  }
-  
-  .footer-link {
-    color: #a8b29e;
-    transition: color 0.3s ease;
-    
-    &:hover,
-    &:focus {
-      color: #faf8f5;
-    }
-  }
-  
-  // Terminal-style CTA button
-  .terminal-cta {
-    padding: 0.5rem 1rem !important;
-    background-color: transparent !important;
-    border: 1px solid #7ce3c6 !important;
-    color: #7ce3c6 !important;
-    font-size: 0.9rem !important;
-    font-weight: 500 !important;
-    border-radius: 4px !important;
-    font-family: "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace !important;
-    letter-spacing: 0.05em !important;
-    
-    &:hover,
-    &:focus {
-      background-color: rgba(124, 227, 198, 0.1) !important;
-      color: #7ce3c6 !important;
-      border-color: #7ce3c6 !important;
-      box-shadow: 0 0 12px rgba(124, 227, 198, 0.3) !important;
-      transform: translateY(-1px) !important;
-    }
-    
-    &:active {
-      transform: translateY(0) !important;
-    }
-  }
-  
-  .footer-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    
-    li {
-      margin-bottom: 0.5rem;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
   
   .social-links {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
   }
   
   .social-link {
@@ -240,30 +181,104 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: #7a8471;
-    color: #faf8f5;
-    border-radius: 50%;
-    transition: all 0.3s ease;
+    color: #606060;
+    transition: color 0.2s ease;
+    font-size: 1.25rem;
     
     &:hover,
     &:focus {
-      background-color: #a8b29e;
-      transform: translateY(-2px);
-      color: #faf8f5;
+      color: #ffffff;
       text-decoration: none;
     }
   }
   
-  .footer-bottom {
-    border-top: 1px solid #4a5340;
-    margin-top: 2rem;
-    padding-top: 1rem;
-    text-align: center;
+  .copyright {
+    color: #404040;
+    font-size: 0.8rem;
+    margin: 0;
+    letter-spacing: 0.05em;
+  }
+}
+
+// =============================================================================
+// PAGE LAYOUTS
+// =============================================================================
+
+// Page Headers
+.page-header {
+  background-color: #0d0d0d;
+  padding: 3rem 0;
+  text-align: center;
+  
+  .page-title {
+    margin-bottom: 0.5rem;
+    color: #fafafa;
   }
   
-  .copyright {
-    color: #a8b29e;
-    font-size: 0.9rem;
+  .page-subtitle {
+    font-size: 1.1rem;
+    color: #606060;
     margin: 0;
   }
-} 
+}
+
+// Page Content
+.page-content {
+  padding: 3rem 0;
+  background-color: #0d0d0d;
+  
+  .container {
+    max-width: 800px;
+  }
+}
+
+// About Page
+.about-page {
+  .page-header {
+    display: none;
+  }
+  
+  .about-content {
+    text-align: center;
+    padding: 8rem 2rem;
+    min-height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 200;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      
+      @media (min-width: 768px) {
+        font-size: 3.5rem;
+      }
+    }
+    
+    .byline {
+      font-size: 1.1rem;
+      color: #606060;
+      margin: 0;
+      
+      @media (min-width: 768px) {
+        font-size: 1.25rem;
+      }
+    }
+    
+    .author-link {
+      color: #808080;
+      border-bottom: 1px solid #404040;
+      padding-bottom: 2px;
+      transition: all 0.2s ease;
+      
+      &:hover {
+        color: #ffffff;
+        border-bottom-color: #606060;
+      }
+    }
+  }
+}
