@@ -5,6 +5,8 @@ main:
     url: "/wallets/"
   - name: "Table Gallery"
     url: "/table-gallery/"
+  - name: "Events"
+    url: "/events/"
   - name: "About"
     url: "/about/"
 

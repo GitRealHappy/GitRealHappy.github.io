@@ -324,3 +324,176 @@
     }
   }
 }
+
+// Events Page
+.events-page {
+  .page-header {
+    display: none;
+  }
+  
+  .events-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    
+    @media (min-width: 768px) {
+      padding: 4rem 2rem;
+    }
+    
+    h1 {
+      font-size: 2rem;
+      font-weight: 200;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+      text-align: center;
+      
+      @media (min-width: 768px) {
+        font-size: 2.5rem;
+        letter-spacing: 0.15em;
+      }
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+      
+      @media (min-width: 768px) {
+        font-size: 1.75rem;
+      }
+    }
+    
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 300;
+      letter-spacing: 0.05em;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: #e0e0e0;
+    }
+    
+    h4 {
+      font-size: 1.1rem;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.5rem;
+      color: #ffffff;
+    }
+    
+    ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+      margin: 1rem 0;
+      
+      li {
+        color: #ffffff;
+        margin-bottom: 0.75rem;
+        line-height: 1.6;
+      }
+    }
+    
+    .speaker-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+      
+      .speaker-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #2a2a2a;
+        transition: transform 0.2s ease, border-color 0.2s ease;
+        
+        &:hover {
+          transform: scale(1.1);
+          border-color: #404040;
+        }
+        
+        @media (min-width: 768px) {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+    
+    .event-date {
+      font-size: 1.1rem;
+      color: #a0a0a0;
+      margin: 0.5rem 0;
+    }
+    
+    .event-location {
+      font-size: 1rem;
+      color: #808080;
+      margin-bottom: 1.5rem;
+    }
+    
+    .event-description {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #c0c0c0;
+      margin-bottom: 2rem;
+    }
+    
+    .ticket-options {
+      display: grid;
+      gap: 1.5rem;
+      margin: 2rem 0;
+      
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .ticket {
+        background-color: #1a1a1a;
+        padding: 1.5rem;
+        border-radius: 4px;
+        border: 1px solid #2a2a2a;
+        transition: border-color 0.2s ease;
+        
+        &:hover {
+          border-color: #404040;
+        }
+        
+        p {
+          font-size: 0.9rem;
+          color: #a0a0a0;
+          line-height: 1.6;
+        }
+      }
+    }
+    
+    .event-cta {
+      text-align: center;
+      margin: 3rem 0 2rem;
+      
+      .event-link {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: #2a2a2a;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        transition: background-color 0.2s ease;
+        
+        &:hover {
+          background-color: #3a3a3a;
+        }
+      }
+    }
+    
+    .event-note {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #606060;
+      font-style: italic;
+    }
+  }
+}
