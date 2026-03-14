@@ -14,9 +14,15 @@ body_class: 'events-page'
     <p class="event-location">Sheraton Vancouver Airport Hotel • Vancouver, BC</p>
 
     <p class="event-description">
-      Get First-Mover Advantage in The Next Stage of The Digital Renaissance. 
-      Join 3 days of live, interactive teaching from top creators including 
-      <strong>Dan Koe</strong>, <strong>Kieran Drew</strong>, and <strong>Taylin John Simmonds</strong>.
+      Find Your Tribe. Build Your Future-Proof Creator Business.
+    </p>
+
+    <p class="event-subtitle">
+      The Future-Proof Creator Summit is where serious creators, educators, and digital entrepreneurs unite for 3 days to master the timeless principles and modern strategies behind building your sustainable, high-income creative business that survives the AI revolution, without compromising your passion.
+    </p>
+
+    <p class="event-headliners">
+      Headlined by: <strong>Dan Koe</strong>, <strong>Kieran Drew</strong>, and <strong>Taylin John Simmonds</strong>.
     </p>
 
     <div class="speaker-icons">
