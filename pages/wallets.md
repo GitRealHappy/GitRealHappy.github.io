@@ -55,9 +55,11 @@ body_class: 'wallets-page'
             </div>
 
             <div class="pricing">
-                <div class="price">$200 USD</div>
+                <div class="price">$149 CAD</div>
                 <p class="availability">Final collection of 25 wallets</p>
-                <p class="contact">To order, email jesse@thelivinginternet.com</p>
+                <a href="https://buy.stripe.com/3cI28s7tB776dud4tdfEk03" target="_blank" class="wallet-cta-button">
+                    Order Your Oakmoss Wallet →
+                </a>
             </div>
         </div>
     </div>
