@@ -321,3 +321,230 @@
     border-color: #353535;
   }
 }
+
+// =============================================================================
+// PODCAST BANNER
+// =============================================================================
+
+.podcast-banner {
+  background-color: #0d0d0d;
+  padding: 0 0.5rem 3rem;
+  
+  @media (min-width: 768px) {
+    padding: 0 2rem 5rem;
+  }
+}
+
+.podcast-banner-image {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  
+  // Mobile: image only, text below
+  height: 250px;
+  
+  @media (min-width: 640px) {
+    height: 400px;
+  }
+  
+  @media (min-width: 1024px) {
+    height: 500px;
+  }
+}
+
+.podcast-banner-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  
+  // Mobile: position below image (static)
+  position: static;
+  padding: 1.5rem 1.5rem 0;
+  background: transparent;
+  
+  @media (min-width: 640px) {
+    // Desktop: overlay on image
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 4rem 2rem 3rem;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85) 30%, rgba(0, 0, 0, 0.95));
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+}
+
+.podcast-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  margin: 0;
+  color: #fafafa;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  
+  @media (min-width: 480px) {
+    font-size: 2rem;
+  }
+  
+  @media (min-width: 640px) {
+    font-size: 2.5rem;
+    letter-spacing: 0.08em;
+  }
+  
+  @media (min-width: 1024px) {
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+  }
+}
+
+.podcast-cta {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-color: #505050;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  
+  &:hover,
+  &:focus {
+    background-color: #252525;
+    color: #ffffff;
+    border-color: #707070;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  }
+}
+
+// =============================================================================
+// PODCAST MODAL
+// =============================================================================
+
+.podcast-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
+}
+
+.podcast-modal-content {
+  background: #1a1a1a;
+  border: 1px solid #303030;
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
+  @media (min-width: 768px) {
+    max-width: 700px;
+    max-height: 85vh;
+  }
+}
+
+.podcast-modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  color: #606060;
+  font-size: 1.75rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: color 0.2s ease;
+  line-height: 1;
+  padding: 0.5rem;
+  z-index: 10;
+  
+  @media (min-width: 768px) {
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+  }
+  
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.podcast-modal-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  margin: 0;
+  padding: 1.5rem 1.5rem 1rem;
+  color: #fafafa;
+  text-align: center;
+  border-bottom: 1px solid #252525;
+  text-transform: uppercase;
+  
+  @media (min-width: 768px) {
+    font-size: 1.75rem;
+    padding: 2rem 2rem 1.5rem;
+    letter-spacing: 0.1em;
+  }
+}
+
+.podcast-episodes {
+  overflow-y: auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  
+  @media (min-width: 768px) {
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  // Custom scrollbar styling
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: #0d0d0d;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: #303030;
+    border-radius: 4px;
+    
+    &:hover {
+      background: #404040;
+    }
+  }
+}
+
+.podcast-episode {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; // 16:9 aspect ratio
+  background: #0d0d0d;
+  
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #252525;
+  }
+}

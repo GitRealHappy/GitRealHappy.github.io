@@ -325,6 +325,72 @@
   }
 }
 
+// Contact Page
+.contact-page {
+  .page-header {
+    display: none;
+  }
+  
+  .contact-content {
+    text-align: center;
+    padding: 4rem 1.5rem;
+    min-height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    
+    @media (min-width: 768px) {
+      padding: 8rem 2rem;
+    }
+    
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 200;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      
+      @media (min-width: 480px) {
+        font-size: 2.25rem;
+        letter-spacing: 0.15em;
+      }
+      
+      @media (min-width: 768px) {
+        font-size: 3.5rem;
+        letter-spacing: 0.2em;
+        margin-bottom: 3rem;
+      }
+    }
+    
+    .contact-message {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #a0a0a0;
+      margin: 0;
+      
+      @media (min-width: 768px) {
+        font-size: 1.15rem;
+      }
+    }
+    
+    .contact-email {
+      color: #ffffff;
+      border-bottom: 1px solid #404040;
+      padding-bottom: 2px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      
+      &:hover {
+        color: #fafafa;
+        border-bottom-color: #808080;
+      }
+    }
+  }
+}
+
 // Events Page
 .events-page {
   .page-header {

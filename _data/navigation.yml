@@ -9,6 +9,8 @@ main:
     url: "/events/"
   - name: "About"
     url: "/about/"
+  - name: "Contact"
+    url: "/contact/"
 
 footer: []
 

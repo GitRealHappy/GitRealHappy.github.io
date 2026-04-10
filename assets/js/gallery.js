@@ -145,4 +145,53 @@ function preloadGalleryImages() {
 }
 
 // Initialize preloading after page load
-window.addEventListener('load', preloadGalleryImages); 
+window.addEventListener('load', preloadGalleryImages);
+
+// =============================================================================
+// PODCAST MODAL FUNCTIONALITY
+// =============================================================================
+
+// Open podcast modal
+function openPodcastModal() {
+    const modal = document.getElementById('podcast-modal');
+    if (modal) {
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+    }
+}
+
+// Close podcast modal
+function closePodcastModal() {
+    const modal = document.getElementById('podcast-modal');
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Restore scrolling
+        
+        // Pause all YouTube videos when closing
+        const iframes = modal.querySelectorAll('iframe');
+        iframes.forEach(iframe => {
+            const src = iframe.src;
+            iframe.src = src; // Reload iframe to stop video
+        });
+    }
+}
+
+// Close modal when clicking outside content
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('podcast-modal');
+    if (modal) {
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closePodcastModal();
+            }
+        });
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+    const modal = document.getElementById('podcast-modal');
+    if (modal && modal.style.display === 'flex' && e.key === 'Escape') {
+        closePodcastModal();
+    }
+}); 
