@@ -6,23 +6,24 @@ body_class: 'events-page'
 ---
 
 <div class="events-content">
-  <h1>Upcoming Events</h1>
+  <h1>Events</h1>
+
+  <p class="events-intro">
+    I organize events for entrepreneurs to get connected and learn from the best thinkers in
+    the world of building personal brand empires. I also throw music and art parties.
+  </p>
 
   <div class="event-feature">
     <h2>The Future-Proof Creator Summit</h2>
-    <p class="event-date"><strong>June 5–7, 2026</strong></p>
-    <p class="event-location">Sheraton Vancouver Airport Hotel • Vancouver, BC</p>
+    <p class="event-date"><strong>June 2026 · Abbotsford, BC</strong></p>
 
     <p class="event-description">
-      Find Your Tribe. Build Your Future-Proof Creator Business.
-    </p>
-
-    <p class="event-subtitle">
-      The Future-Proof Creator Summit is where serious creators, educators, and digital entrepreneurs unite for 3 days to master the timeless principles and modern strategies behind building your sustainable, high-income creative business that survives the AI revolution, without compromising your passion.
-    </p>
-
-    <p class="event-headliners">
-      Headlined by: <strong>Dan Koe</strong>, <strong>Kieran Drew</strong>, and <strong>Taylin John Simmonds</strong>.
+      A three-day gathering where serious creators, educators, and digital entrepreneurs
+      came together to master the timeless principles and modern strategies behind building a
+      sustainable, high-income creative business that survives the AI revolution, without
+      compromising their passion. Headlined by <strong>Dan Koe</strong>,
+      <strong>Kieran Drew</strong>, and <strong>Taylin John Simmonds</strong>, the room was
+      full of people who left as collaborators, friends, and business partners.
     </p>
 
     <div class="speaker-icons">
@@ -34,138 +35,138 @@ body_class: 'events-page'
       <img src="{{ '/assets/images/events/icon6.jpg' | relative_url }}" alt="Speaker" class="speaker-icon">
     </div>
 
-    <h3>What You'll Learn</h3>
-    <ul>
-      <li>How to future-proof your creative work in the age of AI</li>
-      <li>Build real relationships that lead to sales, business deals, and collaborations</li>
-      <li>Write for impact and persuasion</li>
-      <li>Create and sell your products or services authentically</li>
-      <li>Use AI to multiply your productivity</li>
-      <li>Build an audience who trusts you</li>
-    </ul>
+    <p class="event-subtitle">
+      The 2026 summit is over, but the next one is already taking shape. Nobody was asked to
+      post these afterward. They just did.
+    </p>
 
-    <h3>The Experience</h3>
-    <ul>
-      <li><strong>13+ Speaker Sessions:</strong> Learn from creators with 3.5+ million combined followers</li>
-      <li><strong>Life-changing Networking:</strong> Guided networking sessions designed for meaningful connections</li>
-      <li><strong>Workshops & Mental Model Labs:</strong> Turn your knowledge into income</li>
-      <li><strong>Live Podcasts & Q&A:</strong> Unscripted conversations about building in the new era</li>
-      <li><strong>Premium Venue:</strong> 24-hour gym, heated pool, free airport shuttle</li>
-    </ul>
-
-    <h3>Ticket Options</h3>
-
-    <div id="early-bird-countdown" class="early-bird-countdown" aria-live="polite">
-      <p class="early-bird-countdown__label">Early bird pricing ends April 1, 2026</p>
-      <div class="early-bird-countdown__timer" role="timer" aria-label="Time remaining until early bird pricing ends">
-        <div class="early-bird-countdown__unit">
-          <span id="cd-days" class="early-bird-countdown__value">00</span>
-          <span class="early-bird-countdown__unit-label">days</span>
-        </div>
-        <div class="early-bird-countdown__unit">
-          <span id="cd-hours" class="early-bird-countdown__value">00</span>
-          <span class="early-bird-countdown__unit-label">hours</span>
-        </div>
-        <div class="early-bird-countdown__unit">
-          <span id="cd-mins" class="early-bird-countdown__value">00</span>
-          <span class="early-bird-countdown__unit-label">min</span>
-        </div>
-        <div class="early-bird-countdown__unit">
-          <span id="cd-secs" class="early-bird-countdown__value">00</span>
-          <span class="early-bird-countdown__unit-label">sec</span>
-        </div>
-      </div>
+    <div class="testimonial-wall">
+      <button type="button" class="testimonial" onclick="openTestimonial(0)" aria-label="View attendee post">
+        <img src="{{ '/assets/images/testimonials/test14.png' | relative_url }}" alt="A 2026 summit attendee's social post" loading="lazy">
+      </button>
+      <button type="button" class="testimonial" onclick="openTestimonial(1)" aria-label="View attendee post">
+        <img src="{{ '/assets/images/testimonials/test15.png' | relative_url }}" alt="A 2026 summit attendee's social post" loading="lazy">
+      </button>
+      <button type="button" class="testimonial" onclick="openTestimonial(2)" aria-label="View attendee post">
+        <img src="{{ '/assets/images/testimonials/test16.png' | relative_url }}" alt="A 2026 summit attendee's social post" loading="lazy">
+      </button>
     </div>
 
-    <p id="early-bird-ended" class="early-bird-ended" hidden>Early bird pricing has ended. Standard rates are now in effect.</p>
-
-    <div class="ticket-options">
-      <div class="ticket" data-early="$349 USD" data-regular="$449 USD">
-        <h4>General Admission</h4>
-        <p class="ticket-price"><strong class="js-ticket-price">$349 USD</strong></p>
-        <p class="ticket-price-later">$449 USD after April 1st</p>
-        <p>Access to all talks, workshops, and live podcasts. Includes 3 meals, 1-year premium community membership, and networking games.</p>
-      </div>
-
-      <div class="ticket" data-early="$997 USD" data-regular="$1,297 USD">
-        <h4>VIP</h4>
-        <p class="ticket-price"><strong class="js-ticket-price">$997 USD</strong></p>
-        <p class="ticket-price-later">$1,297 USD after April 1st</p>
-        <p>Everything in General Admission PLUS exclusive Saturday dinner with speakers, front-row seating, after-party ticket, and 2 years of premium membership.</p>
-      </div>
-
-      <div class="ticket" data-early="$149 USD" data-regular="$197 USD">
-        <h4>Virtual</h4>
-        <p class="ticket-price"><strong class="js-ticket-price">$149 USD</strong></p>
-        <p class="ticket-price-later">$197 USD after April 1st</p>
-        <p>Livestream access to all three days, 1-year premium community membership, virtual networking, and recordings available for a full year.</p>
-      </div>
-    </div>
+    <p class="event-description">
+      The 2027 Future-Proof Creator Summit is on the horizon. Tickets aren't public yet, and
+      the first twenty sold out in pre-sale. Get on the waitlist to be first to know when the
+      dates, location, and tickets are announced, and to lock in your place before the room
+      fills up again.
+    </p>
 
     <p class="event-cta">
-      <a href="https://thelivinginternet.com/" target="_blank" class="event-link">
-        Learn More & Get Tickets →
+      <a href="https://www.thelivinginternet.com/" target="_blank" rel="noopener" class="event-link">
+        Get on the waitlist →
       </a>
     </p>
 
     <p class="event-note">
-      <em>Oakmoss is a proud sponsor of The Future-Proof Creator Summit.</em>
+      Curious what the 2026 summit was like?
+      <a href="https://www.thelivinginternet.com/" target="_blank" rel="noopener">Learn more here</a>
+      · Stay tuned for 2027 updates.
     </p>
   </div>
+
+  <div class="event-feature">
+    <h2>TURQUOISER Under The Stars</h2>
+    <p class="event-date"><strong>A night to remember</strong></p>
+
+    <div class="event-video">
+      <iframe src="https://www.youtube.com/embed/WBm4qGubn70?si=5DR_TBO5XweYI76h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <p class="event-description">
+      A bunch of friends from the Fraser Valley and Vancouver area gathered to groove to the
+      exquisite funky tunes of Turquoiser, a group of Chilliwack dwellers who make music and
+      other forms of art. At this event we had an art gallery showcasing the visual art of
+      Keaton Sauder, Connor Koewenhoven, and Jack Hendsbee.
+    </p>
+
+    <p class="event-description">
+      Special thanks to Richard Wiebe for constructing this beautiful location, the Rusty
+      Shovel, and inviting such a fun time into it.
+    </p>
+
+    <p class="event-headliners">Event Coordinator: <strong>Jesse James Carver</strong></p>
+
+    <h3>The Band</h3>
+    <ul>
+      <li>Keaton Sauder &mdash; Bass</li>
+      <li>Parker Hendsbee &mdash; Drums</li>
+      <li>Connor Koewenhoven &mdash; Guitar</li>
+      <li>Isaac Cornish &mdash; Keyboard</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Testimonial Lightbox -->
+<div id="testimonial-lightbox" class="testimonial-lightbox" style="display: none;" tabindex="-1" role="dialog" aria-label="Attendee posts">
+  <button class="testimonial-lightbox__close" onclick="closeTestimonial()" aria-label="Close">&times;</button>
+  <button class="testimonial-lightbox__nav testimonial-lightbox__prev" onclick="stepTestimonial(-1)" aria-label="Previous post">&#10094;</button>
+  <div class="testimonial-lightbox__content">
+    <img src="" alt="" id="testimonial-lightbox-image">
+  </div>
+  <button class="testimonial-lightbox__nav testimonial-lightbox__next" onclick="stepTestimonial(1)" aria-label="Next post">&#10095;</button>
 </div>
 
 <script>
 (function () {
-  var end = new Date(2026, 3, 2, 0, 0, 0);
-  var countdown = document.getElementById('early-bird-countdown');
-  var endedMsg = document.getElementById('early-bird-ended');
-  var dEl = document.getElementById('cd-days');
-  var hEl = document.getElementById('cd-hours');
-  var mEl = document.getElementById('cd-mins');
-  var sEl = document.getElementById('cd-secs');
+  var sources = [
+    { src: "{{ '/assets/images/testimonials/test14.png' | relative_url }}", alt: "A 2026 summit attendee's social post" },
+    { src: "{{ '/assets/images/testimonials/test15.png' | relative_url }}", alt: "A 2026 summit attendee's social post" },
+    { src: "{{ '/assets/images/testimonials/test16.png' | relative_url }}", alt: "A 2026 summit attendee's social post" }
+  ];
+  var index = 0;
+  var lightbox = document.getElementById('testimonial-lightbox');
+  var image = document.getElementById('testimonial-lightbox-image');
+  var touchStartX = 0;
 
-  function pad(n) {
-    return n < 10 ? '0' + n : String(n);
+  function render() {
+    image.src = sources[index].src;
+    image.alt = sources[index].alt;
   }
 
-  function applyRegularPricing() {
-    document.querySelectorAll('.ticket').forEach(function (ticket) {
-      var priceEl = ticket.querySelector('.js-ticket-price');
-      if (priceEl && ticket.dataset.regular) {
-        priceEl.textContent = ticket.dataset.regular;
-      }
-      var later = ticket.querySelector('.ticket-price-later');
-      if (later) later.hidden = true;
-    });
-    if (countdown) countdown.hidden = true;
-    if (endedMsg) endedMsg.hidden = false;
-  }
+  window.openTestimonial = function (i) {
+    index = i;
+    render();
+    lightbox.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    lightbox.focus();
+  };
 
-  function tick() {
-    var now = Date.now();
-    var remaining = end - now;
-    if (remaining <= 0) {
-      applyRegularPricing();
-      return;
-    }
-    var sec = Math.floor(remaining / 1000);
-    var days = Math.floor(sec / 86400);
-    sec -= days * 86400;
-    var hours = Math.floor(sec / 3600);
-    sec -= hours * 3600;
-    var mins = Math.floor(sec / 60);
-    sec -= mins * 60;
-    if (dEl) dEl.textContent = pad(days);
-    if (hEl) hEl.textContent = pad(hours);
-    if (mEl) mEl.textContent = pad(mins);
-    if (sEl) sEl.textContent = pad(sec);
-    setTimeout(tick, 1000);
-  }
+  window.closeTestimonial = function () {
+    lightbox.style.display = 'none';
+    document.body.style.overflow = '';
+  };
 
-  if (Date.now() >= end.getTime()) {
-    applyRegularPricing();
-  } else {
-    tick();
-  }
+  window.stepTestimonial = function (dir) {
+    index = (index + dir + sources.length) % sources.length;
+    render();
+  };
+
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox || e.target === image.parentNode) closeTestimonial();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (lightbox.style.display !== 'flex') return;
+    if (e.key === 'Escape') closeTestimonial();
+    else if (e.key === 'ArrowLeft') stepTestimonial(-1);
+    else if (e.key === 'ArrowRight') stepTestimonial(1);
+  });
+
+  lightbox.addEventListener('touchstart', function (e) {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  lightbox.addEventListener('touchend', function (e) {
+    var dx = e.changedTouches[0].screenX - touchStartX;
+    if (Math.abs(dx) > 50) stepTestimonial(dx > 0 ? -1 : 1);
+  }, { passive: true });
 })();
 </script>
