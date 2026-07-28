@@ -114,6 +114,32 @@ body_class: 'events-page'
   <button class="testimonial-lightbox__nav testimonial-lightbox__next" onclick="stepTestimonial(1)" aria-label="Next post">&#10095;</button>
 </div>
 
+<!-- Secret Party Popup -->
+<div id="secret-party-popup" class="secret-popup" style="display: none;" role="dialog" aria-label="Secret party invite">
+  <div class="secret-popup__box">
+    <button class="secret-popup__close" onclick="closeSecretPopup()" aria-label="Close">&times;</button>
+    <p class="secret-popup__text">
+      <strong>August 22:</strong> STAY FOOLISH &mdash; a top secret party in Abbotsford. If
+      you're seeing this, you're probably cool. Text Jesse for the deets:
+      <a href="tel:+17782415956">778-241-5956</a>
+    </p>
+  </div>
+</div>
+
+<script>
+(function () {
+  var popup = document.getElementById('secret-party-popup');
+
+  window.closeSecretPopup = function () {
+    popup.style.display = 'none';
+  };
+
+  window.setTimeout(function () {
+    popup.style.display = 'flex';
+  }, 7000);
+})();
+</script>
+
 <script>
 (function () {
   var sources = [
