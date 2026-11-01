@@ -14,16 +14,38 @@ body_class: 'events-page'
   </p>
 
   <div class="event-feature">
-    <h2>The Future-Proof Creator Summit</h2>
+    <h2>The 2027 Future-Proof Creator Summit</h2>
+    <p class="event-date"><strong>Coming 2027 · Abbotsford, BC</strong></p>
+
+    <p class="event-description">
+      Three days for serious creators, educators, and digital entrepreneurs to master the
+      timeless principles and modern strategies behind building a sustainable, high-income
+      creative business that survives the AI revolution, without compromising their passion.
+      Expect the best thinkers in personal brand building, and a room full of people who
+      leave as collaborators, friends, and business partners.
+    </p>
+
+    <p class="event-description">
+      Tickets aren't public yet, and the first twenty sold out in pre-sale. Get on the
+      waitlist to be first to know when the dates, speakers, and tickets are announced, and
+      to lock in your place before the room fills up again.
+    </p>
+
+    <p class="event-cta">
+      <a href="https://www.thelivinginternet.com/" target="_blank" rel="noopener" class="event-link">
+        Get on the waitlist →
+      </a>
+    </p>
+  </div>
+
+  <div class="event-feature">
+    <h2>Last Year: The 2026 Summit</h2>
     <p class="event-date"><strong>June 2026 · Abbotsford, BC</strong></p>
 
     <p class="event-description">
-      A three-day gathering where serious creators, educators, and digital entrepreneurs
-      came together to master the timeless principles and modern strategies behind building a
-      sustainable, high-income creative business that survives the AI revolution, without
-      compromising their passion. Headlined by <strong>Dan Koe</strong>,
-      <strong>Kieran Drew</strong>, and <strong>Taylin John Simmonds</strong>, the room was
-      full of people who left as collaborators, friends, and business partners.
+      The first Future-Proof Creator Summit was headlined by <strong>Dan Koe</strong>,
+      <strong>Kieran Drew</strong>, and <strong>Taylin John Simmonds</strong>, and the room
+      was full of people who left as collaborators, friends, and business partners.
     </p>
 
     <div class="speaker-icons">
@@ -36,8 +58,7 @@ body_class: 'events-page'
     </div>
 
     <p class="event-subtitle">
-      The 2026 summit is over, but the next one is already taking shape. Nobody was asked to
-      post these afterward. They just did.
+      Nobody was asked to post these afterward. They just did.
     </p>
 
     <div class="testimonial-wall">
@@ -52,23 +73,9 @@ body_class: 'events-page'
       </button>
     </div>
 
-    <p class="event-description">
-      The 2027 Future-Proof Creator Summit is on the horizon. Tickets aren't public yet, and
-      the first twenty sold out in pre-sale. Get on the waitlist to be first to know when the
-      dates, location, and tickets are announced, and to lock in your place before the room
-      fills up again.
-    </p>
-
-    <p class="event-cta">
-      <a href="https://www.thelivinginternet.com/" target="_blank" rel="noopener" class="event-link">
-        Get on the waitlist →
-      </a>
-    </p>
-
     <p class="event-note">
       Curious what the 2026 summit was like?
       <a href="https://www.thelivinginternet.com/" target="_blank" rel="noopener">Learn more here</a>
-      · Stay tuned for 2027 updates.
     </p>
   </div>
 
@@ -113,32 +120,6 @@ body_class: 'events-page'
   </div>
   <button class="testimonial-lightbox__nav testimonial-lightbox__next" onclick="stepTestimonial(1)" aria-label="Next post">&#10095;</button>
 </div>
-
-<!-- Secret Party Popup -->
-<div id="secret-party-popup" class="secret-popup" style="display: none;" role="dialog" aria-label="Secret party invite">
-  <div class="secret-popup__box">
-    <button class="secret-popup__close" onclick="closeSecretPopup()" aria-label="Close">&times;</button>
-    <p class="secret-popup__text">
-      <strong>August 22:</strong> STAY FOOLISH &mdash; a top secret party in Abbotsford. If
-      you're seeing this, you're probably cool. Text Jesse for the deets:
-      <a href="tel:+17782415956">778-241-5956</a>
-    </p>
-  </div>
-</div>
-
-<script>
-(function () {
-  var popup = document.getElementById('secret-party-popup');
-
-  window.closeSecretPopup = function () {
-    popup.style.display = 'none';
-  };
-
-  window.setTimeout(function () {
-    popup.style.display = 'flex';
-  }, 7000);
-})();
-</script>
 
 <script>
 (function () {
