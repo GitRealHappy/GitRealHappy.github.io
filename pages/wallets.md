@@ -55,9 +55,22 @@ body_class: 'wallets-page'
             </div>
 
             <div class="pricing">
-                <div class="price">$149 CAD</div>
+                <div id="sale-banner" class="sale-banner" hidden>Black Friday Sale · 30% off</div>
+                <div class="price">
+                    <span id="price-original" class="price-original">$149 CAD</span>
+                    <span id="price-sale" class="price-sale" hidden>$104.30 CAD</span>
+                </div>
+                <div id="sale-countdown" class="sale-countdown" hidden aria-live="off">
+                    <p class="sale-countdown-label">Sale ends midnight, Black Friday (Mountain Time)</p>
+                    <div class="sale-countdown-clock">
+                        <div><span id="cd-days">0</span><small>days</small></div>
+                        <div><span id="cd-hours">00</span><small>hrs</small></div>
+                        <div><span id="cd-mins">00</span><small>min</small></div>
+                        <div><span id="cd-secs">00</span><small>sec</small></div>
+                    </div>
+                </div>
                 <p class="availability">Final collection of 25 wallets</p>
-                <a href="https://buy.stripe.com/3cI28s7tB776dud4tdfEk03" target="_blank" class="wallet-cta-button">
+                <a id="buy-link" href="https://buy.stripe.com/3cI28s7tB776dud4tdfEk03" target="_blank" class="wallet-cta-button">
                     Order Your Oakmoss Wallet →
                 </a>
             </div>
@@ -74,6 +87,51 @@ body_class: 'wallets-page'
 </div>
 
 <script>
+// Black Friday sale. Black Friday 2026 = Nov 27. "Midnight Black Friday, Mountain Time"
+// = Nov 28 00:00 MST (UTC-7, no DST in late November) = 2026-11-28 07:00 UTC.
+// Using an absolute UTC instant means every visitor's clock agrees regardless of timezone.
+(function () {
+    var SALE_END = Date.UTC(2026, 10, 28, 7, 0, 0);
+    var els = {
+        banner: document.getElementById('sale-banner'),
+        orig: document.getElementById('price-original'),
+        sale: document.getElementById('price-sale'),
+        cd: document.getElementById('sale-countdown'),
+        d: document.getElementById('cd-days'),
+        h: document.getElementById('cd-hours'),
+        m: document.getElementById('cd-mins'),
+        s: document.getElementById('cd-secs')
+    };
+    var timer = null;
+
+    function setSale(on) {
+        els.banner.hidden = !on;
+        els.sale.hidden = !on;
+        els.cd.hidden = !on;
+        els.orig.classList.toggle('struck', on);
+    }
+
+    function pad(n) { return n < 10 ? '0' + n : '' + n; }
+
+    function tick() {
+        var left = SALE_END - Date.now();
+        if (left <= 0) {
+            setSale(false);   // back to full price
+            clearInterval(timer);
+            return;
+        }
+        var t = Math.floor(left / 1000);
+        els.d.textContent = Math.floor(t / 86400);
+        els.h.textContent = pad(Math.floor(t % 86400 / 3600));
+        els.m.textContent = pad(Math.floor(t % 3600 / 60));
+        els.s.textContent = pad(t % 60);
+        setSale(true);
+    }
+
+    tick();
+    if (SALE_END - Date.now() > 0) timer = setInterval(tick, 1000);
+})();
+
 function changeMainImage(thumbnail) {
     const mainImage = document.getElementById('main-image');
     const thumbnails = document.querySelectorAll('.thumbnail');
@@ -388,6 +446,66 @@ document.addEventListener('keydown', function(e) {
   .price {
     font-size: 2rem;
   }
+}
+
+.price-original.struck {
+  text-decoration: line-through;
+  color: #707070;
+  font-size: 1.15rem;
+  margin-right: 0.6rem;
+}
+
+.price-sale {
+  color: #e8c46a;
+  font-weight: 400;
+}
+
+.sale-banner {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #0d0d0d;
+  background: #e8c46a;
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.sale-countdown {
+  margin: 0.75rem 0 1rem;
+}
+
+.sale-countdown-label {
+  font-size: 0.8rem;
+  color: #808080;
+  margin: 0 0 0.5rem;
+}
+
+.sale-countdown-clock {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.sale-countdown-clock div {
+  min-width: 3.5rem;
+  padding: 0.5rem 0.25rem;
+  background: #0d0d0d;
+  border: 1px solid #303030;
+}
+
+.sale-countdown-clock span {
+  display: block;
+  font-size: 1.4rem;
+  color: #fafafa;
+  font-variant-numeric: tabular-nums;
+}
+
+.sale-countdown-clock small {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #606060;
 }
 
 .availability {
